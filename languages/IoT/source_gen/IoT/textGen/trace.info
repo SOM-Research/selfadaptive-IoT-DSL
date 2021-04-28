@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082113931046:jetbrains.mps.baseLanguage.structure.ContinueStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1144226303539:jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <root>
+    <file name="TextGenAspectDescriptor.java">
+      <unit at="52,0,55,0" name="IoT.textGen.TextGenAspectDescriptor$CONCEPTS" />
+      <unit at="16,0,56,0" name="IoT.textGen.TextGenAspectDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:d9a200c5-1e80-496d-9d4b-f28f0f59880a(IoT.textGen)/1286545887381803233">
+    <file name="IoT_System_TextGen.java">
+      <node id="1286545887381803233" at="15,54,16,55" concept="5" />
+      <node id="5608521071052366733" at="17,145,18,27" concept="1" />
+      <node id="1286545887381803233" at="23,0,24,0" concept="7" trace="nodes$XHTE" />
+      <node id="1286545887381803233" at="24,0,25,0" concept="7" trace="containers$eu$n" />
+      <node id="5608521071052366733" at="16,55,19,5" concept="2" />
+      <node id="1286545887381803233" at="14,0,21,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="5608521071052366733" at="17,145,18,27" />
+      <scope id="5608521071052366733" at="16,55,19,5">
+        <var name="item" id="5608521071052366733" />
+      </scope>
+      <scope id="1286545887381803233" at="15,54,19,5">
+        <var name="tgs" id="1286545887381803233" />
+      </scope>
+      <scope id="1286545887381803233" at="14,0,21,0">
+        <var name="ctx" id="1286545887381803233" />
+      </scope>
+      <unit id="1286545887381803233" at="22,0,26,0" name="IoT.textGen.IoT_System_TextGen$LINKS" />
+      <unit id="1286545887381803233" at="13,0,27,0" name="IoT.textGen.IoT_System_TextGen" />
+    </file>
+    <file name="TextGenAspectDescriptor.java">
+      <node id="1286545887381803233" at="28,44,29,40" concept="6" />
+      <node id="1286545887381803233" at="37,61,38,52" concept="5" />
+      <node id="1286545887381803233" at="38,52,39,55" concept="5" />
+      <node id="1286545887381803233" at="39,55,40,84" concept="1" />
+      <node id="1286545887381803233" at="40,84,41,17" concept="0" />
+      <node id="1286545887381803233" at="45,60,46,26" concept="6" />
+      <node id="1286545887381803554" at="48,65,49,18" concept="6" />
+      <node id="1286545887381803233" at="45,0,48,0" concept="8" trace="getFileName_IoT_System#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="1286545887381803233" at="48,0,51,0" concept="8" trace="getFileExtension_IoT_System#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="1286545887381803233" at="36,58,42,7" concept="3" />
+      <scope id="1286545887381803233" at="28,44,29,40" />
+      <scope id="1286545887381803233" at="45,60,46,26" />
+      <scope id="1286545887381803233" at="48,65,49,18" />
+      <scope id="1286545887381803233" at="45,0,48,0">
+        <var name="node" id="1286545887381803233" />
+      </scope>
+      <scope id="1286545887381803233" at="48,0,51,0">
+        <var name="node" id="1286545887381803233" />
+      </scope>
+      <scope id="1286545887381803233" at="37,61,41,17">
+        <var name="ext" id="1286545887381803233" />
+        <var name="fname" id="1286545887381803233" />
+      </scope>
+    </file>
+  </root>
+  <root nodeRef="r:d9a200c5-1e80-496d-9d4b-f28f0f59880a(IoT.textGen)/1286545887390330387">
+    <file name="Container_TextGen.java">
+      <node id="1286545887390330387" at="18,54,19,55" concept="5" />
+      <node id="5608521071052382106" at="19,55,20,38" concept="1" />
+      <node id="5608521071052383148" at="20,38,21,18" concept="1" />
+      <node id="5608521071052382665" at="21,18,22,35" concept="1" />
+      <node id="5608521071052383187" at="22,35,23,18" concept="1" />
+      <node id="5608521071052383682" at="23,18,24,28" concept="1" />
+      <node id="5608521071052383750" at="24,28,25,18" concept="1" />
+      <node id="1286545887390330387" at="25,18,26,44" concept="1" />
+      <node id="5608521071052384286" at="26,44,27,17" concept="1" />
+      <node id="5608521071052384324" at="27,17,28,25" concept="1" />
+      <node id="5608521071052384409" at="28,25,29,86" concept="1" />
+      <node id="5608521071052385958" at="29,86,30,30" concept="1" />
+      <node id="5608521071052386099" at="30,30,31,18" concept="1" />
+      <node id="1286545887390330387" at="31,18,32,44" concept="1" />
+      <node id="5608521071053295786" at="32,44,33,24" concept="1" />
+      <node id="5608521071053295869" at="33,24,34,18" concept="1" />
+      <node id="1286545887390330387" at="34,18,35,44" concept="1" />
+      <node id="1286545887390330387" at="35,44,36,44" concept="1" />
+      <node id="5608521071064901729" at="36,44,37,17" concept="1" />
+      <node id="5608521071064461558" at="37,17,38,45" concept="1" />
+      <node id="5608521071064461611" at="38,45,39,18" concept="1" />
+      <node id="1286545887390330387" at="39,18,40,44" concept="1" />
+      <node id="5608521071053296026" at="40,44,41,17" concept="1" />
+      <node id="5608521071053296027" at="41,17,42,30" concept="1" />
+      <node id="5608521071053296033" at="42,30,43,18" concept="1" />
+      <node id="5608521071053296363" at="43,18,44,17" concept="1" />
+      <node id="5608521071053296401" at="44,17,45,28" concept="1" />
+      <node id="5608521071053296501" at="45,28,46,18" concept="1" />
+      <node id="5608521071053296844" at="46,18,47,17" concept="1" />
+      <node id="5608521071053296886" at="47,17,48,17" concept="1" />
+      <node id="5608521071053296650" at="48,17,49,31" concept="1" />
+      <node id="5608521071053296778" at="49,31,50,18" concept="1" />
+      <node id="5608521071053296943" at="50,18,51,17" concept="1" />
+      <node id="5608521071053296981" at="51,17,52,17" concept="1" />
+      <node id="5608521071053297021" at="52,17,53,17" concept="1" />
+      <node id="5608521071053297063" at="53,17,54,24" concept="1" />
+      <node id="5608521071053300508" at="54,24,55,86" concept="1" />
+      <node id="5608521071053301913" at="55,86,56,20" concept="1" />
+      <node id="5608521071053297152" at="56,20,57,137" concept="1" />
+      <node id="5608521071053302094" at="57,137,58,18" concept="1" />
+      <node id="5608521071053302653" at="58,18,59,17" concept="1" />
+      <node id="5608521071053302746" at="59,17,60,28" concept="1" />
+      <node id="5608521071053302861" at="60,28,61,18" concept="1" />
+      <node id="1286545887390330387" at="61,18,62,44" concept="1" />
+      <node id="5608521071053303365" at="62,44,63,17" concept="1" />
+      <node id="5608521071053303443" at="63,17,64,28" concept="1" />
+      <node id="5608521071053303530" at="64,28,65,18" concept="1" />
+      <node id="5608521071053304045" at="65,18,66,17" concept="1" />
+      <node id="5608521071053304123" at="66,17,67,17" concept="1" />
+      <node id="5608521071053304165" at="67,17,68,26" concept="1" />
+      <node id="5608521071053304242" at="68,26,69,18" concept="1" />
+      <node id="5608521071053304770" at="69,18,70,17" concept="1" />
+      <node id="5608521071053304848" at="70,17,71,17" concept="1" />
+      <node id="5608521071053304890" at="71,17,72,17" concept="1" />
+      <node id="5608521071053304934" at="72,17,73,24" concept="1" />
+      <node id="5608521071053305070" at="73,24,74,86" concept="1" />
+      <node id="5608521071053305335" at="74,86,75,20" concept="1" />
+      <node id="5608521071053305440" at="75,20,76,137" concept="1" />
+      <node id="5608521071053309459" at="76,137,77,18" concept="1" />
+      <node id="5608521071053308880" at="77,18,78,17" concept="1" />
+      <node id="5608521071053308958" at="78,17,79,24" concept="1" />
+      <node id="5608521071053309075" at="79,24,80,18" concept="1" />
+      <node id="5608521071053309917" at="80,18,81,17" concept="1" />
+      <node id="5608521071053309995" at="81,17,82,17" concept="1" />
+      <node id="5608521071053310037" at="82,17,83,30" concept="1" />
+      <node id="5608521071053310111" at="83,30,84,18" concept="1" />
+      <node id="5608521071053310797" at="84,18,85,17" concept="1" />
+      <node id="5608521071053310875" at="85,17,86,17" concept="1" />
+      <node id="5608521071053310917" at="86,17,87,27" concept="1" />
+      <node id="5608521071053311006" at="87,27,88,86" concept="1" />
+      <node id="5608521071053312457" at="88,86,89,18" concept="1" />
+      <node id="5608521071053313236" at="89,18,90,17" concept="1" />
+      <node id="5608521071053313314" at="90,17,91,17" concept="1" />
+      <node id="5608521071053313356" at="91,17,92,28" concept="1" />
+      <node id="5608521071053313537" at="92,28,93,142" concept="1" />
+      <node id="5608521071053316842" at="93,142,94,18" concept="1" />
+      <node id="5608521071053317705" at="94,18,95,17" concept="1" />
+      <node id="5608521071053317783" at="95,17,96,17" concept="1" />
+      <node id="5608521071053317825" at="96,17,97,27" concept="1" />
+      <node id="5608521071053317929" at="97,27,98,18" concept="1" />
+      <node id="5608521071053318771" at="98,18,99,17" concept="1" />
+      <node id="5608521071053318837" at="99,17,100,17" concept="1" />
+      <node id="5608521071053318867" at="100,17,101,17" concept="1" />
+      <node id="5608521071053318899" at="101,17,102,38" concept="1" />
+      <node id="5608521071054707282" at="102,38,103,100" concept="1" />
+      <node id="5608521071053796753" at="103,100,104,18" concept="1" />
+      <node id="5608521071057494251" at="104,18,105,17" concept="1" />
+      <node id="5608521071057494329" at="105,17,106,32" concept="1" />
+      <node id="5608521071057494446" at="106,32,107,18" concept="1" />
+      <node id="5608521071057496205" at="107,18,108,17" concept="1" />
+      <node id="5608521071057496376" at="108,17,109,27" concept="1" />
+      <node id="5608521071057496466" at="109,27,110,151" concept="1" />
+      <node id="5608521071057956684" at="110,151,111,18" concept="1" />
+      <node id="1286545887390330387" at="111,18,112,44" concept="1" />
+      <node id="1286545887390330387" at="112,44,113,44" concept="1" />
+      <node id="5608521071056121254" at="113,44,114,22" concept="1" />
+      <node id="5608521071056121307" at="114,22,115,18" concept="1" />
+      <node id="5608521071055628668" at="115,18,116,33" concept="1" />
+      <node id="5608521071055629721" at="116,33,117,18" concept="1" />
+      <node id="5608521071055630659" at="117,18,118,32" concept="1" />
+      <node id="5608521071055630712" at="118,32,119,18" concept="1" />
+      <node id="5608521071055632020" at="119,18,120,28" concept="1" />
+      <node id="5608521071055632103" at="120,28,121,18" concept="1" />
+      <node id="1286545887390330387" at="121,18,122,44" concept="1" />
+      <node id="5608521071055634555" at="122,44,123,17" concept="1" />
+      <node id="5608521071055634593" at="123,17,124,25" concept="1" />
+      <node id="5608521071055634666" at="124,25,125,86" concept="1" />
+      <node id="5608521071055636275" at="125,86,126,30" concept="1" />
+      <node id="5608521071055636431" at="126,30,127,18" concept="1" />
+      <node id="5608521071055636720" at="127,18,128,17" concept="1" />
+      <node id="5608521071055636758" at="128,17,129,37" concept="1" />
+      <node id="5608521071055636846" at="129,37,130,18" concept="1" />
+      <node id="1286545887390330387" at="130,18,131,44" concept="1" />
+      <node id="5608521071055638984" at="131,44,132,24" concept="1" />
+      <node id="5608521071055639082" at="132,24,133,18" concept="1" />
+      <node id="1286545887390330387" at="133,18,134,44" concept="1" />
+      <node id="5608521071055639948" at="134,44,135,17" concept="1" />
+      <node id="5608521071055639986" at="135,17,136,33" concept="1" />
+      <node id="5608521071055640116" at="136,33,137,18" concept="1" />
+      <node id="5608521071055640256" at="137,18,138,17" concept="1" />
+      <node id="5608521071055640294" at="138,17,139,28" concept="1" />
+      <node id="5608521071055640379" at="139,28,140,18" concept="1" />
+      <node id="5608521071055640453" at="140,18,141,17" concept="1" />
+      <node id="5608521071055640491" at="141,17,142,17" concept="1" />
+      <node id="5608521071055640531" at="142,17,143,24" concept="1" />
+      <node id="5608521071055640603" at="143,24,144,86" concept="1" />
+      <node id="5608521071055642052" at="144,86,145,20" concept="1" />
+      <node id="5608521071055642304" at="145,20,146,137" concept="1" />
+      <node id="5608521071055645419" at="146,137,147,18" concept="1" />
+      <node id="5608521071055645687" at="147,18,148,17" concept="1" />
+      <node id="5608521071055645725" at="148,17,149,25" concept="1" />
+      <node id="5608521071055646165" at="149,25,150,18" concept="1" />
+      <node id="5608521071055646286" at="150,18,151,17" concept="1" />
+      <node id="5608521071055646312" at="151,17,152,27" concept="1" />
+      <node id="5608521071055646412" at="152,27,153,100" concept="1" />
+      <node id="5608521071055657510" at="153,100,154,18" concept="1" />
+      <node id="5608521071055657713" at="154,18,155,17" concept="1" />
+      <node id="5608521071055657751" at="155,17,156,31" concept="1" />
+      <node id="5608521071055657884" at="156,31,157,100" concept="1" />
+      <node id="5608521071055661023" at="157,100,158,18" concept="1" />
+      <node id="5608521071056577736" at="158,18,159,18" concept="1" />
+      <node id="1286545887390330387" at="159,18,160,44" concept="1" />
+      <node id="5608521071056578519" at="160,44,161,22" concept="1" />
+      <node id="5608521071056578520" at="161,22,162,18" concept="1" />
+      <node id="1286545887390330387" at="166,0,167,0" concept="7" trace="name$MnvL" />
+      <node id="1286545887390330387" at="167,0,168,0" concept="7" trace="imageRepo$cH0I" />
+      <node id="1286545887390330387" at="168,0,169,0" concept="7" trace="internalPort$9RyM" />
+      <node id="1286545887390330387" at="169,0,170,0" concept="7" trace="externalPort$9SuQ" />
+      <node id="1286545887390330387" at="173,0,174,0" concept="7" trace="application$GqFB" />
+      <node id="1286545887390330387" at="177,0,178,0" concept="7" trace="Node$uW" />
+      <node id="1286545887390330387" at="17,0,164,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="1286545887390330387" at="18,54,162,18">
+        <var name="tgs" id="1286545887390330387" />
+      </scope>
+      <scope id="1286545887390330387" at="17,0,164,0">
+        <var name="ctx" id="1286545887390330387" />
+      </scope>
+      <unit id="1286545887390330387" at="172,0,175,0" name="IoT.textGen.Container_TextGen$LINKS" />
+      <unit id="1286545887390330387" at="176,0,179,0" name="IoT.textGen.Container_TextGen$CONCEPTS" />
+      <unit id="1286545887390330387" at="165,0,171,0" name="IoT.textGen.Container_TextGen$PROPS" />
+      <unit id="1286545887390330387" at="16,0,180,0" name="IoT.textGen.Container_TextGen" />
+    </file>
+    <file name="TextGenAspectDescriptor.java">
+      <node id="1286545887390330387" at="26,43,27,39" concept="6" />
+      <scope id="1286545887390330387" at="26,43,27,39" />
+    </file>
+  </root>
+</debug-info>
+
