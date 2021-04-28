@@ -3,7 +3,7 @@ Repository to host a DSL for modeling multi-layered and self-adapting IoT system
 
 > _This DSL aims to model multi-layered and self-adaptive IoT systems focusing on three main contributions: (1) modeling primitives covering the four layers of an IoT system, including IoT devices (sensors or actuators), edge, fog, and cloud nodes; (2) modeling the deployment of container-based applications on those nodes; and (3) a specific sublanguage to express adaptation rules to guarantee QoS at runtime._
 
-You can find in this repository the DSL implemented in MPS, an example sandbox model, a yaml file (Smart Building - Hotel.yaml) with the generated kubernetes manifest code, and a paper about the theoretical description.
+You can find in this repository the DSL implemented in MPS, an example sandbox model, a yaml file (Smart Building - Hotel.yaml) with code generated for the Kubernetes deployment and service, and a paper about the theoretical description.
 
 ## Prerequisites
 
