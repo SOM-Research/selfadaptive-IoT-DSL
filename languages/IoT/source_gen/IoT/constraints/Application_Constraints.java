@@ -8,12 +8,19 @@ import jetbrains.mps.smodel.runtime.ConstraintContext_CanBeChild;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.smodel.runtime.CheckingNodeContext;
+import jetbrains.mps.smodel.runtime.base.BasePropertyConstraintsDescriptor;
+import jetbrains.mps.smodel.runtime.ConstraintsDescriptor;
+import jetbrains.mps.smodel.SNodePointer;
 import org.jetbrains.mps.openapi.model.SNode;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
+import java.util.Map;
+import org.jetbrains.mps.openapi.language.SProperty;
+import jetbrains.mps.smodel.runtime.PropertyConstraintsDescriptor;
+import java.util.HashMap;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import IoT.behavior.Application__BehaviorDescriptor;
-import jetbrains.mps.smodel.SNodePointer;
 import org.jetbrains.mps.openapi.language.SConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 
@@ -37,6 +44,55 @@ public class Application_Constraints extends BaseConstraintsDescriptor {
       }
     };
   }
+  public static class CpuRequired_Property extends BasePropertyConstraintsDescriptor {
+    public CpuRequired_Property(ConstraintsDescriptor container) {
+      super(PROPS.cpuRequired$1FHE, container);
+    }
+    @Override
+    public boolean hasOwnValidator() {
+      return true;
+    }
+    private static final SNodePointer validatePropertyBreakingPoint = new SNodePointer("r:ef5b13d7-d5e8-4ebf-a18f-76c256afe20a(IoT.constraints)", "2523733536484727923");
+    @Override
+    public boolean validateValue(SNode node, Object propertyValue, CheckingNodeContext checkingNodeContext) {
+      boolean result = staticValidateProperty(node, SPropertyOperations.castInteger(propertyValue));
+      if (!(result) && checkingNodeContext != null) {
+        checkingNodeContext.setBreakingNode(validatePropertyBreakingPoint);
+      }
+      return result;
+    }
+    private static boolean staticValidateProperty(SNode node, int propertyValue) {
+      return propertyValue > 0;
+    }
+  }
+  public static class MemoryRequired_Property extends BasePropertyConstraintsDescriptor {
+    public MemoryRequired_Property(ConstraintsDescriptor container) {
+      super(PROPS.memoryRequired$4bvj, container);
+    }
+    @Override
+    public boolean hasOwnValidator() {
+      return true;
+    }
+    private static final SNodePointer validatePropertyBreakingPoint = new SNodePointer("r:ef5b13d7-d5e8-4ebf-a18f-76c256afe20a(IoT.constraints)", "2523733536484743735");
+    @Override
+    public boolean validateValue(SNode node, Object propertyValue, CheckingNodeContext checkingNodeContext) {
+      boolean result = staticValidateProperty(node, SPropertyOperations.castInteger(propertyValue));
+      if (!(result) && checkingNodeContext != null) {
+        checkingNodeContext.setBreakingNode(validatePropertyBreakingPoint);
+      }
+      return result;
+    }
+    private static boolean staticValidateProperty(SNode node, int propertyValue) {
+      return propertyValue > 0;
+    }
+  }
+  @Override
+  protected Map<SProperty, PropertyConstraintsDescriptor> getSpecifiedProperties() {
+    Map<SProperty, PropertyConstraintsDescriptor> properties = new HashMap<SProperty, PropertyConstraintsDescriptor>();
+    properties.put(PROPS.cpuRequired$1FHE, new CpuRequired_Property(this));
+    properties.put(PROPS.memoryRequired$4bvj, new MemoryRequired_Property(this));
+    return properties;
+  }
   private static boolean staticCanBeAChild(SNode node, SNode parentNode, SAbstractConcept childConcept, SContainmentLink link) {
     for (SNode n : SNodeOperations.getAllSiblings(node, false)) {
       if ((boolean) Application__BehaviorDescriptor.sameName_id72jAzAjGb$.invoke(node, (SNode) n)) {
@@ -49,5 +105,10 @@ public class Application_Constraints extends BaseConstraintsDescriptor {
 
   private static final class CONCEPTS {
     /*package*/ static final SConcept Application$bF = MetaAdapterFactory.getConcept(0x222ccd66f9d64014L, 0x8569354bddee8138L, 0x23381bd32c6857a6L, "IoT.structure.Application");
+  }
+
+  private static final class PROPS {
+    /*package*/ static final SProperty cpuRequired$1FHE = MetaAdapterFactory.getProperty(0x222ccd66f9d64014L, 0x8569354bddee8138L, 0x23381bd32c6857a6L, 0x6175b41c53adc177L, "cpuRequired");
+    /*package*/ static final SProperty memoryRequired$4bvj = MetaAdapterFactory.getProperty(0x222ccd66f9d64014L, 0x8569354bddee8138L, 0x23381bd32c6857a6L, 0x6175b41c53adc180L, "memoryRequired");
   }
 }

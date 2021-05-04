@@ -10,6 +10,7 @@
     <language id="222ccd66-f9d6-4014-8569-354bddee8138" name="IoT">
       <concept id="2537808983820360067" name="IoT.structure.Node" flags="ng" index="fk49g">
         <property id="2537808983820360084" name="storage" index="fk497" />
+        <property id="2537808983820360090" name="processor" index="fk499" />
         <property id="2537808983820360070" name="ipAddress" index="fk49l" />
         <property id="2537808983820360075" name="cpuCores" index="fk49o" />
         <property id="2537808983820360072" name="oS" index="fk49r" />
@@ -70,20 +71,6 @@
         <reference id="1286545887377715204" name="application" index="tIsEJ" />
         <child id="1286545887377715468" name="targetRegion" index="tIsIB" />
       </concept>
-      <concept id="4142397961358718508" name="IoT.structure.Carro" flags="ng" index="2$qBrj">
-        <child id="4142397961358718753" name="partes" index="2$qBvu" />
-        <child id="3242911558875213006" name="colores" index="2XKGSJ" />
-      </concept>
-      <concept id="4142397961358718505" name="IoT.structure.PadreRoot" flags="ng" index="2$qBrm">
-        <child id="4142397961358718759" name="carros" index="2$qBvo" />
-        <child id="8805056707759238242" name="colores" index="3n6jge" />
-      </concept>
-      <concept id="4142397961358718758" name="IoT.structure.Color" flags="ng" index="2$qBvp">
-        <child id="4378968763268097390" name="subcolor" index="2dTlQd" />
-      </concept>
-      <concept id="4142397961358718755" name="IoT.structure.Parte" flags="ng" index="2$qBvs">
-        <reference id="4142397961358718756" name="color" index="2$qBvr" />
-      </concept>
       <concept id="3677613243630680841" name="IoT.structure.Container" flags="ng" index="2GUnFb">
         <property id="5608521071049151266" name="externalPort" index="2AYeGg" />
         <property id="5608521071049151262" name="internalPort" index="2AYeGG" />
@@ -113,9 +100,6 @@
         <property id="5608521071050528925" name="actionsQuantity" index="2A_Y2J" />
         <child id="5608521071051443738" name="condition" index="2AxvoC" />
         <child id="5608521071050528928" name="actions" index="2A_Y2i" />
-      </concept>
-      <concept id="3242911558875212979" name="IoT.structure.Color_Reference" flags="ng" index="2XKGTi">
-        <reference id="3242911558875213004" name="color" index="2XKGSH" />
       </concept>
       <concept id="5982629958613708481" name="IoT.structure.Exp_Node" flags="ng" index="1iKjM1">
         <reference id="5982629958613708482" name="node" index="1iKjM2" />
@@ -323,6 +307,7 @@
       <property role="fk49o" value="1000" />
       <property role="fk49l" value="192.168.10.15" />
       <property role="fk49r" value="Raspbian" />
+      <property role="fk499" value="2cS6XcGq5Ay/ARM" />
       <node concept="2GUnFb" id="4Rlu3bG5Mgz" role="MQ7lO">
         <property role="TrG5h" value="C01" />
         <property role="3NUgsr" value="800" />
@@ -373,6 +358,7 @@
       <property role="fk49o" value="1000" />
       <property role="fk49l" value="192.168.10.14" />
       <property role="fk49r" value="Raspbian" />
+      <property role="fk499" value="2cS6XcGq5Ay/ARM" />
       <node concept="2GUnFb" id="4Rlu3bG5Mig" role="MQ7lO">
         <property role="TrG5h" value="C02" />
         <property role="3NUgsr" value="800" />
@@ -471,66 +457,6 @@
     </node>
     <node concept="2Q5TI7" id="MV5QEUHAaz" role="2Q5TI0">
       <property role="TrG5h" value="Bandwidth" />
-    </node>
-  </node>
-  <node concept="2$qBrm" id="2O18I6gN21X">
-    <property role="TrG5h" value="Test" />
-    <node concept="2$qBvp" id="2O18I6gN22b" role="3n6jge">
-      <property role="TrG5h" value="Verde" />
-      <node concept="2$qBvp" id="2O18I6gPFZc" role="2dTlQd">
-        <property role="TrG5h" value="Otro" />
-        <node concept="2$qBvp" id="2O18I6hQIIf" role="2dTlQd">
-          <property role="TrG5h" value="Negro" />
-        </node>
-      </node>
-    </node>
-    <node concept="2$qBvp" id="2O18I6gN228" role="3n6jge">
-      <property role="TrG5h" value="Rojo" />
-      <node concept="2$qBvp" id="2O18I6hNmoO" role="2dTlQd">
-        <property role="TrG5h" value="Otr" />
-      </node>
-    </node>
-    <node concept="2$qBvp" id="2O18I6gN226" role="3n6jge">
-      <property role="TrG5h" value="Amarillo" />
-    </node>
-    <node concept="2$qBrj" id="2O18I6hkvbf" role="2$qBvo">
-      <property role="TrG5h" value="Carro2" />
-      <node concept="2$qBvs" id="2O18I6hwxKN" role="2$qBvu">
-        <ref role="2$qBvr" node="2O18I6gN226" resolve="Amarillo" />
-      </node>
-      <node concept="2$qBvs" id="2O18I6hwxL2" role="2$qBvu">
-        <ref role="2$qBvr" node="2O18I6gPFZc" resolve="Otro" />
-      </node>
-      <node concept="2XKGTi" id="2O18I6huR1v" role="2XKGSJ">
-        <ref role="2XKGSH" node="2O18I6gN226" resolve="Amarillo" />
-      </node>
-      <node concept="2XKGTi" id="2O18I6hQIuB" role="2XKGSJ">
-        <ref role="2XKGSH" node="2O18I6gN228" resolve="Rojo" />
-      </node>
-      <node concept="2XKGTi" id="2O18I6hSnDF" role="2XKGSJ">
-        <ref role="2XKGSH" node="2O18I6gN22b" resolve="Verde" />
-      </node>
-      <node concept="2XKGTi" id="2O18I6hSnDJ" role="2XKGSJ">
-        <ref role="2XKGSH" node="2O18I6hNmoO" resolve="Otr" />
-      </node>
-      <node concept="2XKGTi" id="2O18I6hSnDO" role="2XKGSJ">
-        <ref role="2XKGSH" node="2O18I6gPFZc" resolve="Otro" />
-      </node>
-    </node>
-    <node concept="2$qBrj" id="2O18I6gN21Y" role="2$qBvo">
-      <property role="TrG5h" value="Carro1" />
-      <node concept="2$qBvs" id="2O18I6haU5K" role="2$qBvu">
-        <ref role="2$qBvr" node="2O18I6gN226" resolve="Amarillo" />
-      </node>
-    </node>
-  </node>
-  <node concept="2$qBrm" id="2O18I6gN22f">
-    <property role="TrG5h" value="Root2" />
-    <node concept="2$qBvp" id="2O18I6gN22i" role="3n6jge">
-      <property role="TrG5h" value="Cafe" />
-    </node>
-    <node concept="2$qBvp" id="2O18I6gN22g" role="3n6jge">
-      <property role="TrG5h" value="Blanco" />
     </node>
   </node>
 </model>

@@ -8,7 +8,15 @@ import jetbrains.mps.smodel.runtime.ConstraintContext_CanBeChild;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.smodel.runtime.CheckingNodeContext;
+import jetbrains.mps.smodel.runtime.base.BasePropertyConstraintsDescriptor;
+import jetbrains.mps.smodel.runtime.ConstraintsDescriptor;
+import jetbrains.mps.smodel.SNodePointer;
+import org.jetbrains.mps.openapi.model.SNode;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import java.util.Map;
+import org.jetbrains.mps.openapi.language.SProperty;
+import jetbrains.mps.smodel.runtime.PropertyConstraintsDescriptor;
+import java.util.HashMap;
 import org.jetbrains.mps.openapi.language.SReferenceLink;
 import jetbrains.mps.smodel.runtime.ReferenceConstraintsDescriptor;
 import jetbrains.mps.smodel.runtime.base.BaseReferenceConstraintsDescriptor;
@@ -19,12 +27,9 @@ import jetbrains.mps.scope.Scope;
 import jetbrains.mps.smodel.runtime.ReferenceConstraintsContext;
 import jetbrains.mps.scope.SimpleRoleScope;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
-import java.util.HashMap;
-import org.jetbrains.mps.openapi.model.SNode;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
 import IoT.behavior.Container__BehaviorDescriptor;
-import jetbrains.mps.smodel.SNodePointer;
 import org.jetbrains.mps.openapi.language.SConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 
@@ -48,6 +53,99 @@ public class Container_Constraints extends BaseConstraintsDescriptor {
       }
     };
   }
+  public static class CpuLimit_Property extends BasePropertyConstraintsDescriptor {
+    public CpuLimit_Property(ConstraintsDescriptor container) {
+      super(PROPS.cpuLimit$PhFS, container);
+    }
+    @Override
+    public boolean hasOwnValidator() {
+      return true;
+    }
+    private static final SNodePointer validatePropertyBreakingPoint = new SNodePointer("r:ef5b13d7-d5e8-4ebf-a18f-76c256afe20a(IoT.constraints)", "2523733536484666968");
+    @Override
+    public boolean validateValue(SNode node, Object propertyValue, CheckingNodeContext checkingNodeContext) {
+      boolean result = staticValidateProperty(node, SPropertyOperations.castInteger(propertyValue));
+      if (!(result) && checkingNodeContext != null) {
+        checkingNodeContext.setBreakingNode(validatePropertyBreakingPoint);
+      }
+      return result;
+    }
+    private static boolean staticValidateProperty(SNode node, int propertyValue) {
+      return propertyValue > 0;
+    }
+  }
+  public static class ExternalPort_Property extends BasePropertyConstraintsDescriptor {
+    public ExternalPort_Property(ConstraintsDescriptor container) {
+      super(PROPS.externalPort$9SuQ, container);
+    }
+    @Override
+    public boolean hasOwnValidator() {
+      return true;
+    }
+    private static final SNodePointer validatePropertyBreakingPoint = new SNodePointer("r:ef5b13d7-d5e8-4ebf-a18f-76c256afe20a(IoT.constraints)", "2523733536484683757");
+    @Override
+    public boolean validateValue(SNode node, Object propertyValue, CheckingNodeContext checkingNodeContext) {
+      boolean result = staticValidateProperty(node, SPropertyOperations.castInteger(propertyValue));
+      if (!(result) && checkingNodeContext != null) {
+        checkingNodeContext.setBreakingNode(validatePropertyBreakingPoint);
+      }
+      return result;
+    }
+    private static boolean staticValidateProperty(SNode node, int propertyValue) {
+      return propertyValue > 0;
+    }
+  }
+  public static class InternalPort_Property extends BasePropertyConstraintsDescriptor {
+    public InternalPort_Property(ConstraintsDescriptor container) {
+      super(PROPS.internalPort$9RyM, container);
+    }
+    @Override
+    public boolean hasOwnValidator() {
+      return true;
+    }
+    private static final SNodePointer validatePropertyBreakingPoint = new SNodePointer("r:ef5b13d7-d5e8-4ebf-a18f-76c256afe20a(IoT.constraints)", "2523733536484699040");
+    @Override
+    public boolean validateValue(SNode node, Object propertyValue, CheckingNodeContext checkingNodeContext) {
+      boolean result = staticValidateProperty(node, SPropertyOperations.castInteger(propertyValue));
+      if (!(result) && checkingNodeContext != null) {
+        checkingNodeContext.setBreakingNode(validatePropertyBreakingPoint);
+      }
+      return result;
+    }
+    private static boolean staticValidateProperty(SNode node, int propertyValue) {
+      return propertyValue > 0;
+    }
+  }
+  public static class MemoryLimit_Property extends BasePropertyConstraintsDescriptor {
+    public MemoryLimit_Property(ConstraintsDescriptor container) {
+      super(PROPS.memoryLimit$Pi9U, container);
+    }
+    @Override
+    public boolean hasOwnValidator() {
+      return true;
+    }
+    private static final SNodePointer validatePropertyBreakingPoint = new SNodePointer("r:ef5b13d7-d5e8-4ebf-a18f-76c256afe20a(IoT.constraints)", "2523733536484715934");
+    @Override
+    public boolean validateValue(SNode node, Object propertyValue, CheckingNodeContext checkingNodeContext) {
+      boolean result = staticValidateProperty(node, SPropertyOperations.castInteger(propertyValue));
+      if (!(result) && checkingNodeContext != null) {
+        checkingNodeContext.setBreakingNode(validatePropertyBreakingPoint);
+      }
+      return result;
+    }
+    private static boolean staticValidateProperty(SNode node, int propertyValue) {
+      return propertyValue > 0;
+    }
+  }
+  @Override
+  protected Map<SProperty, PropertyConstraintsDescriptor> getSpecifiedProperties() {
+    Map<SProperty, PropertyConstraintsDescriptor> properties = new HashMap<SProperty, PropertyConstraintsDescriptor>();
+    properties.put(PROPS.cpuLimit$PhFS, new CpuLimit_Property(this));
+    properties.put(PROPS.externalPort$9SuQ, new ExternalPort_Property(this));
+    properties.put(PROPS.internalPort$9RyM, new InternalPort_Property(this));
+    properties.put(PROPS.memoryLimit$Pi9U, new MemoryLimit_Property(this));
+    return properties;
+  }
   @Override
   protected Map<SReferenceLink, ReferenceConstraintsDescriptor> getSpecifiedReferences() {
     BaseReferenceConstraintsDescriptor d0 = new BaseReferenceConstraintsDescriptor(LINKS.application$GqFB, this) {
@@ -61,7 +159,7 @@ public class Container_Constraints extends BaseConstraintsDescriptor {
         return new BaseScopeProvider() {
           @Override
           public SNodeReference getSearchScopeValidatorNode() {
-            return breakingNode_24ye1o_a0a0a0a0a1a0a0a0d;
+            return breakingNode_24ye1o_a0a0a0a0a1a0a0a0i;
           }
           @Override
           public Scope createScope(final ReferenceConstraintsContext _context) {
@@ -83,11 +181,18 @@ public class Container_Constraints extends BaseConstraintsDescriptor {
     return true;
   }
   private static final SNodePointer canBeChildBreakingPoint = new SNodePointer("r:ef5b13d7-d5e8-4ebf-a18f-76c256afe20a(IoT.constraints)", "166834276358957282");
-  private static final SNodePointer breakingNode_24ye1o_a0a0a0a0a1a0a0a0d = new SNodePointer("r:ef5b13d7-d5e8-4ebf-a18f-76c256afe20a(IoT.constraints)", "3242911558876457002");
+  private static final SNodePointer breakingNode_24ye1o_a0a0a0a0a1a0a0a0i = new SNodePointer("r:ef5b13d7-d5e8-4ebf-a18f-76c256afe20a(IoT.constraints)", "3242911558876457002");
 
   private static final class CONCEPTS {
     /*package*/ static final SConcept Container$SX = MetaAdapterFactory.getConcept(0x222ccd66f9d64014L, 0x8569354bddee8138L, 0x330981c29fe0fb09L, "IoT.structure.Container");
     /*package*/ static final SConcept IoT_System$Z$ = MetaAdapterFactory.getConcept(0x222ccd66f9d64014L, 0x8569354bddee8138L, 0x23381bd32c6857a2L, "IoT.structure.IoT_System");
+  }
+
+  private static final class PROPS {
+    /*package*/ static final SProperty cpuLimit$PhFS = MetaAdapterFactory.getProperty(0x222ccd66f9d64014L, 0x8569354bddee8138L, 0x330981c29fe0fb09L, 0x78a11bdb8b481cbeL, "cpuLimit");
+    /*package*/ static final SProperty externalPort$9SuQ = MetaAdapterFactory.getProperty(0x222ccd66f9d64014L, 0x8569354bddee8138L, 0x330981c29fe0fb09L, 0x4dd57832eb2d9322L, "externalPort");
+    /*package*/ static final SProperty internalPort$9RyM = MetaAdapterFactory.getProperty(0x222ccd66f9d64014L, 0x8569354bddee8138L, 0x330981c29fe0fb09L, 0x4dd57832eb2d931eL, "internalPort");
+    /*package*/ static final SProperty memoryLimit$Pi9U = MetaAdapterFactory.getProperty(0x222ccd66f9d64014L, 0x8569354bddee8138L, 0x330981c29fe0fb09L, 0x78a11bdb8b481cc0L, "memoryLimit");
   }
 
   private static final class LINKS {
