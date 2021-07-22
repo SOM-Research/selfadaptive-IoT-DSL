@@ -35,20 +35,21 @@ public final class LanguageConceptSwitch {
   public static final int Node = 23;
   public static final int Node_Reference = 24;
   public static final int Offloading = 25;
-  public static final int PadreRoot = 26;
-  public static final int Parte = 27;
-  public static final int QoS_Event = 28;
-  public static final int Redeployment = 29;
-  public static final int Region = 30;
-  public static final int Region_Reference = 31;
-  public static final int Resource_Expression = 32;
-  public static final int Scaling = 33;
-  public static final int Sensor = 34;
-  public static final int Sensor_Actuator_Type = 35;
-  public static final int Sensor_Event = 36;
-  public static final int Sensor_Events = 37;
-  public static final int Sensor_Type = 38;
-  public static final int WorkerReference = 39;
+  public static final int Operate_Actuator = 26;
+  public static final int PadreRoot = 27;
+  public static final int Parte = 28;
+  public static final int QoS_Event = 29;
+  public static final int Redeployment = 30;
+  public static final int Region = 31;
+  public static final int Region_Reference = 32;
+  public static final int Resource_Expression = 33;
+  public static final int Scaling = 34;
+  public static final int Sensor = 35;
+  public static final int Sensor_Actuator_Type = 36;
+  public static final int Sensor_Event = 37;
+  public static final int Sensor_Events = 38;
+  public static final int Sensor_Type = 39;
+  public static final int WorkerReference = 40;
 
   public LanguageConceptSwitch() {
     LanguageConceptIndexBuilder builder = new LanguageConceptIndexBuilder(0x222ccd66f9d64014L, 0x8569354bddee8138L);
@@ -78,6 +79,7 @@ public final class LanguageConceptSwitch {
     builder.put(0x23381bd32c685983L, Node);
     builder.put(0x11dabaab0c637009L, Node_Reference);
     builder.put(0x250b6e3f27339aeL, Offloading);
+    builder.put(0xde8316f4b5dd34dL, Operate_Actuator);
     builder.put(0x397cc0ff9d16b629L, PadreRoot);
     builder.put(0x397cc0ff9d16b723L, Parte);
     builder.put(0xcbb176aba3d9f94L, QoS_Event);

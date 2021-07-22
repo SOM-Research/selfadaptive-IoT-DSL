@@ -42,6 +42,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptNode = createDescriptorForNode();
   /*package*/ final ConceptDescriptor myConceptNode_Reference = createDescriptorForNode_Reference();
   /*package*/ final ConceptDescriptor myConceptOffloading = createDescriptorForOffloading();
+  /*package*/ final ConceptDescriptor myConceptOperate_Actuator = createDescriptorForOperate_Actuator();
   /*package*/ final ConceptDescriptor myConceptPadreRoot = createDescriptorForPadreRoot();
   /*package*/ final ConceptDescriptor myConceptParte = createDescriptorForParte();
   /*package*/ final ConceptDescriptor myConceptQoS_Event = createDescriptorForQoS_Event();
@@ -76,7 +77,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptAction, myConceptActuator, myConceptActuator_Type, myConceptAdaptationRule, myConceptApplication, myConceptCarro, myConceptCloud_Node, myConceptCluster, myConceptCluster_Reference, myConceptColor, myConceptColor_Reference, myConceptCondition, myConceptContainer, myConceptEdge_Node, myConceptExp_ClusterLayer, myConceptExp_Node, myConceptExp_RegLayer, myConceptFog_Node, myConceptGrammar, myConceptIoT_Device, myConceptIoT_System, myConceptList_Of_Metrics, myConceptMetric, myConceptNode, myConceptNode_Reference, myConceptOffloading, myConceptPadreRoot, myConceptParte, myConceptQoS_Event, myConceptRedeployment, myConceptRegion, myConceptRegion_Reference, myConceptResource_Expression, myConceptScaling, myConceptSensor, myConceptSensor_Actuator_Type, myConceptSensor_Event, myConceptSensor_Events, myConceptSensor_Type, myConceptWorkerReference);
+    return Arrays.asList(myConceptAction, myConceptActuator, myConceptActuator_Type, myConceptAdaptationRule, myConceptApplication, myConceptCarro, myConceptCloud_Node, myConceptCluster, myConceptCluster_Reference, myConceptColor, myConceptColor_Reference, myConceptCondition, myConceptContainer, myConceptEdge_Node, myConceptExp_ClusterLayer, myConceptExp_Node, myConceptExp_RegLayer, myConceptFog_Node, myConceptGrammar, myConceptIoT_Device, myConceptIoT_System, myConceptList_Of_Metrics, myConceptMetric, myConceptNode, myConceptNode_Reference, myConceptOffloading, myConceptOperate_Actuator, myConceptPadreRoot, myConceptParte, myConceptQoS_Event, myConceptRedeployment, myConceptRegion, myConceptRegion_Reference, myConceptResource_Expression, myConceptScaling, myConceptSensor, myConceptSensor_Actuator_Type, myConceptSensor_Event, myConceptSensor_Events, myConceptSensor_Type, myConceptWorkerReference);
   }
 
   @Override
@@ -135,6 +136,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptNode_Reference;
       case LanguageConceptSwitch.Offloading:
         return myConceptOffloading;
+      case LanguageConceptSwitch.Operate_Actuator:
+        return myConceptOperate_Actuator;
       case LanguageConceptSwitch.PadreRoot:
         return myConceptPadreRoot;
       case LanguageConceptSwitch.Parte:
@@ -445,6 +448,17 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.aggregate("targetRegion", 0x11dabaab0c637020L).target(0x222ccd66f9d64014L, 0x8569354bddee8138L, 0x424863e2f3693460L).optional(true).ordered(true).multiple(true).origin("1286545887377715232").done();
     b.aggregate("targetCluster", 0x11dabaab0c637026L).target(0x222ccd66f9d64014L, 0x8569354bddee8138L, 0x11dabaab0c63700aL).optional(true).ordered(true).multiple(true).origin("1286545887377715238").done();
     b.alias("Offloading");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForOperate_Actuator() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("IoT", "Operate_Actuator", 0x222ccd66f9d64014L, 0x8569354bddee8138L, 0xde8316f4b5dd34dL);
+    b.class_(false, false, false);
+    b.super_("IoT.structure.Action", 0x222ccd66f9d64014L, 0x8569354bddee8138L, 0xcbb176aba9dbdddL);
+    b.origin("r:589c5fd8-b628-4aae-9e87-31a99b5068a7(IoT.structure)/1002105271165506381");
+    b.version(2);
+    b.property("message", 0xde8316f4b5efdfbL).type(PrimitiveTypeId.STRING).origin("1002105271165582843").done();
+    b.associate("device", 0xde8316f4b5e23d2L).target(0x222ccd66f9d64014L, 0x8569354bddee8138L, 0x23381bd32c6875cbL).optional(false).origin("1002105271165526994").done();
+    b.alias("Operate Actuator");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForPadreRoot() {

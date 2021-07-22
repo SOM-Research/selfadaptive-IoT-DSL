@@ -7166,5 +7166,57 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="RCcmXbnyfr">
+    <property role="3GE5qa" value="AdaptationRules" />
+    <ref role="1XX52x" to="40ag:RCcmXbntdd" resolve="Operate_Actuator" />
+    <node concept="3EZMnI" id="RCcmXbnyft" role="2wV5jI">
+      <node concept="3F0ifn" id="RCcmXbnyfu" role="3EZMnx">
+        <property role="3F0ifm" value="*" />
+        <node concept="lj46D" id="RCcmXbnyfv" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="RCcmXbnyfw" role="3EZMnx">
+        <property role="3F0ifm" value="Operate Actuator" />
+        <node concept="lj46D" id="RCcmXbnyfx" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="RCcmXbnyfy" role="3EZMnx">
+        <property role="3F0ifm" value="-&gt;" />
+      </node>
+      <node concept="3EZMnI" id="RCcmXbnyfz" role="3EZMnx">
+        <node concept="VPM3Z" id="RCcmXbnyf$" role="3F10Kt" />
+        <node concept="3EZMnI" id="RCcmXbnyf_" role="3EZMnx">
+          <node concept="VPM3Z" id="RCcmXbnyfA" role="3F10Kt" />
+          <node concept="3F0ifn" id="RCcmXbnyfB" role="3EZMnx">
+            <property role="3F0ifm" value="Actuator:" />
+          </node>
+          <node concept="1iCGBv" id="RCcmXbnygB" role="3EZMnx">
+            <ref role="1NtTu8" to="40ag:RCcmXbnyfi" resolve="device" />
+            <node concept="1sVBvm" id="RCcmXbnygD" role="1sWHZn">
+              <node concept="3F0A7n" id="RCcmXbnygO" role="2wV5jI">
+                <property role="1Intyy" value="true" />
+                <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+          </node>
+          <node concept="2iRfu4" id="RCcmXbnyfF" role="2iSdaV" />
+        </node>
+        <node concept="3EZMnI" id="RCcmXbnyfG" role="3EZMnx">
+          <node concept="VPM3Z" id="RCcmXbnyfH" role="3F10Kt" />
+          <node concept="3F0ifn" id="RCcmXbnyfI" role="3EZMnx">
+            <property role="3F0ifm" value="message:" />
+          </node>
+          <node concept="3F0A7n" id="RCcmXbnJRX" role="3EZMnx">
+            <ref role="1NtTu8" to="40ag:RCcmXbnJRV" resolve="message" />
+          </node>
+          <node concept="2iRfu4" id="RCcmXbnyfL" role="2iSdaV" />
+        </node>
+        <node concept="2iRkQZ" id="RCcmXbnyfY" role="2iSdaV" />
+      </node>
+      <node concept="l2Vlx" id="RCcmXbnyfZ" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 

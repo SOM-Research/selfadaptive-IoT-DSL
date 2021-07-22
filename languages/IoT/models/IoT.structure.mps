@@ -981,5 +981,23 @@
       <ref role="20lvS9" node="3c9wsavSfG9" resolve="Container" />
     </node>
   </node>
+  <node concept="1TIwiD" id="RCcmXbntdd">
+    <property role="EcuMT" value="1002105271165506381" />
+    <property role="3GE5qa" value="AdaptationRules" />
+    <property role="TrG5h" value="Operate_Actuator" />
+    <property role="34LRSv" value="Operate Actuator" />
+    <ref role="1TJDcQ" node="MV5QEUBrRt" resolve="Action" />
+    <node concept="1TJgyj" id="RCcmXbnyfi" role="1TKVEi">
+      <property role="IQ2ns" value="1002105271165526994" />
+      <property role="20kJfa" value="device" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="2cS6XcGq7nb" resolve="Actuator" />
+    </node>
+    <node concept="1TJgyi" id="RCcmXbnJRV" role="1TKVEl">
+      <property role="IQ2nx" value="1002105271165582843" />
+      <property role="TrG5h" value="message" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
 </model>
 

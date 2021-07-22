@@ -91,15 +91,23 @@
         <child id="917352696265870570" name="metric" index="2Q5TI0" />
       </concept>
       <concept id="917352696265870573" name="IoT.structure.Metric" flags="ng" index="2Q5TI7" />
+      <concept id="917352696268172191" name="IoT.structure.Sensor_Event" flags="ng" index="2QtbNP">
+        <reference id="917352696268172192" name="sensor" index="2QtbNa" />
+      </concept>
       <concept id="917352696258600852" name="IoT.structure.QoS_Event" flags="ng" index="2QxCzY">
         <reference id="917352696260579292" name="metric" index="2QSdyQ" />
         <child id="5982629958611403235" name="expr" index="1iCxez" />
       </concept>
       <concept id="917352696257099656" name="IoT.structure.AdaptationRule" flags="ng" index="2QBq3y">
         <property id="5608521071051442531" name="period" index="2Axv5h" />
+        <property id="5608521071050528924" name="allActions" index="2A_Y2I" />
         <property id="5608521071050528925" name="actionsQuantity" index="2A_Y2J" />
         <child id="5608521071051443738" name="condition" index="2AxvoC" />
         <child id="5608521071050528928" name="actions" index="2A_Y2i" />
+      </concept>
+      <concept id="1002105271165506381" name="IoT.structure.Operate_Actuator" flags="ng" index="16Hu8y">
+        <property id="1002105271165582843" name="message" index="16HGMk" />
+        <reference id="1002105271165526994" name="device" index="16HxaX" />
       </concept>
       <concept id="5982629958613708481" name="IoT.structure.Exp_Node" flags="ng" index="1iKjM1">
         <reference id="5982629958613708482" name="node" index="1iKjM2" />
@@ -112,6 +120,9 @@
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
+      <concept id="1111509017652" name="jetbrains.mps.baseLanguage.structure.FloatingPointConstant" flags="nn" index="3b6qkQ">
+        <property id="1113006610751" name="value" index="$nhwW" />
+      </concept>
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
@@ -457,6 +468,332 @@
     </node>
     <node concept="2Q5TI7" id="MV5QEUHAaz" role="2Q5TI0">
       <property role="TrG5h" value="Bandwidth" />
+    </node>
+  </node>
+  <node concept="fk4LL" id="3l6H7otesu$">
+    <property role="TrG5h" value="Mining Industry" />
+    <node concept="2QBq3y" id="3l6H7otesu_" role="2QBqNM">
+      <property role="TrG5h" value="Rule 1" />
+      <property role="2Axv5h" value="60000" />
+      <property role="2A_Y2J" value="1" />
+      <node concept="3K8SXd" id="3l6H7otesuA" role="2A_Y2i">
+        <ref role="3K8SWz" node="3l6H7otesv9" resolve="C01" />
+        <node concept="2L8lu2" id="3l6H7otesuB" role="tIsEb">
+          <ref role="2L8lrf" node="3l6H7otesuP" resolve="Level1" />
+        </node>
+        <node concept="tIsEy" id="3l6H7otesuC" role="tIsEX">
+          <ref role="tIsEA" node="3l6H7otesvi" resolve="EdgeWF2" />
+        </node>
+      </node>
+      <node concept="tIsEE" id="3l6H7otesuD" role="2A_Y2i">
+        <property role="tIsED" value="1" />
+        <ref role="tIsEJ" node="3l6H7otesvm" resolve="App1" />
+        <node concept="2L8lu2" id="3l6H7otesuE" role="tIsIB">
+          <ref role="2L8lrf" node="3l6H7otesuO" resolve="Mine" />
+        </node>
+      </node>
+      <node concept="22lmx$" id="3l6H7otesuF" role="2AxvoC">
+        <node concept="3eOSWO" id="3l6H7otesuG" role="3uHU7B">
+          <node concept="3cmrfG" id="3l6H7otesuH" role="3uHU7w">
+            <property role="3cmrfH" value="90" />
+          </node>
+          <node concept="2QxCzY" id="3l6H7otesuI" role="3uHU7B">
+            <ref role="2QSdyQ" node="MV5QEUHA9Y" resolve="CPU" />
+            <node concept="1iKjM1" id="3l6H7otesuJ" role="1iCxez">
+              <ref role="1iKjM2" node="3l6H7otesv8" resolve="EdgeWF1" />
+            </node>
+          </node>
+        </node>
+        <node concept="3eOSWO" id="3l6H7otesuK" role="3uHU7w">
+          <node concept="2QxCzY" id="3l6H7otesuL" role="3uHU7B">
+            <ref role="2QSdyQ" node="MV5QEUHAao" resolve="Ram" />
+            <node concept="1iKjM1" id="3l6H7otesuM" role="1iCxez">
+              <ref role="1iKjM2" node="3l6H7otesv8" resolve="EdgeWF1" />
+            </node>
+          </node>
+          <node concept="3cmrfG" id="RCcmXbnwk5" role="3uHU7w">
+            <property role="3cmrfH" value="90" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2QBq3y" id="RCcmXbqwc8" role="2QBqNM">
+      <property role="TrG5h" value="Rule 2" />
+      <property role="2Axv5h" value="5000" />
+      <property role="2A_Y2I" value="true" />
+      <node concept="16Hu8y" id="RCcmXbqwIg" role="2A_Y2i">
+        <property role="16HGMk" value="On" />
+        <ref role="16HxaX" node="RCcmXbqvGR" resolve="A-WF1" />
+      </node>
+      <node concept="16Hu8y" id="RCcmXbqwIa" role="2A_Y2i">
+        <property role="16HGMk" value="On" />
+        <ref role="16HxaX" node="RCcmXbqwLx" resolve="A-WF2" />
+      </node>
+      <node concept="22lmx$" id="RCcmXbqwlR" role="2AxvoC">
+        <node concept="3eOSWO" id="RCcmXbqwHg" role="3uHU7w">
+          <node concept="3b6qkQ" id="RCcmXbqwIJ" role="3uHU7w">
+            <property role="$nhwW" value="1.5" />
+          </node>
+          <node concept="2QtbNP" id="RCcmXbqwJZ" role="3uHU7B">
+            <ref role="2QtbNa" node="3l6H7otevC3" resolve="G-WF2" />
+          </node>
+        </node>
+        <node concept="3eOSWO" id="RCcmXbqwc_" role="3uHU7B">
+          <node concept="2QtbNP" id="RCcmXbqwJz" role="3uHU7B">
+            <ref role="2QtbNa" node="3l6H7otesuY" resolve="G-WF1" />
+          </node>
+          <node concept="3b6qkQ" id="RCcmXbqwKv" role="3uHU7w">
+            <property role="$nhwW" value="1.5" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="MQ7l0" id="3l6H7otesuO" role="MQ7m6">
+      <property role="TrG5h" value="Mine" />
+      <node concept="MQ7l0" id="3l6H7otesuP" role="MQ7lX">
+        <property role="TrG5h" value="Level1" />
+        <node concept="MQ7l0" id="3l6H7oteswj" role="MQ7lX">
+          <property role="TrG5h" value="WorkFront1" />
+        </node>
+        <node concept="MQ7l0" id="3l6H7oteswm" role="MQ7lX">
+          <property role="TrG5h" value="WorkFront2" />
+        </node>
+        <node concept="MQ7l0" id="3l6H7oteswq" role="MQ7lX">
+          <property role="TrG5h" value="TunnelA" />
+        </node>
+        <node concept="MQ7l0" id="3l6H7oteswh" role="MQ7lX">
+          <property role="TrG5h" value="TunnelB" />
+        </node>
+      </node>
+    </node>
+    <node concept="fk6Sm" id="3l6H7otesuY" role="MQ7jC">
+      <property role="TrG5h" value="G-WF1" />
+      <property role="fk6TG" value="Microship" />
+      <property role="fk6TJ" value="level1/front1/methane" />
+      <property role="2A5aiE" value="51° 30’ 30’’ N" />
+      <property role="2A5aiJ" value="0° 7’ 32’’ O" />
+      <property role="fk6TD" value="2cS6XcGq7mH/ZigBee" />
+      <ref role="fk6Sr" node="4Rlu3bFeTwY" resolve="Smoke" />
+      <ref role="MQ7mx" node="3l6H7otesv8" resolve="EdgeWF1" />
+      <node concept="2L8lu2" id="3l6H7otevBQ" role="1sz1b6">
+        <ref role="2L8lrf" node="3l6H7oteswj" resolve="WorkFront1" />
+      </node>
+    </node>
+    <node concept="fk6Sm" id="3l6H7otesv0" role="MQ7jC">
+      <property role="TrG5h" value="T-WF1" />
+      <property role="fk6TG" value="Cisco" />
+      <property role="fk6TD" value="2cS6XcGq7mH/ZigBee" />
+      <property role="fk6TJ" value="level1/front1/temp" />
+      <property role="2A5aiE" value="51° 30’ 31’’ N" />
+      <property role="2A5aiJ" value="0° 7’ 33’’ O" />
+      <ref role="MQ7mx" node="3l6H7otesv8" resolve="EdgeWF1" />
+      <ref role="fk6Sr" node="6CCMDSRediz" resolve="Temperature" />
+      <node concept="2L8lu2" id="RCcmXbqvGC" role="1sz1b6">
+        <ref role="2L8lrf" node="3l6H7oteswj" resolve="WorkFront1" />
+      </node>
+    </node>
+    <node concept="fk6So" id="RCcmXbqvGR" role="MQ7jC">
+      <property role="TrG5h" value="A-WF1" />
+      <property role="fk6TG" value="Burkert" />
+      <property role="fk6TD" value="2cS6XcGq7mN/Z_Wave" />
+      <property role="fk6TJ" value="level1/front1/alarm" />
+      <property role="2A5aiE" value="51° 30’ 28’’ N" />
+      <property role="2A5aiJ" value="0° 7’ 15’’ O" />
+      <ref role="fk6Sv" node="6CCMDSRedjH" resolve="Alarm" />
+      <ref role="MQ7mx" node="3l6H7otesv8" resolve="EdgeWF1" />
+      <node concept="2L8lu2" id="RCcmXbqvH4" role="1sz1b6">
+        <ref role="2L8lrf" node="3l6H7oteswj" resolve="WorkFront1" />
+      </node>
+    </node>
+    <node concept="fk6Sm" id="3l6H7otevC3" role="MQ7jC">
+      <property role="TrG5h" value="G-WF2" />
+      <property role="fk6TG" value="Microship" />
+      <property role="fk6TD" value="2cS6XcGq7mH/ZigBee" />
+      <property role="fk6TJ" value="level1/front2/methane" />
+      <property role="2A5aiE" value="50° 32’ 30’’ N" />
+      <property role="2A5aiJ" value="0° 8’ 36’’ O" />
+      <ref role="fk6Sr" node="4Rlu3bFeTwY" resolve="Smoke" />
+      <ref role="MQ7mx" node="3l6H7otesvi" resolve="EdgeWF2" />
+      <node concept="2L8lu2" id="3l6H7otevCe" role="1sz1b6">
+        <ref role="2L8lrf" node="3l6H7oteswm" resolve="WorkFront2" />
+      </node>
+    </node>
+    <node concept="fk6Sm" id="3l6H7otesv2" role="MQ7jC">
+      <property role="TrG5h" value="T-WF2" />
+      <property role="fk6TG" value="Cisco" />
+      <property role="fk6TD" value="2cS6XcGq7mH/ZigBee" />
+      <property role="fk6TJ" value="level1/front2/temp" />
+      <property role="2A5aiE" value="51° 30’ 32’’ N" />
+      <property role="2A5aiJ" value="0° 7’ 34’’ O" />
+      <ref role="fk6Sr" node="6CCMDSRediz" resolve="Temperature" />
+      <ref role="MQ7mx" node="3l6H7otesvi" resolve="EdgeWF2" />
+      <node concept="2L8lu2" id="3l6H7otevCg" role="1sz1b6">
+        <ref role="2L8lrf" node="3l6H7oteswm" resolve="WorkFront2" />
+      </node>
+    </node>
+    <node concept="fk49U" id="3l6H7otesv4" role="fk49T">
+      <property role="TrG5h" value="ClusterLevel1" />
+      <ref role="MQ7mW" node="3l6H7otesvq" resolve="Cloud01" />
+      <node concept="MQ7mT" id="3l6H7otesv5" role="MQ7mP">
+        <ref role="MQ7mU" node="3l6H7otesv8" resolve="EdgeWF1" />
+      </node>
+      <node concept="MQ7mT" id="3l6H7otesv6" role="MQ7mP">
+        <ref role="MQ7mU" node="3l6H7otesvi" resolve="EdgeWF2" />
+      </node>
+      <node concept="MQ7mT" id="3l6H7otesv7" role="MQ7mP">
+        <ref role="MQ7mU" node="3l6H7otesvc" resolve="Fog01" />
+      </node>
+    </node>
+    <node concept="fk49P" id="3l6H7otesv8" role="MQ7jN">
+      <property role="TrG5h" value="EdgeWF1" />
+      <property role="fk49s" value="2000" />
+      <property role="fk497" value="5000" />
+      <property role="fk49o" value="1000" />
+      <property role="fk49l" value="192.168.10.15" />
+      <property role="fk49r" value="Raspbian" />
+      <property role="fk499" value="2cS6XcGq5Ay/ARM" />
+      <node concept="2GUnFb" id="3l6H7otesv9" role="MQ7lO">
+        <property role="TrG5h" value="C01" />
+        <property role="3NUgsr" value="800" />
+        <property role="3NUgt_" value="400" />
+        <property role="2AYeGG" value="8080" />
+        <property role="2AYeGg" value="8000" />
+        <ref role="MQ7m4" node="3l6H7otesvm" resolve="App1" />
+      </node>
+      <node concept="tIsEy" id="3l6H7otesvb" role="2A2yXp">
+        <ref role="tIsEA" node="3l6H7otesvc" resolve="Fog01" />
+      </node>
+      <node concept="2L8lu2" id="3l6H7otevBA" role="2L8lnZ">
+        <ref role="2L8lrf" node="3l6H7oteswj" resolve="WorkFront1" />
+      </node>
+    </node>
+    <node concept="fk49O" id="3l6H7otesvc" role="MQ7jN">
+      <property role="TrG5h" value="Fog01" />
+      <property role="fk49s" value="4000" />
+      <property role="fk497" value="10000" />
+      <property role="fk49o" value="2000" />
+      <property role="fk49l" value="192.168.10.17" />
+      <property role="fk49r" value="Ubuntu" />
+      <node concept="2GUnFb" id="3l6H7otesvd" role="MQ7lO">
+        <property role="TrG5h" value="C03" />
+        <property role="3NUgsr" value="1000" />
+        <property role="3NUgt_" value="1000" />
+        <property role="2AYeGG" value="8080" />
+        <property role="2AYeGg" value="8000" />
+        <ref role="MQ7m4" node="3l6H7otesvn" resolve="App2" />
+      </node>
+      <node concept="tIsEy" id="3l6H7otesvf" role="2A2yXp">
+        <ref role="tIsEA" node="3l6H7otesv8" resolve="EdgeWF1" />
+      </node>
+      <node concept="tIsEy" id="3l6H7otesvg" role="2A2yXp">
+        <ref role="tIsEA" node="3l6H7otesvi" resolve="EdgeWF2" />
+      </node>
+      <node concept="tIsEy" id="3l6H7otesvh" role="2A2yXp">
+        <ref role="tIsEA" node="3l6H7otesvq" resolve="Cloud01" />
+      </node>
+      <node concept="2L8lu2" id="3l6H7otevBC" role="2AaJ7l">
+        <ref role="2L8lrf" node="3l6H7oteswq" resolve="TunnelA" />
+      </node>
+    </node>
+    <node concept="fk49P" id="3l6H7otesvi" role="MQ7jN">
+      <property role="TrG5h" value="EdgeWF2" />
+      <property role="fk49s" value="2000" />
+      <property role="fk497" value="5000" />
+      <property role="fk49o" value="1000" />
+      <property role="fk49l" value="192.168.10.14" />
+      <property role="fk49r" value="Raspbian" />
+      <property role="fk499" value="2cS6XcGq5Ay/ARM" />
+      <node concept="2GUnFb" id="3l6H7otesvj" role="MQ7lO">
+        <property role="TrG5h" value="C02" />
+        <property role="3NUgsr" value="800" />
+        <property role="3NUgt_" value="400" />
+        <property role="2AYeGG" value="8080" />
+        <property role="2AYeGg" value="8000" />
+        <ref role="MQ7m4" node="3l6H7otesvm" resolve="App1" />
+      </node>
+      <node concept="2L8lu2" id="3l6H7otevBE" role="2L8lnZ">
+        <ref role="2L8lrf" node="3l6H7oteswm" resolve="WorkFront2" />
+      </node>
+      <node concept="tIsEy" id="3l6H7otesvl" role="2A2yXp">
+        <ref role="tIsEA" node="3l6H7otesvc" resolve="Fog01" />
+      </node>
+    </node>
+    <node concept="fk4LP" id="3l6H7otesvm" role="MQ7lN">
+      <property role="TrG5h" value="App1" />
+      <property role="MQ7ms" value="500" />
+      <property role="MQ7lF" value="400" />
+      <property role="2GUnF7" value="mineIndustry/imageApp1:V0.1" />
+    </node>
+    <node concept="fk4LP" id="3l6H7otesvn" role="MQ7lN">
+      <property role="TrG5h" value="App2" />
+      <property role="MQ7ms" value="1000" />
+      <property role="MQ7lF" value="1000" />
+      <property role="2GUnF7" value="mineIndustry/imageApp2:V0.1" />
+    </node>
+    <node concept="fk4LP" id="3l6H7otesvo" role="MQ7lN">
+      <property role="TrG5h" value="App3" />
+      <property role="MQ7ms" value="1000" />
+      <property role="MQ7lF" value="1000" />
+      <property role="2GUnF7" value="mineIndustry/imageApp3:V0.1" />
+    </node>
+    <node concept="fk4LP" id="3l6H7otesvp" role="MQ7lN">
+      <property role="TrG5h" value="DB1" />
+      <property role="MQ7ms" value="2000" />
+      <property role="MQ7lF" value="1000" />
+      <property role="2GUnF7" value="mineIndustry/imageDB1:V0.1" />
+    </node>
+    <node concept="fk49V" id="3l6H7otesvq" role="MQ7jN">
+      <property role="TrG5h" value="Cloud01" />
+      <property role="fk49s" value="8000" />
+      <property role="fk497" value="50000" />
+      <property role="fk49o" value="4000" />
+      <property role="fk49l" value="172.15.12.19" />
+      <property role="fk49r" value="Ubuntu" />
+      <node concept="2GUnFb" id="3l6H7otesvr" role="MQ7lO">
+        <property role="TrG5h" value="C04" />
+        <property role="3NUgsr" value="2000" />
+        <property role="3NUgt_" value="1000" />
+        <property role="2AYeGG" value="8080" />
+        <property role="2AYeGg" value="8000" />
+        <ref role="MQ7m4" node="3l6H7otesvo" resolve="App3" />
+      </node>
+      <node concept="2GUnFb" id="3l6H7otesvs" role="MQ7lO">
+        <property role="TrG5h" value="C05" />
+        <property role="3NUgsr" value="2000" />
+        <property role="3NUgt_" value="1000" />
+        <property role="2AYeGG" value="8082" />
+        <property role="2AYeGg" value="8084" />
+        <ref role="MQ7m4" node="3l6H7otesvp" resolve="DB1" />
+      </node>
+      <node concept="tIsEy" id="3l6H7otesvt" role="2A2yXp">
+        <ref role="tIsEA" node="3l6H7otesvc" resolve="Fog01" />
+      </node>
+    </node>
+    <node concept="fk6So" id="RCcmXbqwLx" role="MQ7jC">
+      <property role="TrG5h" value="A-WF2" />
+      <property role="fk6TG" value="Burkert" />
+      <property role="fk6TD" value="2cS6XcGq7mN/Z_Wave" />
+      <property role="fk6TJ" value="levele1/front2/alarm" />
+      <property role="2A5aiE" value="51° 31’ 22’’ N" />
+      <property role="2A5aiJ" value="0° 7’ 30’’ O" />
+      <ref role="fk6Sv" node="6CCMDSRedjH" resolve="Alarm" />
+      <ref role="MQ7mx" node="3l6H7otesvi" resolve="EdgeWF2" />
+      <node concept="2L8lu2" id="RCcmXbqwLK" role="1sz1b6">
+        <ref role="2L8lrf" node="3l6H7oteswm" resolve="WorkFront2" />
+      </node>
+    </node>
+    <node concept="fk6So" id="3l6H7otesvu" role="MQ7jC">
+      <property role="TrG5h" value="F-TB" />
+      <property role="fk6TG" value="Burkert" />
+      <property role="fk6TD" value="2cS6XcGq7mz/Bluethooth" />
+      <property role="fk6TJ" value="floor1/roomA1/valve" />
+      <property role="2A5aiE" value="51° 30’ 33’’ N" />
+      <property role="2A5aiJ" value="0° 7’ 35’’ O" />
+      <ref role="fk6Sv" node="6CCMDSRedj0" resolve="Valve" />
+      <ref role="MQ7mx" node="3l6H7otesv8" resolve="EdgeWF1" />
+      <node concept="2L8lu2" id="3l6H7otevBK" role="1sz1b6">
+        <ref role="2L8lrf" node="3l6H7oteswh" resolve="TunnelB" />
+      </node>
     </node>
   </node>
 </model>

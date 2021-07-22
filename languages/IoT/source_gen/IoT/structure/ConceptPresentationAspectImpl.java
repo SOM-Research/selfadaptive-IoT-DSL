@@ -35,6 +35,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_Node;
   private ConceptPresentation props_Node_Reference;
   private ConceptPresentation props_Offloading;
+  private ConceptPresentation props_Operate_Actuator;
   private ConceptPresentation props_PadreRoot;
   private ConceptPresentation props_Parte;
   private ConceptPresentation props_QoS_Event;
@@ -234,6 +235,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Offloading = cpb.create();
         }
         return props_Offloading;
+      case LanguageConceptSwitch.Operate_Actuator:
+        if (props_Operate_Actuator == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("Operate Actuator");
+          props_Operate_Actuator = cpb.create();
+        }
+        return props_Operate_Actuator;
       case LanguageConceptSwitch.PadreRoot:
         if (props_PadreRoot == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
