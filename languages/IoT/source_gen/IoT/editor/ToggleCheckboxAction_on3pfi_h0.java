@@ -11,10 +11,10 @@ import jetbrains.mps.nodeEditor.selectionRestoring.WholeCellSelector;
 import org.jetbrains.mps.openapi.language.SProperty;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 
-public class ToggleCheckboxAction_on3pfi_i0 extends AbstractToggleCheckboxAction {
+public class ToggleCheckboxAction_on3pfi_h0 extends AbstractToggleCheckboxAction {
   private final SNode myNode;
 
-  public ToggleCheckboxAction_on3pfi_i0(SNode node) {
+  public ToggleCheckboxAction_on3pfi_h0(SNode node) {
     myNode = node;
   }
 

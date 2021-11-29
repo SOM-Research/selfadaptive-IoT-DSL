@@ -6,7 +6,6 @@
     <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="4" />
     <use id="7e450f4e-1ac3-41ef-a851-4598161bdb94" name="de.slisson.mps.tables" version="0" />
     <use id="c73b17af-16a1-4490-8072-8a84937c5206" name="com.mbeddr.mpsutil.treenotation" version="0" />
-    <use id="f89904fb-9486-43a1-865e-5ad0375a8a88" name="de.itemis.mps.editor.bool" version="0" />
     <use id="602c36ad-cc55-47ff-8c40-73d7f12f035c" name="jetbrains.mps.lang.editor.forms" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -414,7 +413,7 @@
         <ref role="1NtTu8" to="40ag:65PH1LjFs5R" resolve="cpuRequired" />
       </node>
       <node concept="3F0ifn" id="6CCMDSQAnKh" role="3EZMnx">
-        <property role="3F0ifm" value="mCores" />
+        <property role="3F0ifm" value="mCPUs" />
       </node>
       <node concept="3F0ifn" id="7yx6XIbi1O6" role="3EZMnx">
         <property role="3F0ifm" value="Repository:" />
@@ -6505,11 +6504,8 @@
           <property role="VOm3f" value="true" />
         </node>
       </node>
-      <node concept="3F0A7n" id="4Rlu3bFka3Y" role="3EZMnx">
-        <ref role="1NtTu8" to="40ag:4Rlu3bFk8_z" resolve="period" />
-      </node>
-      <node concept="3F0ifn" id="4Rlu3bFlT76" role="3EZMnx">
-        <property role="3F0ifm" value="ms" />
+      <node concept="3F1sOY" id="7yxl$fUXZhW" role="3EZMnx">
+        <ref role="1NtTu8" to="40ag:7yxl$fUXYMl" resolve="period" />
       </node>
       <node concept="3F0ifn" id="4Rlu3bFgDPp" role="3EZMnx">
         <property role="3F0ifm" value="Actions" />
@@ -6989,6 +6985,7 @@
             <property role="3F0ifm" value="Target node(s):" />
           </node>
           <node concept="3F2HdR" id="17qIEGcoR1$" role="3EZMnx">
+            <property role="2czwfO" value=", " />
             <ref role="1NtTu8" to="40ag:17qIEGcoR0m" resolve="targetNode" />
             <node concept="l2Vlx" id="17qIEGcoR1A" role="2czzBx" />
           </node>
@@ -7000,6 +6997,7 @@
             <property role="3F0ifm" value="Target region(s):" />
           </node>
           <node concept="3F2HdR" id="17qIEGcoR2F" role="3EZMnx">
+            <property role="2czwfO" value=", " />
             <ref role="1NtTu8" to="40ag:17qIEGcoR0w" resolve="targetRegion" />
             <node concept="l2Vlx" id="17qIEGcoR2H" role="2czzBx" />
           </node>
@@ -7011,6 +7009,7 @@
             <property role="3F0ifm" value="Target cluster(s):" />
           </node>
           <node concept="3F2HdR" id="17qIEGcoR3J" role="3EZMnx">
+            <property role="2czwfO" value=", " />
             <ref role="1NtTu8" to="40ag:17qIEGcoR0A" resolve="targetCluster" />
             <node concept="l2Vlx" id="17qIEGcoR3L" role="2czzBx" />
           </node>
@@ -7216,6 +7215,19 @@
         <node concept="2iRkQZ" id="RCcmXbnyfY" role="2iSdaV" />
       </node>
       <node concept="l2Vlx" id="RCcmXbnyfZ" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="7yxl$fUXYeD">
+    <property role="3GE5qa" value="AdaptationRules" />
+    <ref role="1XX52x" to="40ag:7yxl$fUXYe8" resolve="Period" />
+    <node concept="3EZMnI" id="7yxl$fUXYLZ" role="2wV5jI">
+      <node concept="3F0A7n" id="7yxl$fUXYM6" role="3EZMnx">
+        <ref role="1NtTu8" to="40ag:7yxl$fUXYe9" resolve="value" />
+      </node>
+      <node concept="3F0A7n" id="7yxl$fUXYMc" role="3EZMnx">
+        <ref role="1NtTu8" to="40ag:7yxl$fUXYeb" resolve="unit" />
+      </node>
+      <node concept="l2Vlx" id="7yxl$fUXYM2" role="2iSdaV" />
     </node>
   </node>
 </model>

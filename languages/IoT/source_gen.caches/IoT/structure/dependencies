@@ -41,6 +41,16 @@
     <classNode dependClassName="org.jetbrains.annotations.Nullable" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.EnumerationDescriptorBase" />
   </dependency>
+  <dependency className="IoT.structure.EnumerationDescriptor_Time_Unit">
+    <classNode dependClassName="java.lang.Override" />
+    <classNode dependClassName="java.lang.String" />
+    <classNode dependClassName="java.util.List" />
+    <classNode dependClassName="jetbrains.mps.lang.smodel.EnumerationLiteralsIndex" />
+    <classNode dependClassName="jetbrains.mps.smodel.runtime.EnumerationDescriptor" />
+    <classNode dependClassName="org.jetbrains.annotations.NotNull" />
+    <classNode dependClassName="org.jetbrains.annotations.Nullable" />
+    <classNode extendsClassName="jetbrains.mps.smodel.runtime.EnumerationDescriptorBase" />
+  </dependency>
   <dependency className="IoT.structure.EnumerationDescriptor_layer">
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="java.lang.String" />
@@ -61,6 +71,7 @@
     <classNode dependClassName="IoT.structure.EnumerationDescriptor_Connectivity" />
     <classNode dependClassName="IoT.structure.EnumerationDescriptor_Node_Presentation" />
     <classNode dependClassName="IoT.structure.EnumerationDescriptor_Processor" />
+    <classNode dependClassName="IoT.structure.EnumerationDescriptor_Time_Unit" />
     <classNode dependClassName="IoT.structure.EnumerationDescriptor_layer" />
     <classNode dependClassName="IoT.structure.LanguageConceptSwitch" />
     <classNode dependClassName="java.lang.Override" />

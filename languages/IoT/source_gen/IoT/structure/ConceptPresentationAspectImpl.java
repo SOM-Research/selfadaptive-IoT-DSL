@@ -38,6 +38,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_Operate_Actuator;
   private ConceptPresentation props_PadreRoot;
   private ConceptPresentation props_Parte;
+  private ConceptPresentation props_Period;
   private ConceptPresentation props_QoS_Event;
   private ConceptPresentation props_Redeployment;
   private ConceptPresentation props_Region;
@@ -256,6 +257,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Parte = cpb.create();
         }
         return props_Parte;
+      case LanguageConceptSwitch.Period:
+        if (props_Period == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.rawPresentation("Period");
+          props_Period = cpb.create();
+        }
+        return props_Period;
       case LanguageConceptSwitch.QoS_Event:
         if (props_QoS_Event == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

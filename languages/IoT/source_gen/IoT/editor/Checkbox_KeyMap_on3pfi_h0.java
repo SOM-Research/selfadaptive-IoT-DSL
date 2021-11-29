@@ -11,15 +11,15 @@ import org.jetbrains.mps.openapi.model.SNode;
 import java.util.List;
 import jetbrains.mps.openapi.editor.cells.EditorCell_Collection;
 
-public class Checkbox_KeyMap_on3pfi_i0 extends KeyMapImpl {
-  public Checkbox_KeyMap_on3pfi_i0() {
+public class Checkbox_KeyMap_on3pfi_h0 extends KeyMapImpl {
+  public Checkbox_KeyMap_on3pfi_h0() {
     this.setApplicableToEveryModel(false);
     KeyMapAction action;
-    action = new Checkbox_KeyMap_on3pfi_i0_Action0();
+    action = new Checkbox_KeyMap_on3pfi_h0_Action0();
     this.putAction("none", "VK_SPACE", action);
   }
-  public static class Checkbox_KeyMap_on3pfi_i0_Action0 extends KeyMapActionImpl {
-    public Checkbox_KeyMap_on3pfi_i0_Action0() {
+  public static class Checkbox_KeyMap_on3pfi_h0_Action0 extends KeyMapActionImpl {
+    public Checkbox_KeyMap_on3pfi_h0_Action0() {
       this.setShownInPopupMenu(false);
     }
     public String getDescriptionText() {
@@ -47,7 +47,7 @@ public class Checkbox_KeyMap_on3pfi_i0 extends KeyMapImpl {
       return editorContext.getContextCell() instanceof EditorCell_Collection;
     }
     private void execute_internal(final EditorContext editorContext, final SNode node, final List<SNode> selectedNodes) {
-      new ToggleCheckboxAction_on3pfi_i0((SNode) node).execute(editorContext);
+      new ToggleCheckboxAction_on3pfi_h0((SNode) node).execute(editorContext);
     }
     public String getKeyStroke() {
       return "none SPACE";

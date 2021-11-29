@@ -45,6 +45,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptOperate_Actuator = createDescriptorForOperate_Actuator();
   /*package*/ final ConceptDescriptor myConceptPadreRoot = createDescriptorForPadreRoot();
   /*package*/ final ConceptDescriptor myConceptParte = createDescriptorForParte();
+  /*package*/ final ConceptDescriptor myConceptPeriod = createDescriptorForPeriod();
   /*package*/ final ConceptDescriptor myConceptQoS_Event = createDescriptorForQoS_Event();
   /*package*/ final ConceptDescriptor myConceptRedeployment = createDescriptorForRedeployment();
   /*package*/ final ConceptDescriptor myConceptRegion = createDescriptorForRegion();
@@ -60,6 +61,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final EnumerationDescriptor myEnumerationConnectivity = new EnumerationDescriptor_Connectivity();
   /*package*/ final EnumerationDescriptor myEnumerationNode_Presentation = new EnumerationDescriptor_Node_Presentation();
   /*package*/ final EnumerationDescriptor myEnumerationProcessor = new EnumerationDescriptor_Processor();
+  /*package*/ final EnumerationDescriptor myEnumerationTime_Unit = new EnumerationDescriptor_Time_Unit();
   /*package*/ final EnumerationDescriptor myEnumerationlayer = new EnumerationDescriptor_layer();
   private final LanguageConceptSwitch myIndexSwitch;
 
@@ -77,7 +79,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptAction, myConceptActuator, myConceptActuator_Type, myConceptAdaptationRule, myConceptApplication, myConceptCarro, myConceptCloud_Node, myConceptCluster, myConceptCluster_Reference, myConceptColor, myConceptColor_Reference, myConceptCondition, myConceptContainer, myConceptEdge_Node, myConceptExp_ClusterLayer, myConceptExp_Node, myConceptExp_RegLayer, myConceptFog_Node, myConceptGrammar, myConceptIoT_Device, myConceptIoT_System, myConceptList_Of_Metrics, myConceptMetric, myConceptNode, myConceptNode_Reference, myConceptOffloading, myConceptOperate_Actuator, myConceptPadreRoot, myConceptParte, myConceptQoS_Event, myConceptRedeployment, myConceptRegion, myConceptRegion_Reference, myConceptResource_Expression, myConceptScaling, myConceptSensor, myConceptSensor_Actuator_Type, myConceptSensor_Event, myConceptSensor_Events, myConceptSensor_Type, myConceptWorkerReference);
+    return Arrays.asList(myConceptAction, myConceptActuator, myConceptActuator_Type, myConceptAdaptationRule, myConceptApplication, myConceptCarro, myConceptCloud_Node, myConceptCluster, myConceptCluster_Reference, myConceptColor, myConceptColor_Reference, myConceptCondition, myConceptContainer, myConceptEdge_Node, myConceptExp_ClusterLayer, myConceptExp_Node, myConceptExp_RegLayer, myConceptFog_Node, myConceptGrammar, myConceptIoT_Device, myConceptIoT_System, myConceptList_Of_Metrics, myConceptMetric, myConceptNode, myConceptNode_Reference, myConceptOffloading, myConceptOperate_Actuator, myConceptPadreRoot, myConceptParte, myConceptPeriod, myConceptQoS_Event, myConceptRedeployment, myConceptRegion, myConceptRegion_Reference, myConceptResource_Expression, myConceptScaling, myConceptSensor, myConceptSensor_Actuator_Type, myConceptSensor_Event, myConceptSensor_Events, myConceptSensor_Type, myConceptWorkerReference);
   }
 
   @Override
@@ -142,6 +144,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptPadreRoot;
       case LanguageConceptSwitch.Parte:
         return myConceptParte;
+      case LanguageConceptSwitch.Period:
+        return myConceptPeriod;
       case LanguageConceptSwitch.QoS_Event:
         return myConceptQoS_Event;
       case LanguageConceptSwitch.Redeployment:
@@ -173,7 +177,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<DataTypeDescriptor> getDataTypeDescriptors() {
-    return Arrays.asList(myEnumerationConnectivity, myEnumerationNode_Presentation, myEnumerationProcessor, myEnumerationlayer);
+    return Arrays.asList(myEnumerationConnectivity, myEnumerationNode_Presentation, myEnumerationProcessor, myEnumerationTime_Unit, myEnumerationlayer);
   }
 
   /*package*/ int internalIndex(SAbstractConcept c) {
@@ -214,9 +218,9 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.version(2);
     b.property("allActions", 0x4dd57832eb42989cL).type(PrimitiveTypeId.BOOLEAN).origin("5608521071050528924").done();
     b.property("actionsQuantity", 0x4dd57832eb42989dL).type(PrimitiveTypeId.INTEGER).origin("5608521071050528925").done();
-    b.property("period", 0x4dd57832eb508963L).type(PrimitiveTypeId.INTEGER).origin("5608521071051442531").done();
     b.aggregate("actions", 0x4dd57832eb4298a0L).target(0x222ccd66f9d64014L, 0x8569354bddee8138L, 0xcbb176aba9dbdddL).optional(false).ordered(true).multiple(true).origin("5608521071050528928").done();
     b.aggregate("condition", 0x4dd57832eb508e1aL).target(0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8c37f506fL).optional(false).ordered(true).multiple(false).origin("5608521071051443738").done();
+    b.aggregate("period", 0x78a15643faf7ec95L).target(0x222ccd66f9d64014L, 0x8569354bddee8138L, 0x78a15643faf7e388L).optional(false).ordered(true).multiple(false).origin("8692323605775117461").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForApplication() {
@@ -481,6 +485,15 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.associate("color", 0x397cc0ff9d16b724L).target(0x222ccd66f9d64014L, 0x8569354bddee8138L, 0x397cc0ff9d16b726L).optional(false).origin("4142397961358718756").done();
     b.associate("region", 0x397cc0ff9d22a5b8L).target(0x222ccd66f9d64014L, 0x8569354bddee8138L, 0x6175b41c53adc15cL).optional(true).origin("4142397961359500728").done();
     b.alias("parte");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForPeriod() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("IoT", "Period", 0x222ccd66f9d64014L, 0x8569354bddee8138L, 0x78a15643faf7e388L);
+    b.class_(false, false, false);
+    b.origin("r:589c5fd8-b628-4aae-9e87-31a99b5068a7(IoT.structure)/8692323605775115144");
+    b.version(2);
+    b.property("value", 0x78a15643faf7e389L).type(PrimitiveTypeId.INTEGER).origin("8692323605775115145").done();
+    b.property("unit", 0x78a15643faf7e38bL).type(MetaIdFactory.dataTypeId(0x222ccd66f9d64014L, 0x8569354bddee8138L, 0x78a15643faf7e38eL)).origin("8692323605775115147").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForQoS_Event() {

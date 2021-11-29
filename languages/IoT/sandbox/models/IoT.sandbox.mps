@@ -8,6 +8,9 @@
   <imports />
   <registry>
     <language id="222ccd66-f9d6-4014-8569-354bddee8138" name="IoT">
+      <concept id="8692323605775115144" name="IoT.structure.Period" flags="ng" index="22lFnb">
+        <property id="8692323605775115145" name="value" index="22lFna" />
+      </concept>
       <concept id="2537808983820360067" name="IoT.structure.Node" flags="ng" index="fk49g">
         <property id="2537808983820360084" name="storage" index="fk497" />
         <property id="2537808983820360090" name="processor" index="fk499" />
@@ -63,13 +66,18 @@
         <reference id="7022717227710136765" name="gateway" index="MQ7mx" />
         <child id="7649586747959203928" name="regions" index="1sz1b6" />
       </concept>
+      <concept id="1286545887377715210" name="IoT.structure.Cluster_Reference" flags="ng" index="tIsEx">
+        <reference id="1286545887377715211" name="cluster" index="tIsEw" />
+      </concept>
       <concept id="1286545887377715209" name="IoT.structure.Node_Reference" flags="ng" index="tIsEy">
         <reference id="1286545887377715213" name="node" index="tIsEA" />
       </concept>
       <concept id="1286545887377715201" name="IoT.structure.Scaling" flags="ng" index="tIsEE">
         <property id="1286545887377715202" name="instances" index="tIsED" />
         <reference id="1286545887377715204" name="application" index="tIsEJ" />
+        <child id="1286545887377715465" name="targetNodes" index="tIsIy" />
         <child id="1286545887377715468" name="targetRegion" index="tIsIB" />
+        <child id="1286545887377715472" name="targetCluster" index="tIsIV" />
       </concept>
       <concept id="3677613243630680841" name="IoT.structure.Container" flags="ng" index="2GUnFb">
         <property id="5608521071049151266" name="externalPort" index="2AYeGg" />
@@ -99,9 +107,9 @@
         <child id="5982629958611403235" name="expr" index="1iCxez" />
       </concept>
       <concept id="917352696257099656" name="IoT.structure.AdaptationRule" flags="ng" index="2QBq3y">
-        <property id="5608521071051442531" name="period" index="2Axv5h" />
         <property id="5608521071050528924" name="allActions" index="2A_Y2I" />
         <property id="5608521071050528925" name="actionsQuantity" index="2A_Y2J" />
+        <child id="8692323605775117461" name="period" index="22lFFm" />
         <child id="5608521071051443738" name="condition" index="2AxvoC" />
         <child id="5608521071050528928" name="actions" index="2A_Y2i" />
       </concept>
@@ -115,6 +123,7 @@
       <concept id="166834276354177454" name="IoT.structure.Offloading" flags="ng" index="3K8SXd">
         <reference id="166834276354177472" name="container" index="3K8SWz" />
         <child id="1286545887377715232" name="targetRegion" index="tIsEb" />
+        <child id="1286545887377715238" name="targetCluster" index="tIsEd" />
         <child id="1286545887377715222" name="targetNode" index="tIsEX" />
       </concept>
     </language>
@@ -182,274 +191,6 @@
       <property role="TrG5h" value="Smoke" />
     </node>
   </node>
-  <node concept="fk4LL" id="6CCMDSReMXy">
-    <property role="TrG5h" value="Smart Building" />
-    <node concept="2QBq3y" id="4Rlu3bFlSKL" role="2QBqNM">
-      <property role="TrG5h" value="Example rule" />
-      <property role="2Axv5h" value="60000" />
-      <property role="2A_Y2J" value="1" />
-      <node concept="3K8SXd" id="4Rlu3bFnCAu" role="2A_Y2i">
-        <ref role="3K8SWz" node="4Rlu3bG5Mgz" resolve="C01" />
-        <node concept="2L8lu2" id="4Rlu3bFnCAC" role="tIsEb">
-          <ref role="2L8lrf" node="3N5eeeM9ibg" resolve="Floor1" />
-        </node>
-        <node concept="tIsEy" id="4Rlu3bG5Mlc" role="tIsEX">
-          <ref role="tIsEA" node="4Rlu3bG5MhV" resolve="Edge01B1" />
-        </node>
-      </node>
-      <node concept="tIsEE" id="4Rlu3bG5Mlv" role="2A_Y2i">
-        <property role="tIsED" value="1" />
-        <ref role="tIsEJ" node="11jURvNzrM2" resolve="App1" />
-        <node concept="2L8lu2" id="4Rlu3bG5Ml_" role="tIsIB">
-          <ref role="2L8lrf" node="3N5eeeM9ibc" resolve="HotelA" />
-        </node>
-      </node>
-      <node concept="22lmx$" id="4Rlu3bFnC27" role="2AxvoC">
-        <node concept="3eOSWO" id="4Rlu3bFnC0n" role="3uHU7B">
-          <node concept="3cmrfG" id="4Rlu3bFnC0q" role="3uHU7w">
-            <property role="3cmrfH" value="90" />
-          </node>
-          <node concept="2QxCzY" id="4Rlu3bFlSKR" role="3uHU7B">
-            <ref role="2QSdyQ" node="MV5QEUHA9Y" resolve="CPU" />
-            <node concept="1iKjM1" id="4Rlu3bG5Mjq" role="1iCxez">
-              <ref role="1iKjM2" node="4Rlu3bG5Mgc" resolve="Edge01A1" />
-            </node>
-          </node>
-        </node>
-        <node concept="3eOSWO" id="4Rlu3bFnC74" role="3uHU7w">
-          <node concept="2QxCzY" id="4Rlu3bFnC2C" role="3uHU7B">
-            <ref role="2QSdyQ" node="MV5QEUHAao" resolve="Ram" />
-            <node concept="1iKjM1" id="4Rlu3bG5Mk2" role="1iCxez">
-              <ref role="1iKjM2" node="4Rlu3bG5Mgc" resolve="Edge01A1" />
-            </node>
-          </node>
-          <node concept="3cmrfG" id="4Rlu3bFnC7_" role="3uHU7w">
-            <property role="3cmrfH" value="90" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="MQ7l0" id="3N5eeeM9ibc" role="MQ7m6">
-      <property role="TrG5h" value="HotelA" />
-      <node concept="MQ7l0" id="3N5eeeM9ibg" role="MQ7lX">
-        <property role="TrG5h" value="Floor1" />
-        <node concept="MQ7l0" id="4Rlu3bFd8hI" role="MQ7lX">
-          <property role="TrG5h" value="RoomA1" />
-        </node>
-        <node concept="MQ7l0" id="4Rlu3bFd8hE" role="MQ7lX">
-          <property role="TrG5h" value="RoomB1" />
-        </node>
-      </node>
-      <node concept="MQ7l0" id="MV5QEU_Y1R" role="MQ7lX">
-        <property role="TrG5h" value="Floor2" />
-        <node concept="MQ7l0" id="4Rlu3bFd8hN" role="MQ7lX">
-          <property role="TrG5h" value="RoomA2" />
-        </node>
-        <node concept="MQ7l0" id="4Rlu3bFd8hL" role="MQ7lX">
-          <property role="TrG5h" value="RoomB2" />
-        </node>
-      </node>
-      <node concept="MQ7l0" id="4Rlu3bFd8h_" role="MQ7lX">
-        <property role="TrG5h" value="Floor3" />
-        <node concept="MQ7l0" id="4Rlu3bFd8hS" role="MQ7lX">
-          <property role="TrG5h" value="RoomA3" />
-        </node>
-        <node concept="MQ7l0" id="4Rlu3bFd8hQ" role="MQ7lX">
-          <property role="TrG5h" value="RoomB3" />
-        </node>
-      </node>
-    </node>
-    <node concept="fk6Sm" id="4Rlu3bFZSAh" role="MQ7jC">
-      <property role="TrG5h" value="S1-A1" />
-      <property role="fk6TG" value="Microship" />
-      <property role="fk6TJ" value="floor1/roomA1/smoke1" />
-      <property role="2A5aiE" value="51° 30’ 30’’ N" />
-      <property role="2A5aiJ" value="0° 7’ 32’’ O" />
-      <property role="fk6TD" value="2cS6XcGq7mH/ZigBee" />
-      <ref role="fk6Sr" node="4Rlu3bFeTwY" resolve="Smoke" />
-      <ref role="MQ7mx" node="4Rlu3bG5Mgc" resolve="Edge01A1" />
-      <node concept="2L8lu2" id="4Rlu3bFZSAs" role="1sz1b6">
-        <ref role="2L8lrf" node="4Rlu3bFd8hI" resolve="RoomA1" />
-      </node>
-    </node>
-    <node concept="fk6Sm" id="4Rlu3bFZS_L" role="MQ7jC">
-      <property role="TrG5h" value="S2-A1" />
-      <property role="fk6TG" value="Microship" />
-      <property role="fk6TD" value="2cS6XcGq7mH/ZigBee" />
-      <property role="fk6TJ" value="floor1/roomA1/smoke2" />
-      <property role="2A5aiE" value="51° 30’ 31’’ N" />
-      <property role="2A5aiJ" value="0° 7’ 33’’ O" />
-      <ref role="fk6Sr" node="4Rlu3bFeTwY" resolve="Smoke" />
-      <ref role="MQ7mx" node="4Rlu3bG5Mgc" resolve="Edge01A1" />
-      <node concept="2L8lu2" id="4Rlu3bFZS_X" role="1sz1b6">
-        <ref role="2L8lrf" node="4Rlu3bFd8hI" resolve="RoomA1" />
-      </node>
-    </node>
-    <node concept="fk6Sm" id="4Rlu3bFZSAK" role="MQ7jC">
-      <property role="TrG5h" value="S3-A1" />
-      <property role="fk6TG" value="Cisco" />
-      <property role="fk6TD" value="2cS6XcGq7mz/Bluethooth" />
-      <property role="fk6TJ" value="floor1/roomA1/temp" />
-      <property role="2A5aiE" value="51° 30’ 32’’ N" />
-      <property role="2A5aiJ" value="0° 7’ 34’’ O" />
-      <ref role="fk6Sr" node="6CCMDSRediz" resolve="Temperature" />
-      <ref role="MQ7mx" node="4Rlu3bG5Mgc" resolve="Edge01A1" />
-      <node concept="2L8lu2" id="4Rlu3bFZSAV" role="1sz1b6">
-        <ref role="2L8lrf" node="4Rlu3bFd8hI" resolve="RoomA1" />
-      </node>
-    </node>
-    <node concept="fk49U" id="11jURvNzrMt" role="fk49T">
-      <property role="TrG5h" value="ClusterFloor1" />
-      <ref role="MQ7mW" node="4Rlu3bFeTwg" resolve="Cloud01" />
-      <node concept="MQ7mT" id="4Rlu3bG5Mj8" role="MQ7mP">
-        <ref role="MQ7mU" node="4Rlu3bG5Mgc" resolve="Edge01A1" />
-      </node>
-      <node concept="MQ7mT" id="4Rlu3bG5Mjg" role="MQ7mP">
-        <ref role="MQ7mU" node="4Rlu3bG5MhV" resolve="Edge01B1" />
-      </node>
-      <node concept="MQ7mT" id="4Rlu3bG5Mjl" role="MQ7mP">
-        <ref role="MQ7mU" node="4Rlu3bG5Mh5" resolve="FogHotelA" />
-      </node>
-    </node>
-    <node concept="fk49P" id="4Rlu3bG5Mgc" role="MQ7jN">
-      <property role="TrG5h" value="Edge01A1" />
-      <property role="fk49s" value="2000" />
-      <property role="fk497" value="5000" />
-      <property role="fk49o" value="1000" />
-      <property role="fk49l" value="192.168.10.15" />
-      <property role="fk49r" value="Raspbian" />
-      <property role="fk499" value="2cS6XcGq5Ay/ARM" />
-      <node concept="2GUnFb" id="4Rlu3bG5Mgz" role="MQ7lO">
-        <property role="TrG5h" value="C01" />
-        <property role="3NUgsr" value="800" />
-        <property role="3NUgt_" value="400" />
-        <property role="2AYeGG" value="8080" />
-        <property role="2AYeGg" value="8000" />
-        <ref role="MQ7m4" node="11jURvNzrM2" resolve="App1" />
-      </node>
-      <node concept="2L8lu2" id="4Rlu3bG5Mgv" role="2L8lnZ">
-        <ref role="2L8lrf" node="4Rlu3bFd8hI" resolve="RoomA1" />
-      </node>
-      <node concept="tIsEy" id="4Rlu3bG5Mix" role="2A2yXp">
-        <ref role="tIsEA" node="4Rlu3bG5Mh5" resolve="FogHotelA" />
-      </node>
-    </node>
-    <node concept="fk49O" id="4Rlu3bG5Mh5" role="MQ7jN">
-      <property role="TrG5h" value="FogHotelA" />
-      <property role="fk49s" value="4000" />
-      <property role="fk497" value="10000" />
-      <property role="fk49o" value="2000" />
-      <property role="fk49l" value="192.168.10.17" />
-      <property role="fk49r" value="Ubuntu" />
-      <node concept="2GUnFb" id="4Rlu3bG5Mhr" role="MQ7lO">
-        <property role="TrG5h" value="C03" />
-        <property role="3NUgsr" value="1000" />
-        <property role="3NUgt_" value="1000" />
-        <property role="2AYeGG" value="8080" />
-        <property role="2AYeGg" value="8000" />
-        <ref role="MQ7m4" node="4Rlu3bFd8hk" resolve="App2" />
-      </node>
-      <node concept="2L8lu2" id="4Rlu3bG5Mhn" role="2AaJ7l">
-        <ref role="2L8lrf" node="3N5eeeM9ibg" resolve="Floor1" />
-      </node>
-      <node concept="tIsEy" id="4Rlu3bG5MiA" role="2A2yXp">
-        <ref role="tIsEA" node="4Rlu3bG5Mgc" resolve="Edge01A1" />
-      </node>
-      <node concept="tIsEy" id="4Rlu3bG5MiV" role="2A2yXp">
-        <ref role="tIsEA" node="4Rlu3bG5MhV" resolve="Edge01B1" />
-      </node>
-      <node concept="tIsEy" id="4Rlu3bG5Mj3" role="2A2yXp">
-        <ref role="tIsEA" node="4Rlu3bFeTwg" resolve="Cloud01" />
-      </node>
-    </node>
-    <node concept="fk49P" id="4Rlu3bG5MhV" role="MQ7jN">
-      <property role="TrG5h" value="Edge01B1" />
-      <property role="fk49s" value="2000" />
-      <property role="fk497" value="5000" />
-      <property role="fk49o" value="1000" />
-      <property role="fk49l" value="192.168.10.14" />
-      <property role="fk49r" value="Raspbian" />
-      <property role="fk499" value="2cS6XcGq5Ay/ARM" />
-      <node concept="2GUnFb" id="4Rlu3bG5Mig" role="MQ7lO">
-        <property role="TrG5h" value="C02" />
-        <property role="3NUgsr" value="800" />
-        <property role="3NUgt_" value="400" />
-        <property role="2AYeGG" value="8080" />
-        <property role="2AYeGg" value="8000" />
-        <ref role="MQ7m4" node="11jURvNzrM2" resolve="App1" />
-      </node>
-      <node concept="2L8lu2" id="4Rlu3bG5Mic" role="2L8lnZ">
-        <ref role="2L8lrf" node="4Rlu3bFd8hE" resolve="RoomB1" />
-      </node>
-      <node concept="tIsEy" id="4Rlu3bG5Mie" role="2A2yXp">
-        <ref role="tIsEA" node="4Rlu3bG5Mh5" resolve="FogHotelA" />
-      </node>
-    </node>
-    <node concept="fk4LP" id="11jURvNzrM2" role="MQ7lN">
-      <property role="TrG5h" value="App1" />
-      <property role="MQ7ms" value="500" />
-      <property role="MQ7lF" value="400" />
-      <property role="2GUnF7" value="smartBuilding/imageApp1:V0.1" />
-    </node>
-    <node concept="fk4LP" id="4Rlu3bFd8hk" role="MQ7lN">
-      <property role="TrG5h" value="App2" />
-      <property role="MQ7ms" value="1000" />
-      <property role="MQ7lF" value="1000" />
-      <property role="2GUnF7" value="smartBuilding/imageApp3:V0.1" />
-    </node>
-    <node concept="fk4LP" id="4Rlu3bFd8ho" role="MQ7lN">
-      <property role="TrG5h" value="App3" />
-      <property role="MQ7ms" value="1000" />
-      <property role="MQ7lF" value="1000" />
-      <property role="2GUnF7" value="smartBuilding/imageApp4:V0.1" />
-    </node>
-    <node concept="fk4LP" id="4Rlu3bFd8ht" role="MQ7lN">
-      <property role="TrG5h" value="DB1" />
-      <property role="MQ7ms" value="2000" />
-      <property role="MQ7lF" value="1000" />
-      <property role="2GUnF7" value="smartBuilding/imageDB1:V0.1" />
-    </node>
-    <node concept="fk49V" id="4Rlu3bFeTwg" role="MQ7jN">
-      <property role="TrG5h" value="Cloud01" />
-      <property role="fk49s" value="8000" />
-      <property role="fk497" value="50000" />
-      <property role="fk49o" value="4000" />
-      <property role="fk49l" value="172.15.12.19" />
-      <property role="fk49r" value="Ubuntu" />
-      <node concept="2GUnFb" id="4Rlu3bFeTwu" role="MQ7lO">
-        <property role="TrG5h" value="C04" />
-        <property role="3NUgsr" value="2000" />
-        <property role="3NUgt_" value="1000" />
-        <property role="2AYeGG" value="8080" />
-        <property role="2AYeGg" value="8000" />
-        <ref role="MQ7m4" node="4Rlu3bFd8ho" resolve="App3" />
-      </node>
-      <node concept="2GUnFb" id="4Rlu3bFeTww" role="MQ7lO">
-        <property role="TrG5h" value="C05" />
-        <property role="3NUgsr" value="2000" />
-        <property role="3NUgt_" value="1000" />
-        <property role="2AYeGG" value="8082" />
-        <property role="2AYeGg" value="8084" />
-        <ref role="MQ7m4" node="4Rlu3bFd8ht" resolve="DB1" />
-      </node>
-      <node concept="tIsEy" id="4Rlu3bG5Mi$" role="2A2yXp">
-        <ref role="tIsEA" node="4Rlu3bG5Mh5" resolve="FogHotelA" />
-      </node>
-    </node>
-    <node concept="fk6So" id="4Rlu3bFZSBf" role="MQ7jC">
-      <property role="TrG5h" value="A1-A1" />
-      <property role="fk6TG" value="Burkert" />
-      <property role="fk6TD" value="2cS6XcGq7mz/Bluethooth" />
-      <property role="fk6TJ" value="floor1/roomA1/valve" />
-      <property role="2A5aiE" value="51° 30’ 33’’ N" />
-      <property role="2A5aiJ" value="0° 7’ 35’’ O" />
-      <ref role="fk6Sv" node="6CCMDSRedj0" resolve="Valve" />
-      <ref role="MQ7mx" node="4Rlu3bG5Mgc" resolve="Edge01A1" />
-      <node concept="2L8lu2" id="4Rlu3bFZSBq" role="1sz1b6">
-        <ref role="2L8lrf" node="4Rlu3bFd8hI" resolve="RoomA1" />
-      </node>
-    </node>
-  </node>
   <node concept="2Q5TI3" id="MV5QEUGmWt">
     <node concept="2Q5TI7" id="MV5QEUGmWu" role="2Q5TI0">
       <property role="TrG5h" value="Latency" />
@@ -472,80 +213,102 @@
   </node>
   <node concept="fk4LL" id="3l6H7otesu$">
     <property role="TrG5h" value="Mining Industry" />
-    <node concept="2QBq3y" id="3l6H7otesu_" role="2QBqNM">
+    <node concept="2QBq3y" id="7yxl$fV51OZ" role="2QBqNM">
       <property role="TrG5h" value="Rule 1" />
-      <property role="2Axv5h" value="60000" />
       <property role="2A_Y2J" value="1" />
-      <node concept="3K8SXd" id="3l6H7otesuA" role="2A_Y2i">
+      <node concept="3K8SXd" id="7yxl$fV52$l" role="2A_Y2i">
         <ref role="3K8SWz" node="3l6H7otesv9" resolve="C01" />
-        <node concept="2L8lu2" id="3l6H7otesuB" role="tIsEb">
-          <ref role="2L8lrf" node="3l6H7otesuP" resolve="Level1" />
+        <node concept="tIsEx" id="G3oDr$qaf6" role="tIsEd">
+          <ref role="tIsEw" node="3l6H7otesv4" resolve="ClusterLevel1" />
         </node>
-        <node concept="tIsEy" id="3l6H7otesuC" role="tIsEX">
+        <node concept="tIsEy" id="7yxl$fV52_9" role="tIsEX">
           <ref role="tIsEA" node="3l6H7otesvi" resolve="EdgeWF2" />
         </node>
+        <node concept="2L8lu2" id="7yxl$fV52_c" role="tIsEb">
+          <ref role="2L8lrf" node="3l6H7otesuP" resolve="Level1" />
+        </node>
       </node>
-      <node concept="tIsEE" id="3l6H7otesuD" role="2A_Y2i">
+      <node concept="tIsEE" id="7yxl$fV52$Y" role="2A_Y2i">
         <property role="tIsED" value="1" />
         <ref role="tIsEJ" node="3l6H7otesvm" resolve="App1" />
-        <node concept="2L8lu2" id="3l6H7otesuE" role="tIsIB">
+        <node concept="2L8lu2" id="7yxl$fV52_e" role="tIsIB">
           <ref role="2L8lrf" node="3l6H7otesuO" resolve="Mine" />
         </node>
+        <node concept="2L8lu2" id="1$zhqElXl0M" role="tIsIB">
+          <ref role="2L8lrf" node="3l6H7oteswj" resolve="WorkFront1" />
+        </node>
+        <node concept="tIsEy" id="1$zhqElXl0C" role="tIsIy">
+          <ref role="tIsEA" node="3l6H7otesvq" resolve="Cloud01" />
+        </node>
+        <node concept="tIsEy" id="1$zhqElXl0H" role="tIsIy">
+          <ref role="tIsEA" node="3l6H7otesv8" resolve="EdgeWF1" />
+        </node>
+        <node concept="tIsEy" id="11RiBCivPmA" role="tIsIy">
+          <ref role="tIsEA" node="3l6H7otesvc" resolve="Fog01" />
+        </node>
+        <node concept="tIsEx" id="1$zhqElXl0Q" role="tIsIV">
+          <ref role="tIsEw" node="3l6H7otesv4" resolve="ClusterLevel1" />
+        </node>
       </node>
-      <node concept="22lmx$" id="3l6H7otesuF" role="2AxvoC">
-        <node concept="3eOSWO" id="3l6H7otesuG" role="3uHU7B">
-          <node concept="3cmrfG" id="3l6H7otesuH" role="3uHU7w">
+      <node concept="22lmx$" id="7yxl$fV52gU" role="2AxvoC">
+        <node concept="3eOSWO" id="7yxl$fV52ys" role="3uHU7w">
+          <node concept="3cmrfG" id="7yxl$fV52yX" role="3uHU7w">
             <property role="3cmrfH" value="90" />
           </node>
-          <node concept="2QxCzY" id="3l6H7otesuI" role="3uHU7B">
-            <ref role="2QSdyQ" node="MV5QEUHA9Y" resolve="CPU" />
-            <node concept="1iKjM1" id="3l6H7otesuJ" role="1iCxez">
-              <ref role="1iKjM2" node="3l6H7otesv8" resolve="EdgeWF1" />
-            </node>
-          </node>
-        </node>
-        <node concept="3eOSWO" id="3l6H7otesuK" role="3uHU7w">
-          <node concept="2QxCzY" id="3l6H7otesuL" role="3uHU7B">
+          <node concept="2QxCzY" id="7yxl$fV52hs" role="3uHU7B">
             <ref role="2QSdyQ" node="MV5QEUHAao" resolve="Ram" />
-            <node concept="1iKjM1" id="3l6H7otesuM" role="1iCxez">
+            <node concept="1iKjM1" id="7yxl$fV52hQ" role="1iCxez">
               <ref role="1iKjM2" node="3l6H7otesv8" resolve="EdgeWF1" />
             </node>
           </node>
-          <node concept="3cmrfG" id="RCcmXbnwk5" role="3uHU7w">
+        </node>
+        <node concept="3eOSWO" id="7yxl$fV51Qf" role="3uHU7B">
+          <node concept="2QxCzY" id="7yxl$fV51Py" role="3uHU7B">
+            <ref role="2QSdyQ" node="MV5QEUHA9Y" resolve="CPU" />
+            <node concept="1iKjM1" id="7yxl$fV51PC" role="1iCxez">
+              <ref role="1iKjM2" node="3l6H7otesv8" resolve="EdgeWF1" />
+            </node>
+          </node>
+          <node concept="3cmrfG" id="7yxl$fV51Qs" role="3uHU7w">
             <property role="3cmrfH" value="90" />
           </node>
         </node>
+      </node>
+      <node concept="22lFnb" id="7yxl$fV51P2" role="22lFFm">
+        <property role="22lFna" value="10" />
       </node>
     </node>
-    <node concept="2QBq3y" id="RCcmXbqwc8" role="2QBqNM">
+    <node concept="2QBq3y" id="7yxl$fV52zv" role="2QBqNM">
       <property role="TrG5h" value="Rule 2" />
-      <property role="2Axv5h" value="5000" />
       <property role="2A_Y2I" value="true" />
-      <node concept="16Hu8y" id="RCcmXbqwIg" role="2A_Y2i">
-        <property role="16HGMk" value="On" />
+      <node concept="16Hu8y" id="7yxl$fV52ZS" role="2A_Y2i">
+        <property role="16HGMk" value="on" />
         <ref role="16HxaX" node="RCcmXbqvGR" resolve="A-WF1" />
       </node>
-      <node concept="16Hu8y" id="RCcmXbqwIa" role="2A_Y2i">
-        <property role="16HGMk" value="On" />
+      <node concept="16Hu8y" id="7yxl$fV530V" role="2A_Y2i">
+        <property role="16HGMk" value="on" />
         <ref role="16HxaX" node="RCcmXbqwLx" resolve="A-WF2" />
       </node>
-      <node concept="22lmx$" id="RCcmXbqwlR" role="2AxvoC">
-        <node concept="3eOSWO" id="RCcmXbqwHg" role="3uHU7w">
-          <node concept="3b6qkQ" id="RCcmXbqwIJ" role="3uHU7w">
+      <node concept="22lmx$" id="7yxl$fV52MV" role="2AxvoC">
+        <node concept="3eOSWO" id="7yxl$fV52Yz" role="3uHU7w">
+          <node concept="3b6qkQ" id="7yxl$fV52Z4" role="3uHU7w">
             <property role="$nhwW" value="1.5" />
           </node>
-          <node concept="2QtbNP" id="RCcmXbqwJZ" role="3uHU7B">
+          <node concept="2QtbNP" id="7yxl$fV52Nr" role="3uHU7B">
             <ref role="2QtbNa" node="3l6H7otevC3" resolve="G-WF2" />
           </node>
         </node>
-        <node concept="3eOSWO" id="RCcmXbqwc_" role="3uHU7B">
-          <node concept="2QtbNP" id="RCcmXbqwJz" role="3uHU7B">
+        <node concept="3eOSWO" id="7yxl$fV52_L" role="3uHU7B">
+          <node concept="2QtbNP" id="7yxl$fV52_g" role="3uHU7B">
             <ref role="2QtbNa" node="3l6H7otesuY" resolve="G-WF1" />
           </node>
-          <node concept="3b6qkQ" id="RCcmXbqwKv" role="3uHU7w">
+          <node concept="3b6qkQ" id="7yxl$fV52A3" role="3uHU7w">
             <property role="$nhwW" value="1.5" />
           </node>
         </node>
+      </node>
+      <node concept="22lFnb" id="7yxl$fV52zy" role="22lFFm">
+        <property role="22lFna" value="10" />
       </node>
     </node>
     <node concept="MQ7l0" id="3l6H7otesuO" role="MQ7m6">
@@ -640,7 +403,7 @@
       <node concept="MQ7mT" id="3l6H7otesv6" role="MQ7mP">
         <ref role="MQ7mU" node="3l6H7otesvi" resolve="EdgeWF2" />
       </node>
-      <node concept="MQ7mT" id="3l6H7otesv7" role="MQ7mP">
+      <node concept="MQ7mT" id="C$pSYT9hGc" role="MQ7mP">
         <ref role="MQ7mU" node="3l6H7otesvc" resolve="Fog01" />
       </node>
     </node>
@@ -656,14 +419,14 @@
         <property role="TrG5h" value="C01" />
         <property role="3NUgsr" value="800" />
         <property role="3NUgt_" value="400" />
-        <property role="2AYeGG" value="8080" />
+        <property role="2AYeGG" value="8000" />
         <property role="2AYeGg" value="8000" />
         <ref role="MQ7m4" node="3l6H7otesvm" resolve="App1" />
       </node>
       <node concept="tIsEy" id="3l6H7otesvb" role="2A2yXp">
         <ref role="tIsEA" node="3l6H7otesvc" resolve="Fog01" />
       </node>
-      <node concept="2L8lu2" id="3l6H7otevBA" role="2L8lnZ">
+      <node concept="2L8lu2" id="1$zhqElXl1s" role="2L8lnZ">
         <ref role="2L8lrf" node="3l6H7oteswj" resolve="WorkFront1" />
       </node>
     </node>

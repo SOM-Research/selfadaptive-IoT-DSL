@@ -11,7 +11,7 @@ import jetbrains.mps.openapi.editor.cells.CellActionType;
 import jetbrains.mps.nodeEditor.cellProviders.AbstractCellListHandler;
 import java.util.Objects;
 
-public class Checkbox_ActionMap_on3pfi_i0 {
+public class Checkbox_ActionMap_on3pfi_h0 {
 
   /*package*/ static AbstractCellAction createAction_CLICK(final SNode node) {
     return new AbstractCellAction() {
@@ -22,7 +22,7 @@ public class Checkbox_ActionMap_on3pfi_i0 {
         this.execute_internal(editorContext, node);
       }
       public void execute_internal(EditorContext editorContext, SNode node) {
-        new ToggleCheckboxAction_on3pfi_i0((SNode) node).execute(editorContext);
+        new ToggleCheckboxAction_on3pfi_h0((SNode) node).execute(editorContext);
       }
 
     };

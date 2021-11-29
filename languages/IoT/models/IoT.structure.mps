@@ -619,11 +619,6 @@
       <property role="TrG5h" value="actionsQuantity" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
-    <node concept="1TJgyi" id="4Rlu3bFk8_z" role="1TKVEl">
-      <property role="IQ2nx" value="5608521071051442531" />
-      <property role="TrG5h" value="period" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
-    </node>
     <node concept="PrWs8" id="MV5QEU9FuP" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
@@ -640,6 +635,13 @@
       <property role="20kJfa" value="condition" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="7yxl$fUXYMl" role="1TKVEi">
+      <property role="IQ2ns" value="8692323605775117461" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="period" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="7yxl$fUXYe8" resolve="Period" />
     </node>
   </node>
   <node concept="1TIwiD" id="MV5QEU9FuR">
@@ -997,6 +999,48 @@
       <property role="IQ2nx" value="1002105271165582843" />
       <property role="TrG5h" value="message" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7yxl$fUXYe8">
+    <property role="EcuMT" value="8692323605775115144" />
+    <property role="3GE5qa" value="AdaptationRules" />
+    <property role="TrG5h" value="Period" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="7yxl$fUXYe9" role="1TKVEl">
+      <property role="IQ2nx" value="8692323605775115145" />
+      <property role="TrG5h" value="value" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="7yxl$fUXYeb" role="1TKVEl">
+      <property role="IQ2nx" value="8692323605775115147" />
+      <property role="TrG5h" value="unit" />
+      <ref role="AX2Wp" node="7yxl$fUXYee" resolve="Time_Unit" />
+    </node>
+  </node>
+  <node concept="25R3W" id="7yxl$fUXYee">
+    <property role="3F6X1D" value="8692323605775115150" />
+    <property role="3GE5qa" value="AdaptationRules" />
+    <property role="TrG5h" value="Time_Unit" />
+    <ref role="1H5jkz" node="7yxl$fUXYeg" resolve="s" />
+    <node concept="25R33" id="7yxl$fUXYef" role="25R1y">
+      <property role="3tVfz5" value="8692323605775115151" />
+      <property role="TrG5h" value="ms" />
+    </node>
+    <node concept="25R33" id="7yxl$fUXYeg" role="25R1y">
+      <property role="3tVfz5" value="8692323605775115152" />
+      <property role="TrG5h" value="s" />
+    </node>
+    <node concept="25R33" id="7yxl$fUXYej" role="25R1y">
+      <property role="3tVfz5" value="8692323605775115155" />
+      <property role="TrG5h" value="m" />
+    </node>
+    <node concept="25R33" id="7yxl$fUXYen" role="25R1y">
+      <property role="3tVfz5" value="8692323605775115159" />
+      <property role="TrG5h" value="h" />
+    </node>
+    <node concept="25R33" id="7yxl$fUXYes" role="25R1y">
+      <property role="3tVfz5" value="8692323605775115164" />
+      <property role="TrG5h" value="d" />
     </node>
   </node>
 </model>
