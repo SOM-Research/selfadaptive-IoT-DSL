@@ -11,3 +11,5 @@ To run DSL in MPS you need the following prerequisites:
 
 * [Jetbrains MPS 2020.3.1](https://www.jetbrains.com/es-es/mps/) or above.
 * [mbeddr platform](http://mbeddr.com/) (MPS plugin)
+* [plaintext-gen](https://jetbrains.github.io/MPS-extensions/extensions/plaintext-gen/) (MPS plugin)
+* MPS Table Editor Component (MPS plugin)
