@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mqtt-exporter
+  namespace: monitoring
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mqtt-exporter
+  template:
+    metadata:
+      labels:
+        app: mqtt-exporter
+    spec:
+      containers:
+      - name: mqtt-exporter
+        image: ghcr.io/fhemberger/mqtt_exporter:v1.4.0
+        ports:
+        - containerPort: 9344
+        volumeMounts:
+          - name: config-volume
+            mountPath: /usr/src/app/conf
+            subPath: conf.yaml
+      volumes:
+        - name: config-volume
+          configMap:
+           name: mqtt-exporter-config

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="e96zwv30gta7skp4nogo0sq18pw7yd0">
+  <files names="adaptation-engine/clusterRole.yaml:adaptation-engine/deployment.yaml:adaptation-engine/service.yaml:alert-manager/config-map.yaml:alert-manager/deployment.yaml:alert-manager/service.yaml:grafana/config-map.yaml:grafana/deployment.yaml:grafana/service.yaml:iot-system/cofig-map.yaml:iot-system/pods.yaml:iot-system/services.yaml:kube-state-metrics/cluster-role-binding.yaml:kube-state-metrics/cluster-role.yaml:kube-state-metrics/deployment.yaml:kube-state-metrics/service-account.yaml:kube-state-metrics/service.yaml:mqtt-exporter/config-map-C_6.yaml:mqtt-exporter/deployment.yaml:mqtt-exporter/service.yaml:namespace/namespace.yaml:node-exporter/daemonset.yaml:node-exporter/service.yaml:prometheus/clusterRole.yaml:prometheus/config-map.yaml:prometheus/deployment.yaml:prometheus/rules.yml:prometheus/service.yaml" />
+</product>
+

@@ -1,0 +1,33 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: prometheus-rules
+  namespace: monitoring
+data:
+  prometheus.rules: |-
+    groups:
+    - name: Alert-Rule 1
+      interval: 1s
+      rules:
+      - alert: Rule 1
+        # Condition for alerting
+        expr: 100 - (avg by(node_hostname) (rate(node_cpu_seconds_total{mode="idle",node_hostname="fog-f1"}[30s])) * 100) > 80
+        for: 1m
+        annotations:
+          adaptations: '{"offloading_0.2964162965774193":{"pod_name":"C4","image":"mosquitto:2.0","namespace":"default","requirements":{"memory":"700M","cpu":"700m"},"hosts":{"node":{"operator":"In","values":["edge-b1"]},"region":{"operator":"In","values":["Floor 1"]},"cluster":{"operator":"In","values":[]}}},"scaling_0.47256457075932035":{"instances":1,"image":"mosquitto:2.0","namespace":"default","requirements":{"memory":"700M","cpu":"700m"},"hosts":{"node":{"operator":"In","values":[]},"region":{"operator":"In","values":["Hotel Beach"]},"cluster":{"operator":"In","values":[]}}}}'
+        labels:
+          severity: 'critical'
+          actions: '1'
+
+    - name: Alert-Rule 2 - option 2
+      interval: 1s
+      rules:
+      - alert: Rule 2 - option 2
+        # Condition for alerting
+        expr: f1_rA1_smoke > 400 or f1_rB1_smoke > 400
+        for: 10s
+        annotations:
+          adaptations: '{"operate_actuator_test":{"broker_ip":"192.168.10.3","port":30070,"topic":"f1/lb/alarm","message":"On"}}'
+        labels:
+          severity: 'critical'
+          actions: 'all'

@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: adaptation-engine
+  namespace: monitoring
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: adaptation-engine
+  template:
+    metadata:
+      labels:
+        app: adaptation-engine
+    spec:
+      containers:
+      - name: adaptation-engine
+        image: ivanalfonso/adaptation-engine:latest
+        ports:
+        - containerPort: 8000

@@ -1,0 +1,23 @@
+kind: ConfigMap
+apiVersion: v1
+metadata:
+  name: alertmanager-config
+  namespace: monitoring
+data:
+  config.yml: |-
+    global:
+    receivers:
+      - name: default-receiver
+      - name: ycap-webhook
+        webhook_configs:
+          - url: "http://adaptation-engine-service.monitoring:8000/webhook"
+    route:
+      group_wait: 1s
+      group_interval: 5s
+      receiver: default-receiver
+      repeat_interval: 3h
+
+      routes:
+        - receiver: ycap-webhook
+          match_re:
+            severity: critical

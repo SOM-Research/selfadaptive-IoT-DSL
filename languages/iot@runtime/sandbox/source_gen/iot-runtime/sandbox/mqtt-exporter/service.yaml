@@ -1,0 +1,14 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: mqtt-exporter-service
+  namespace: monitoring
+spec:
+  selector:
+    app: mqtt-exporter
+  type: ClusterIP
+  ports:
+  - name: mqtt-exporter
+    protocol: TCP
+    port: 9344
+    targetPort: 9344
