@@ -226,12 +226,17 @@
             <node concept="3clFbF" id="5c6$$011CX0" role="3cqZAp">
               <node concept="37vLTI" id="5c6$$011DD6" role="3clFbG">
                 <node concept="3cpWs3" id="5c6$$011DVp" role="37vLTx">
-                  <node concept="2OqwBi" id="5c6$$011EiI" role="3uHU7w">
-                    <node concept="37vLTw" id="5c6$$011E4$" role="2Oq$k0">
-                      <ref role="3cqZAo" node="5c6$$011AAi" resolve="c" />
+                  <node concept="2OqwBi" id="7mdOoMTCVQQ" role="3uHU7w">
+                    <node concept="2OqwBi" id="5c6$$011EiI" role="2Oq$k0">
+                      <node concept="37vLTw" id="5c6$$011E4$" role="2Oq$k0">
+                        <ref role="3cqZAo" node="5c6$$011AAi" resolve="c" />
+                      </node>
+                      <node concept="3TrEf2" id="7mdOoMTCUhJ" role="2OqNvi">
+                        <ref role="3Tt5mk" to="40ag:65PH1LjFs6o" resolve="application" />
+                      </node>
                     </node>
-                    <node concept="3TrcHB" id="5c6$$011EFK" role="2OqNvi">
-                      <ref role="3TsBF5" to="40ag:7yx6XIbi1N0" resolve="memoryLimit" />
+                    <node concept="3TrcHB" id="7mdOoMTCXBK" role="2OqNvi">
+                      <ref role="3TsBF5" to="40ag:65PH1LjFs60" resolve="memoryRequired" />
                     </node>
                   </node>
                   <node concept="37vLTw" id="5c6$$011DDu" role="3uHU7B">
@@ -293,12 +298,17 @@
             <node concept="3clFbF" id="5c6$$016dm5" role="3cqZAp">
               <node concept="37vLTI" id="5c6$$016dm6" role="3clFbG">
                 <node concept="3cpWs3" id="5c6$$016dm7" role="37vLTx">
-                  <node concept="2OqwBi" id="5c6$$016dm8" role="3uHU7w">
-                    <node concept="37vLTw" id="5c6$$016dm9" role="2Oq$k0">
-                      <ref role="3cqZAo" node="5c6$$016dlZ" resolve="c" />
+                  <node concept="2OqwBi" id="7mdOoMTD0CE" role="3uHU7w">
+                    <node concept="2OqwBi" id="5c6$$016dm8" role="2Oq$k0">
+                      <node concept="37vLTw" id="5c6$$016dm9" role="2Oq$k0">
+                        <ref role="3cqZAo" node="5c6$$016dlZ" resolve="c" />
+                      </node>
+                      <node concept="3TrEf2" id="7mdOoMTCZ5c" role="2OqNvi">
+                        <ref role="3Tt5mk" to="40ag:65PH1LjFs6o" resolve="application" />
+                      </node>
                     </node>
-                    <node concept="3TrcHB" id="5c6$$016ql6" role="2OqNvi">
-                      <ref role="3TsBF5" to="40ag:7yx6XIbi1MY" resolve="cpuLimit" />
+                    <node concept="3TrcHB" id="7mdOoMTD2wc" role="2OqNvi">
+                      <ref role="3TsBF5" to="40ag:65PH1LjFs5R" resolve="cpuRequired" />
                     </node>
                   </node>
                   <node concept="37vLTw" id="5c6$$016dmb" role="3uHU7B">

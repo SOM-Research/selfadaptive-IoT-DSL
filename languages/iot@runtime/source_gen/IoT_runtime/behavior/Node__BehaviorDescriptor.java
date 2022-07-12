@@ -20,6 +20,7 @@ import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.core.aspects.behaviour.api.BHMethodNotFoundException;
 import org.jetbrains.mps.openapi.language.SProperty;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
+import org.jetbrains.mps.openapi.language.SReferenceLink;
 
 public final class Node__BehaviorDescriptor extends BaseBHDescriptor {
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x222ccd66f9d64014L, 0x8569354bddee8138L, 0x23381bd32c685983L, "IoT_runtime.structure.Node");
@@ -42,14 +43,14 @@ public final class Node__BehaviorDescriptor extends BaseBHDescriptor {
   /*package*/ static int availableMemory_id5c6$$011Azd(@NotNull SNode __thisNode__) {
     int memory = 0;
     for (SNode c : SLinkOperations.getChildren(__thisNode__, LINKS.containers$eu$n)) {
-      memory = memory + SPropertyOperations.getInteger(c, PROPS.memoryLimit$Pi9U);
+      memory = memory + SPropertyOperations.getInteger(SLinkOperations.getTarget(c, LINKS.application$GqFB), PROPS.memoryRequired$4bvj);
     }
     return (SPropertyOperations.getInteger(__thisNode__, PROPS.memory$iHkq) - memory);
   }
   /*package*/ static int availableCPU_id5c6$$016dlQ(@NotNull SNode __thisNode__) {
     int cpu = 0;
     for (SNode c : SLinkOperations.getChildren(__thisNode__, LINKS.containers$eu$n)) {
-      cpu = cpu + SPropertyOperations.getInteger(c, PROPS.cpuLimit$PhFS);
+      cpu = cpu + SPropertyOperations.getInteger(SLinkOperations.getTarget(c, LINKS.application$GqFB), PROPS.cpuRequired$1FHE);
     }
     return ((SPropertyOperations.getInteger(__thisNode__, PROPS.cpuCores$iGom) * 1000) - cpu);
   }
@@ -106,13 +107,14 @@ public final class Node__BehaviorDescriptor extends BaseBHDescriptor {
 
   private static final class PROPS {
     /*package*/ static final SProperty name$MnvL = MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name");
-    /*package*/ static final SProperty memoryLimit$Pi9U = MetaAdapterFactory.getProperty(0x222ccd66f9d64014L, 0x8569354bddee8138L, 0x330981c29fe0fb09L, 0x78a11bdb8b481cc0L, "memoryLimit");
+    /*package*/ static final SProperty memoryRequired$4bvj = MetaAdapterFactory.getProperty(0x222ccd66f9d64014L, 0x8569354bddee8138L, 0x23381bd32c6857a6L, 0x6175b41c53adc180L, "memoryRequired");
     /*package*/ static final SProperty memory$iHkq = MetaAdapterFactory.getProperty(0x222ccd66f9d64014L, 0x8569354bddee8138L, 0x23381bd32c685983L, 0x23381bd32c68598fL, "memory");
-    /*package*/ static final SProperty cpuLimit$PhFS = MetaAdapterFactory.getProperty(0x222ccd66f9d64014L, 0x8569354bddee8138L, 0x330981c29fe0fb09L, 0x78a11bdb8b481cbeL, "cpuLimit");
+    /*package*/ static final SProperty cpuRequired$1FHE = MetaAdapterFactory.getProperty(0x222ccd66f9d64014L, 0x8569354bddee8138L, 0x23381bd32c6857a6L, 0x6175b41c53adc177L, "cpuRequired");
     /*package*/ static final SProperty cpuCores$iGom = MetaAdapterFactory.getProperty(0x222ccd66f9d64014L, 0x8569354bddee8138L, 0x23381bd32c685983L, 0x23381bd32c68598bL, "cpuCores");
   }
 
   private static final class LINKS {
     /*package*/ static final SContainmentLink containers$eu$n = MetaAdapterFactory.getContainmentLink(0x222ccd66f9d64014L, 0x8569354bddee8138L, 0x23381bd32c685983L, 0x6175b41c53adc168L, "containers");
+    /*package*/ static final SReferenceLink application$GqFB = MetaAdapterFactory.getReferenceLink(0x222ccd66f9d64014L, 0x8569354bddee8138L, 0x330981c29fe0fb09L, 0x6175b41c53adc198L, "application");
   }
 }
