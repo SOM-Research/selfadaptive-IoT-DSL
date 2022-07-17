@@ -129,7 +129,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
       final SProperty property = PROPS.name$MnvL;
       getCellFactory().setPropertyInfo(new SPropertyInfo(myNode, property));
       EditorCell_Property editorCell = EditorCell_Property.create(getEditorContext(), new SPropertyAccessor(myNode, property, false, false), myNode);
-      editorCell.setDefaultText("<<Mine name>>");
+      editorCell.setDefaultText("<<IoT System Name>>");
       editorCell.setCellId("property_name");
       Style style = new StyleImpl();
       style.set(StyleAttributes.TEXT_COLOR, StyleRegistry.getInstance().getSimpleColor(MPSColors.DARK_BLUE));

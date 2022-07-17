@@ -479,7 +479,7 @@
     <ref role="1XX52x" to="40ag:2cS6XcGq5uy" resolve="IoT_System" />
     <node concept="3EZMnI" id="7yx6XIbhAhC" role="2wV5jI">
       <node concept="3F0A7n" id="5KqIGGYpIg3" role="3EZMnx">
-        <property role="1$x2rV" value="&lt;&lt;Mine name&gt;&gt;" />
+        <property role="1$x2rV" value="&lt;&lt;IoT System Name&gt;&gt;" />
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
         <node concept="VechU" id="5KqIGGYpIg4" role="3F10Kt">
           <property role="Vb096" value="g1_eI4o/darkBlue" />
@@ -5601,7 +5601,7 @@
     <ref role="1XX52x" to="40ag:2cS6XcGq5uy" resolve="IoT_System" />
     <node concept="3EZMnI" id="6CCMDSQSdJB" role="2wV5jI">
       <node concept="3F0A7n" id="5KqIGGYING7" role="3EZMnx">
-        <property role="1$x2rV" value="&lt;&lt;Mine name&gt;&gt;" />
+        <property role="1$x2rV" value="&lt;&lt;IoT System Name&gt;&gt;" />
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
         <node concept="VechU" id="5KqIGGYING8" role="3F10Kt">
           <property role="Vb096" value="g1_eI4o/darkBlue" />

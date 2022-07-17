@@ -11,10 +11,10 @@ data:
       port:       30070
 
     metrics:
-      - name:     'f1_rA1_smoke'
-        help:     'Topic f1/rA1/smoke'
+      - name:     'floor1_roomA1_smoke'
+        help:     'Topic floor1/roomA1/smoke'
         type:     'gauge'
-        topic:    'f1/rA1/smoke'
+        topic:    'floor1/roomA1/smoke'
         label_configs:
           - source_labels:  ['__msg_topic__']           # Required (when label_configs is present)
             separator:      '/'                         # Optional default ';'
@@ -23,10 +23,10 @@ data:
             replacement:    '\1'                        # Optional default '\1'
             action:         'replace'                   # Optional default 'replace'
 
-      - name:     'f1_rA1_temp'
-        help:     'Topic f1/rA1/temp'
+      - name:     'floor1_roomA1_temp'
+        help:     'Topic floor1/roomA1/temp'
         type:     'gauge'
-        topic:    'f1/rA1/temp'
+        topic:    'floor1/roomA1/temp'
         label_configs:
           - source_labels:  ['__msg_topic__']           # Required (when label_configs is present)
             separator:      '/'                         # Optional default ';'
@@ -35,10 +35,10 @@ data:
             replacement:    '\1'                        # Optional default '\1'
             action:         'replace'                   # Optional default 'replace'
 
-      - name:     'f1_rA1_valve'
-        help:     'Topic f1/rA1/valve'
+      - name:     'floor1_roomA1_valve'
+        help:     'Topic floor1/roomA1/valve'
         type:     'gauge'
-        topic:    'f1/rA1/valve'
+        topic:    'floor1/roomA1/valve'
         label_configs:
           - source_labels:  ['__msg_topic__']           # Required (when label_configs is present)
             separator:      '/'                         # Optional default ';'
@@ -47,10 +47,10 @@ data:
             replacement:    '\1'                        # Optional default '\1'
             action:         'replace'                   # Optional default 'replace'
 
-      - name:     'f1_rB1_smoke'
-        help:     'Topic f1/rB1/smoke'
+      - name:     'floor1_roomB1_smoke'
+        help:     'Topic floor1/roomB1/smoke'
         type:     'gauge'
-        topic:    'f1/rB1/smoke'
+        topic:    'floor1/roomB1/smoke'
         label_configs:
           - source_labels:  ['__msg_topic__']           # Required (when label_configs is present)
             separator:      '/'                         # Optional default ';'
@@ -59,10 +59,10 @@ data:
             replacement:    '\1'                        # Optional default '\1'
             action:         'replace'                   # Optional default 'replace'
 
-      - name:     'f1_rB1_temp'
-        help:     'Topic f1/rB1/temp'
+      - name:     'floor1_roomB1_temp'
+        help:     'Topic floor1/roomB1/temp'
         type:     'gauge'
-        topic:    'f1/rB1/temp'
+        topic:    'floor1/roomB1/temp'
         label_configs:
           - source_labels:  ['__msg_topic__']           # Required (when label_configs is present)
             separator:      '/'                         # Optional default ';'
@@ -71,10 +71,10 @@ data:
             replacement:    '\1'                        # Optional default '\1'
             action:         'replace'                   # Optional default 'replace'
 
-      - name:     'f1_rB1_valve'
-        help:     'Topic f1/rB1/valve'
+      - name:     'floor1_roomB1_valve'
+        help:     'Topic floor1/roomB1/valve'
         type:     'gauge'
-        topic:    'f1/rB1/valve'
+        topic:    'floor1/roomB1/valve'
         label_configs:
           - source_labels:  ['__msg_topic__']           # Required (when label_configs is present)
             separator:      '/'                         # Optional default ';'
@@ -83,10 +83,10 @@ data:
             replacement:    '\1'                        # Optional default '\1'
             action:         'replace'                   # Optional default 'replace'
 
-      - name:     'f1_lb_alarm'
-        help:     'Topic f1/lb/alarm'
+      - name:     'floor1_lobby_alarm'
+        help:     'Topic floor1/lobby/alarm'
         type:     'gauge'
-        topic:    'f1/lb/alarm'
+        topic:    'floor1/lobby/alarm'
         label_configs:
           - source_labels:  ['__msg_topic__']           # Required (when label_configs is present)
             separator:      '/'                         # Optional default ';'

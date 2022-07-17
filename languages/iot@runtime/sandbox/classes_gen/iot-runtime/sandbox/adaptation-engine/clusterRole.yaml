@@ -4,7 +4,7 @@ metadata:
   name: adaptation-engine
 rules:
 - apiGroups: [""]
-  resources: ["pods", "deployments", "jobs", "services", "endpoints", "nodes"]
+  resources: ["pods", "pods/status", "deployments", "jobs", "services", "endpoints", "nodes"]
   verbs: ["get", "list", "watch", "create", "update", "patch", "delete"]
 ---
 kind: ClusterRoleBinding

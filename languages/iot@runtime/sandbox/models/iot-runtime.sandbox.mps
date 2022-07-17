@@ -285,7 +285,7 @@
       <property role="TrG5h" value="Rule 2 - option 2" />
       <node concept="16Hu8y" id="72esdhMUAht" role="2A_Y2i">
         <property role="16HGMk" value="On" />
-        <ref role="16HxaX" node="72esdhMUzQx" resolve="a-lobby" />
+        <ref role="16HxaX" node="6yTESjZVSaa" resolve="a-lobby" />
       </node>
       <node concept="22lmx$" id="72esdhMUA42" role="2AxvoC">
         <node concept="3eOSWO" id="72esdhMUAfR" role="3uHU7w">
@@ -396,25 +396,25 @@
         <property role="TrG5h" value="C4" />
         <ref role="MQ7m4" node="V6zdAuuicE" resolve="App3" />
         <node concept="2ZjsHc" id="V6zdAvaAnH" role="2ZuSZ_">
-          <property role="TrG5h" value="f1/rA1/smoke" />
+          <property role="TrG5h" value="floor1/roomA1/smoke" />
         </node>
         <node concept="2ZjsHc" id="V6zdAvaAnJ" role="2ZuSZ_">
-          <property role="TrG5h" value="f1/rA1/temp" />
+          <property role="TrG5h" value="floor1/roomA1/temp" />
         </node>
         <node concept="2ZjsHc" id="V6zdAvaAnV" role="2ZuSZ_">
-          <property role="TrG5h" value="f1/rA1/valve" />
+          <property role="TrG5h" value="floor1/roomA1/valve" />
         </node>
         <node concept="2ZjsHc" id="V6zdAvaAnM" role="2ZuSZ_">
-          <property role="TrG5h" value="f1/rB1/smoke" />
+          <property role="TrG5h" value="floor1/roomB1/smoke" />
         </node>
         <node concept="2ZjsHc" id="V6zdAvaAnQ" role="2ZuSZ_">
-          <property role="TrG5h" value="f1/rB1/temp" />
+          <property role="TrG5h" value="floor1/roomB1/temp" />
         </node>
         <node concept="2ZjsHc" id="V6zdAvaAo1" role="2ZuSZ_">
-          <property role="TrG5h" value="f1/rB1/valve" />
+          <property role="TrG5h" value="floor1/roomB1/valve" />
         </node>
         <node concept="2ZjsHc" id="V6zdAvaAo8" role="2ZuSZ_">
-          <property role="TrG5h" value="f1/lb/alarm" />
+          <property role="TrG5h" value="floor1/lobby/alarm" />
         </node>
         <node concept="1PrJje" id="V6zdAuyRge" role="1PrGIx">
           <property role="TrG5h" value="mosquitto-config" />
@@ -524,7 +524,7 @@
     <node concept="fk6So" id="V6zdAveC8f" role="MQ7jC">
       <property role="TrG5h" value="valve-a1" />
       <property role="fk6TG" value="Bray" />
-      <property role="fk6TD" value="2cS6XcGq7mn/Serial" />
+      <property role="fk6TD" value="2cS6XcGq7mu/WiFi" />
       <property role="2A5aiE" value="1°0'3''N" />
       <property role="2A5aiJ" value="0°7'7''E" />
       <ref role="fk6Sv" node="6CCMDSRedj0" resolve="Valve" />
@@ -534,32 +534,60 @@
         <ref role="2L8lrf" node="V6zdAuuicB" resolve="RoomA1" />
       </node>
     </node>
-    <node concept="fk6So" id="72esdhMUzQx" role="MQ7jC">
-      <property role="TrG5h" value="a-lobby" />
-      <property role="fk6TG" value="Security" />
-      <property role="fk6TD" value="2cS6XcGq7mu/WiFi" />
-      <property role="2A5aiE" value="1°10'2''N" />
-      <property role="2A5aiJ" value="1°20'3''E" />
-      <ref role="fk6Sv" node="5O_Idj2q1BK" resolve="Alarm" />
-      <ref role="MQ7mx" node="V6zdAuyRg1" resolve="edge-b1" />
-      <ref role="2Z02Rh" node="V6zdAvaAo8" resolve="f1/lb/alarm" />
-      <node concept="2L8lu2" id="72esdhMUzQE" role="1sz1b6">
-        <ref role="2L8lrf" node="V6zdAuuic_" resolve="Lobby" />
-      </node>
-    </node>
-    <node concept="fk6Sm" id="72esdhMUzRB" role="MQ7jC">
+    <node concept="fk6Sm" id="6yTESjZVSaA" role="MQ7jC">
       <property role="TrG5h" value="gas-b1" />
       <property role="1fGzIU" value="ppm" />
       <property role="xF1DA" value="50" />
       <property role="fk6TG" value="Winsen" />
       <property role="fk6TD" value="2cS6XcGq7mH/ZigBee" />
-      <property role="2A5aiE" value="1°11'2''N" />
-      <property role="2A5aiJ" value="1°11'2''N" />
+      <property role="2A5aiE" value="1°1'2''N" />
+      <property role="2A5aiJ" value="1°1'2''N" />
       <ref role="fk6Sr" node="5O_Idj2q1BG" resolve="CO" />
+      <ref role="2Z02Rh" node="V6zdAvaAnM" resolve="floor1/roomB1/smoke" />
       <ref role="MQ7mx" node="V6zdAuyRg1" resolve="edge-b1" />
-      <ref role="2Z02Rh" node="V6zdAvaAnM" resolve="f1/rB1/smoke" />
+      <node concept="2L8lu2" id="6yTESjZVSaB" role="1sz1b6">
+        <ref role="2L8lrf" node="V6zdAuuicA" resolve="RoomB1" />
+      </node>
+    </node>
+    <node concept="fk6Sm" id="72esdhMUzRB" role="MQ7jC">
+      <property role="TrG5h" value="temp-b1" />
+      <property role="1fGzIU" value="ppm" />
+      <property role="xF1DA" value="50" />
+      <property role="fk6TG" value="MLX" />
+      <property role="fk6TD" value="2cS6XcGq7mN/Z_Wave" />
+      <property role="2A5aiE" value="1°1'3''N" />
+      <property role="2A5aiJ" value="1°1'3''N" />
+      <ref role="MQ7mx" node="V6zdAuyRg1" resolve="edge-b1" />
+      <ref role="fk6Sr" node="4ONOcanSE6J" resolve="Temperature" />
+      <ref role="2Z02Rh" node="V6zdAvaAnQ" resolve="floor1/roomB1/temp" />
       <node concept="2L8lu2" id="72esdhMUzRM" role="1sz1b6">
         <ref role="2L8lrf" node="V6zdAuuicA" resolve="RoomB1" />
+      </node>
+    </node>
+    <node concept="fk6So" id="6yTESjZVSb2" role="MQ7jC">
+      <property role="TrG5h" value="valve-b1" />
+      <property role="fk6TG" value="Bray" />
+      <property role="fk6TD" value="2cS6XcGq7mu/WiFi" />
+      <property role="2A5aiE" value="1°1'3''N" />
+      <property role="2A5aiJ" value="1°1'4''N" />
+      <ref role="fk6Sv" node="6CCMDSRedj0" resolve="Valve" />
+      <ref role="MQ7mx" node="V6zdAuyRg1" resolve="edge-b1" />
+      <ref role="2Z02Rh" node="V6zdAvaAo1" resolve="floor1/roomB1/valve" />
+      <node concept="2L8lu2" id="6yTESjZVSbh" role="1sz1b6">
+        <ref role="2L8lrf" node="V6zdAuuicA" resolve="RoomB1" />
+      </node>
+    </node>
+    <node concept="fk6So" id="6yTESjZVSaa" role="MQ7jC">
+      <property role="TrG5h" value="a-lobby" />
+      <property role="fk6TG" value="Security" />
+      <property role="fk6TD" value="2cS6XcGq7mu/WiFi" />
+      <property role="2A5aiE" value="1°1'2''N" />
+      <property role="2A5aiJ" value="1°2'3''E" />
+      <ref role="MQ7mx" node="V6zdAuyRg1" resolve="edge-b1" />
+      <ref role="fk6Sv" node="5O_Idj2q1BK" resolve="Alarm" />
+      <ref role="2Z02Rh" node="V6zdAvaAo8" resolve="floor1/lobby/alarm" />
+      <node concept="2L8lu2" id="6yTESjZVSab" role="1sz1b6">
+        <ref role="2L8lrf" node="V6zdAuuic_" resolve="Lobby" />
       </node>
     </node>
   </node>
