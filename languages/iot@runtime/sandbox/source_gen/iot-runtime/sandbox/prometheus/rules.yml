@@ -14,7 +14,7 @@ data:
         expr: 100 - (avg by(node_hostname) (rate(node_cpu_seconds_total{mode="idle",node_hostname="fog-f1"}[30s])) * 100) > 80
         for: 1m
         annotations:
-          adaptations: '{"offloading_0.3968980675094613":{"pod_name":"C4","image":"mosquitto:2.0","namespace":"default","requirements":{"memory":"700M","cpu":"700m"},"hosts":{"node":{"operator":"In","values":["edge-b1"]},"region":{"operator":"In","values":["Floor 1"]},"cluster":{"operator":"In","values":[]}}},"scaling_0.44711820808234315":{"instances":1,"image":"mosquitto:2.0","namespace":"default","requirements":{"memory":"700M","cpu":"700m"},"hosts":{"node":{"operator":"In","values":[]},"region":{"operator":"In","values":["Hotel Beach"]},"cluster":{"operator":"In","values":[]}}}}'
+          adaptations: '{"offloading_0.5089545317514009":{"pod_name":"C4","image":"mosquitto:2.0","namespace":"default","requirements":{"memory":"700M","cpu":"700m"},"hosts":{"node":{"operator":"In","values":["edge-b1"]},"region":{"operator":"In","values":["Floor 1"]},"cluster":{"operator":"In","values":[]}}},"scaling_0.7538018121110722":{"instances":1,"image":"mosquitto:2.0","namespace":"default","requirements":{"memory":"700M","cpu":"700m"},"hosts":{"node":{"operator":"In","values":[]},"region":{"operator":"In","values":["Hotel Beach"]},"cluster":{"operator":"In","values":[]}}}}'
         labels:
           severity: 'critical'
           actions: '1'
