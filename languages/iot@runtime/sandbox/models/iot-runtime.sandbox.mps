@@ -218,8 +218,8 @@
       <property role="1zwx4q" value="latency" />
     </node>
     <node concept="2Q5TI7" id="MV5QEUHA9V" role="2Q5TI0">
-      <property role="TrG5h" value="Availability" />
-      <property role="1zwx4q" value="availability" />
+      <property role="TrG5h" value="Unavailability" />
+      <property role="1zwx4q" value="unavailability" />
     </node>
     <node concept="2Q5TI7" id="MV5QEUHA9Y" role="2Q5TI0">
       <property role="TrG5h" value="CPU consumption" />
