@@ -35,9 +35,9 @@ public final class LanguageConceptSwitch {
   public static final int Operate_Actuator = 23;
   public static final int Period = 24;
   public static final int QoSCluster = 25;
-  public static final int QoSNode = 26;
-  public static final int QoSRegion = 27;
-  public static final int QoS_Cont = 28;
+  public static final int QoSContainer = 26;
+  public static final int QoSNode = 27;
+  public static final int QoSRegion = 28;
   public static final int QoS_Event = 29;
   public static final int Redeployment = 30;
   public static final int Region = 31;
@@ -82,9 +82,9 @@ public final class LanguageConceptSwitch {
     builder.put(0xde8316f4b5dd34dL, Operate_Actuator);
     builder.put(0x78a15643faf7e388L, Period);
     builder.put(0x5306924001b2832bL, QoSCluster);
+    builder.put(0x25ba6d72b2d8c740L, QoSContainer);
     builder.put(0x5306924001c7aec1L, QoSNode);
     builder.put(0xcbb176ababbb082L, QoSRegion);
-    builder.put(0x25ba6d72b2d8c740L, QoS_Cont);
     builder.put(0xcbb176aba3d9f94L, QoS_Event);
     builder.put(0x11dabaab0c6371b7L, Redeployment);
     builder.put(0x6175b41c53adc15cL, Region);

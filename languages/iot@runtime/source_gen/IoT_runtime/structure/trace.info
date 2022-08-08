@@ -955,37 +955,37 @@
   </root>
   <root nodeRef="r:589c5fd8-b628-4aae-9e87-31a99b5068a7(IoT_runtime.structure)/2718605664465766208">
     <file name="ConceptPresentationAspectImpl.java">
-      <node id="2718605664465766208" at="40,0,41,0" concept="2" trace="props_QoS_Cont" />
-      <node id="2718605664465766208" at="256,37,257,76" concept="5" />
-      <node id="2718605664465766208" at="257,76,258,143" concept="1" />
-      <node id="2718605664465766208" at="258,143,259,40" concept="1" />
-      <node id="2718605664465766208" at="260,9,261,30" concept="6" />
-      <node id="2718605664465766208" at="255,42,260,9" concept="3" />
-      <scope id="2718605664465766208" at="256,37,259,40">
+      <node id="2718605664465766208" at="38,0,39,0" concept="2" trace="props_QoSContainer" />
+      <node id="2718605664465766208" at="242,41,243,76" concept="5" />
+      <node id="2718605664465766208" at="243,76,244,143" concept="1" />
+      <node id="2718605664465766208" at="244,143,245,44" concept="1" />
+      <node id="2718605664465766208" at="246,9,247,34" concept="6" />
+      <node id="2718605664465766208" at="241,46,246,9" concept="3" />
+      <scope id="2718605664465766208" at="242,41,245,44">
         <var name="cpb" id="2718605664465766208" />
       </scope>
-      <scope id="2718605664465766208" at="255,42,261,30" />
+      <scope id="2718605664465766208" at="241,46,247,34" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="2718605664465766208" at="40,0,41,0" concept="7" trace="QoS_Cont" />
-      <node id="2718605664465766208" at="86,47,87,47" concept="1" />
+      <node id="2718605664465766208" at="38,0,39,0" concept="7" trace="QoSContainer" />
+      <node id="2718605664465766208" at="84,49,85,51" concept="1" />
     </file>
     <file name="StructureAspectDescriptor.java">
-      <node id="2718605664465766208" at="49,0,50,0" concept="2" trace="myConceptQoS_Cont" />
-      <node id="2718605664465766208" at="150,42,151,33" concept="6" />
-      <node id="2718605664465766208" at="489,66,490,154" concept="5" />
-      <node id="2718605664465766208" at="490,154,491,34" concept="1" />
-      <node id="2718605664465766208" at="491,34,492,121" concept="1" />
-      <node id="2718605664465766208" at="492,121,493,98" concept="1" />
-      <node id="2718605664465766208" at="493,98,494,17" concept="1" />
-      <node id="2718605664465766209" at="494,17,495,173" concept="1" />
-      <node id="2718605664465766208" at="495,173,496,22" concept="6" />
-      <node id="2718605664465766208" at="489,0,498,0" concept="8" trace="createDescriptorForQoS_Cont#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
-      <scope id="2718605664465766208" at="150,42,151,33" />
-      <scope id="2718605664465766208" at="489,66,496,22">
+      <node id="2718605664465766208" at="47,0,48,0" concept="2" trace="myConceptQoSContainer" />
+      <node id="2718605664465766208" at="146,46,147,37" concept="6" />
+      <node id="2718605664465766208" at="469,70,470,158" concept="5" />
+      <node id="2718605664465766208" at="470,158,471,34" concept="1" />
+      <node id="2718605664465766208" at="471,34,472,121" concept="1" />
+      <node id="2718605664465766208" at="472,121,473,98" concept="1" />
+      <node id="2718605664465766208" at="473,98,474,17" concept="1" />
+      <node id="2718605664465766209" at="474,17,475,173" concept="1" />
+      <node id="2718605664465766208" at="475,173,476,22" concept="6" />
+      <node id="2718605664465766208" at="469,0,478,0" concept="8" trace="createDescriptorForQoSContainer#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="2718605664465766208" at="146,46,147,37" />
+      <scope id="2718605664465766208" at="469,70,476,22">
         <var name="b" id="2718605664465766208" />
       </scope>
-      <scope id="2718605664465766208" at="489,0,498,0" />
+      <scope id="2718605664465766208" at="469,0,478,0" />
     </file>
   </root>
   <root nodeRef="r:589c5fd8-b628-4aae-9e87-31a99b5068a7(IoT_runtime.structure)/3677613243630680841">
@@ -1261,37 +1261,37 @@
   </root>
   <root nodeRef="r:589c5fd8-b628-4aae-9e87-31a99b5068a7(IoT_runtime.structure)/5982629958613708481">
     <file name="ConceptPresentationAspectImpl.java">
-      <node id="5982629958613708481" at="38,0,39,0" concept="2" trace="props_QoSNode" />
-      <node id="5982629958613708481" at="242,36,243,76" concept="5" />
-      <node id="5982629958613708481" at="243,76,244,138" concept="1" />
-      <node id="5982629958613708481" at="244,138,245,39" concept="1" />
-      <node id="5982629958613708481" at="246,9,247,29" concept="6" />
-      <node id="5982629958613708481" at="241,41,246,9" concept="3" />
-      <scope id="5982629958613708481" at="242,36,245,39">
+      <node id="5982629958613708481" at="39,0,40,0" concept="2" trace="props_QoSNode" />
+      <node id="5982629958613708481" at="249,36,250,76" concept="5" />
+      <node id="5982629958613708481" at="250,76,251,138" concept="1" />
+      <node id="5982629958613708481" at="251,138,252,39" concept="1" />
+      <node id="5982629958613708481" at="253,9,254,29" concept="6" />
+      <node id="5982629958613708481" at="248,41,253,9" concept="3" />
+      <scope id="5982629958613708481" at="249,36,252,39">
         <var name="cpb" id="5982629958613708481" />
       </scope>
-      <scope id="5982629958613708481" at="241,41,247,29" />
+      <scope id="5982629958613708481" at="248,41,254,29" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="5982629958613708481" at="38,0,39,0" concept="7" trace="QoSNode" />
-      <node id="5982629958613708481" at="84,49,85,46" concept="1" />
+      <node id="5982629958613708481" at="39,0,40,0" concept="7" trace="QoSNode" />
+      <node id="5982629958613708481" at="85,51,86,46" concept="1" />
     </file>
     <file name="StructureAspectDescriptor.java">
-      <node id="5982629958613708481" at="47,0,48,0" concept="2" trace="myConceptQoSNode" />
-      <node id="5982629958613708481" at="146,41,147,32" concept="6" />
-      <node id="5982629958613708481" at="469,65,470,153" concept="5" />
-      <node id="5982629958613708481" at="470,153,471,34" concept="1" />
-      <node id="5982629958613708481" at="471,34,472,121" concept="1" />
-      <node id="5982629958613708481" at="472,121,473,98" concept="1" />
-      <node id="5982629958613708481" at="473,98,474,17" concept="1" />
-      <node id="5982629958613708482" at="474,17,475,168" concept="1" />
-      <node id="5982629958613708481" at="475,168,476,22" concept="6" />
-      <node id="5982629958613708481" at="469,0,478,0" concept="8" trace="createDescriptorForQoSNode#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
-      <scope id="5982629958613708481" at="146,41,147,32" />
-      <scope id="5982629958613708481" at="469,65,476,22">
+      <node id="5982629958613708481" at="48,0,49,0" concept="2" trace="myConceptQoSNode" />
+      <node id="5982629958613708481" at="148,41,149,32" concept="6" />
+      <node id="5982629958613708481" at="478,65,479,153" concept="5" />
+      <node id="5982629958613708481" at="479,153,480,34" concept="1" />
+      <node id="5982629958613708481" at="480,34,481,121" concept="1" />
+      <node id="5982629958613708481" at="481,121,482,98" concept="1" />
+      <node id="5982629958613708481" at="482,98,483,17" concept="1" />
+      <node id="5982629958613708482" at="483,17,484,168" concept="1" />
+      <node id="5982629958613708481" at="484,168,485,22" concept="6" />
+      <node id="5982629958613708481" at="478,0,487,0" concept="8" trace="createDescriptorForQoSNode#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="5982629958613708481" at="148,41,149,32" />
+      <scope id="5982629958613708481" at="478,65,485,22">
         <var name="b" id="5982629958613708481" />
       </scope>
-      <scope id="5982629958613708481" at="469,0,478,0" />
+      <scope id="5982629958613708481" at="478,0,487,0" />
     </file>
   </root>
   <root nodeRef="r:589c5fd8-b628-4aae-9e87-31a99b5068a7(IoT_runtime.structure)/6318530625411809612">
@@ -1826,39 +1826,39 @@
   </root>
   <root nodeRef="r:589c5fd8-b628-4aae-9e87-31a99b5068a7(IoT_runtime.structure)/917352696266862722">
     <file name="ConceptPresentationAspectImpl.java">
-      <node id="917352696266862722" at="39,0,40,0" concept="2" trace="props_QoSRegion" />
-      <node id="917352696266862722" at="249,38,250,76" concept="5" />
-      <node id="917352696266862722" at="250,76,251,139" concept="1" />
-      <node id="917352696266862722" at="251,139,252,41" concept="1" />
-      <node id="917352696266862722" at="253,9,254,31" concept="6" />
-      <node id="917352696266862722" at="248,43,253,9" concept="3" />
-      <scope id="917352696266862722" at="249,38,252,41">
+      <node id="917352696266862722" at="40,0,41,0" concept="2" trace="props_QoSRegion" />
+      <node id="917352696266862722" at="256,38,257,76" concept="5" />
+      <node id="917352696266862722" at="257,76,258,139" concept="1" />
+      <node id="917352696266862722" at="258,139,259,41" concept="1" />
+      <node id="917352696266862722" at="260,9,261,31" concept="6" />
+      <node id="917352696266862722" at="255,43,260,9" concept="3" />
+      <scope id="917352696266862722" at="256,38,259,41">
         <var name="cpb" id="917352696266862722" />
       </scope>
-      <scope id="917352696266862722" at="248,43,254,31" />
+      <scope id="917352696266862722" at="255,43,261,31" />
     </file>
     <file name="LanguageConceptSwitch.java">
-      <node id="917352696266862722" at="39,0,40,0" concept="7" trace="QoSRegion" />
-      <node id="917352696266862722" at="85,46,86,47" concept="1" />
+      <node id="917352696266862722" at="40,0,41,0" concept="7" trace="QoSRegion" />
+      <node id="917352696266862722" at="86,46,87,47" concept="1" />
     </file>
     <file name="StructureAspectDescriptor.java">
-      <node id="917352696266862722" at="48,0,49,0" concept="2" trace="myConceptQoSRegion" />
-      <node id="917352696266862722" at="148,43,149,34" concept="6" />
-      <node id="917352696266862722" at="478,67,479,154" concept="5" />
-      <node id="917352696266862722" at="479,154,480,34" concept="1" />
-      <node id="917352696266862722" at="480,34,481,121" concept="1" />
-      <node id="917352696266862722" at="481,121,482,97" concept="1" />
-      <node id="917352696266862722" at="482,97,483,17" concept="1" />
-      <node id="5982629958611860871" at="483,17,484,176" concept="1" />
-      <node id="5982629958614651337" at="484,176,485,114" concept="1" />
-      <node id="5982629958605164010" at="485,114,486,169" concept="1" />
-      <node id="917352696266862722" at="486,169,487,22" concept="6" />
-      <node id="917352696266862722" at="478,0,489,0" concept="8" trace="createDescriptorForQoSRegion#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
-      <scope id="917352696266862722" at="148,43,149,34" />
-      <scope id="917352696266862722" at="478,67,487,22">
+      <node id="917352696266862722" at="49,0,50,0" concept="2" trace="myConceptQoSRegion" />
+      <node id="917352696266862722" at="150,43,151,34" concept="6" />
+      <node id="917352696266862722" at="487,67,488,154" concept="5" />
+      <node id="917352696266862722" at="488,154,489,34" concept="1" />
+      <node id="917352696266862722" at="489,34,490,121" concept="1" />
+      <node id="917352696266862722" at="490,121,491,97" concept="1" />
+      <node id="917352696266862722" at="491,97,492,17" concept="1" />
+      <node id="5982629958611860871" at="492,17,493,176" concept="1" />
+      <node id="5982629958614651337" at="493,176,494,114" concept="1" />
+      <node id="5982629958605164010" at="494,114,495,169" concept="1" />
+      <node id="917352696266862722" at="495,169,496,22" concept="6" />
+      <node id="917352696266862722" at="487,0,498,0" concept="8" trace="createDescriptorForQoSRegion#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="917352696266862722" at="150,43,151,34" />
+      <scope id="917352696266862722" at="487,67,496,22">
         <var name="b" id="917352696266862722" />
       </scope>
-      <scope id="917352696266862722" at="478,0,489,0" />
+      <scope id="917352696266862722" at="487,0,498,0" />
     </file>
   </root>
   <root nodeRef="r:589c5fd8-b628-4aae-9e87-31a99b5068a7(IoT_runtime.structure)/917352696268172191">

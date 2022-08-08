@@ -1059,7 +1059,7 @@
   <node concept="1TIwiD" id="2mUrnaMQct0">
     <property role="EcuMT" value="2718605664465766208" />
     <property role="3GE5qa" value="AdaptationRules" />
-    <property role="TrG5h" value="QoS_Cont" />
+    <property role="TrG5h" value="QoSContainer" />
     <ref role="1TJDcQ" node="5c6$$01D87u" resolve="Resource_Expression" />
     <node concept="1TJgyj" id="2mUrnaMQct1" role="1TKVEi">
       <property role="IQ2ns" value="2718605664465766209" />

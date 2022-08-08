@@ -7,8 +7,8 @@ import jetbrains.mps.openapi.editor.cells.EditorCell;
 import jetbrains.mps.openapi.editor.EditorContext;
 import org.jetbrains.mps.openapi.model.SNode;
 
-public class QoS_Cont_Editor extends DefaultNodeEditor {
+public class QoSContainer_Editor extends DefaultNodeEditor {
   public EditorCell createEditorCell(EditorContext editorContext, SNode node) {
-    return new QoS_Cont_EditorBuilder_a(editorContext, node).createCell();
+    return new QoSContainer_EditorBuilder_a(editorContext, node).createCell();
   }
 }

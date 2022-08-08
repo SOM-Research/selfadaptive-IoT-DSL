@@ -35,9 +35,9 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_Operate_Actuator;
   private ConceptPresentation props_Period;
   private ConceptPresentation props_QoSCluster;
+  private ConceptPresentation props_QoSContainer;
   private ConceptPresentation props_QoSNode;
   private ConceptPresentation props_QoSRegion;
-  private ConceptPresentation props_QoS_Cont;
   private ConceptPresentation props_QoS_Event;
   private ConceptPresentation props_Redeployment;
   private ConceptPresentation props_Region;
@@ -238,6 +238,13 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_QoSCluster = cpb.create();
         }
         return props_QoSCluster;
+      case LanguageConceptSwitch.QoSContainer:
+        if (props_QoSContainer == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByReference(0x222ccd66f9d64014L, 0x8569354bddee8138L, 0x25ba6d72b2d8c740L, 0x25ba6d72b2d8c741L, "container", "", "");
+          props_QoSContainer = cpb.create();
+        }
+        return props_QoSContainer;
       case LanguageConceptSwitch.QoSNode:
         if (props_QoSNode == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -252,13 +259,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_QoSRegion = cpb.create();
         }
         return props_QoSRegion;
-      case LanguageConceptSwitch.QoS_Cont:
-        if (props_QoS_Cont == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.presentationByReference(0x222ccd66f9d64014L, 0x8569354bddee8138L, 0x25ba6d72b2d8c740L, 0x25ba6d72b2d8c741L, "container", "", "");
-          props_QoS_Cont = cpb.create();
-        }
-        return props_QoS_Cont;
       case LanguageConceptSwitch.QoS_Event:
         if (props_QoS_Event == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

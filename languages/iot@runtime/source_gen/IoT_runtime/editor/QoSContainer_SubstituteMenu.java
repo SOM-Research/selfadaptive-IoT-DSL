@@ -23,13 +23,13 @@ import org.jetbrains.mps.openapi.language.SConcept;
 import jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory;
 import org.jetbrains.mps.openapi.language.SReferenceLink;
 
-public class QoS_Cont_SubstituteMenu extends SubstituteMenuBase {
+public class QoSContainer_SubstituteMenu extends SubstituteMenuBase {
   @NotNull
   @Override
   protected List<MenuPart<SubstituteMenuItem, SubstituteMenuContext>> getParts(final SubstituteMenuContext _context) {
     List<MenuPart<SubstituteMenuItem, SubstituteMenuContext>> result = new ArrayList<MenuPart<SubstituteMenuItem, SubstituteMenuContext>>();
-    result.add(new ConstraintsFilteringSubstituteMenuPartDecorator(new SMP_ReferenceScope_q5963y_a(), CONCEPTS.QoS_Cont$kE));
-    result.add(new SMP_Subconcepts_q5963y_b());
+    result.add(new ConstraintsFilteringSubstituteMenuPartDecorator(new SMP_ReferenceScope_8x3oie_a(), CONCEPTS.QoSContainer$kE));
+    result.add(new SMP_Subconcepts_8x3oie_b());
     return result;
   }
 
@@ -37,7 +37,7 @@ public class QoS_Cont_SubstituteMenu extends SubstituteMenuBase {
   @Override
   public List<SubstituteMenuItem> createMenuItems(@NotNull SubstituteMenuContext context) {
     context.getEditorMenuTrace().pushTraceInfo();
-    context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("default substitute menu for QoS_Cont. Generated from the smart reference attribute.", new SNodePointer("r:589c5fd8-b628-4aae-9e87-31a99b5068a7(IoT_runtime.structure)", "2718605664465766211")));
+    context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("default substitute menu for QoSContainer. Generated from the smart reference attribute.", new SNodePointer("r:589c5fd8-b628-4aae-9e87-31a99b5068a7(IoT_runtime.structure)", "2718605664465766211")));
     try {
       return super.createMenuItems(context);
     } finally {
@@ -46,11 +46,11 @@ public class QoS_Cont_SubstituteMenu extends SubstituteMenuBase {
   }
 
 
-  public class SMP_ReferenceScope_q5963y_a extends ReferenceScopeSubstituteMenuPart {
+  public class SMP_ReferenceScope_8x3oie_a extends ReferenceScopeSubstituteMenuPart {
 
-    public SMP_ReferenceScope_q5963y_a() {
+    public SMP_ReferenceScope_8x3oie_a() {
       // that cast is needed for prevent the users from https://youtrack.jetbrains.com/issue/MPS-29051
-      super((SAbstractConcept) CONCEPTS.QoS_Cont$kE, LINKS.container$4wEU);
+      super((SAbstractConcept) CONCEPTS.QoSContainer$kE, LINKS.container$4wEU);
     }
     @NotNull
     @Override
@@ -65,15 +65,15 @@ public class QoS_Cont_SubstituteMenu extends SubstituteMenuBase {
     }
 
   }
-  public class SMP_Subconcepts_q5963y_b extends ConceptMenusPart<SubstituteMenuItem, SubstituteMenuContext> {
+  public class SMP_Subconcepts_8x3oie_b extends ConceptMenusPart<SubstituteMenuItem, SubstituteMenuContext> {
     protected Collection getConcepts(final SubstituteMenuContext _context) {
-      return ConceptDescendantsCache.getInstance().getDirectDescendants(CONCEPTS.QoS_Cont$kE);
+      return ConceptDescendantsCache.getInstance().getDirectDescendants(CONCEPTS.QoSContainer$kE);
     }
     @NotNull
     @Override
     public List<SubstituteMenuItem> createItems(SubstituteMenuContext context) {
       context.getEditorMenuTrace().pushTraceInfo();
-      context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("include menus for all the direct subconcepts of " + "QoS_Cont", null));
+      context.getEditorMenuTrace().setDescriptor(new EditorMenuDescriptorBase("include menus for all the direct subconcepts of " + "QoSContainer", null));
       try {
         return super.createItems(context);
       } finally {
@@ -88,7 +88,7 @@ public class QoS_Cont_SubstituteMenu extends SubstituteMenuBase {
   }
 
   private static final class CONCEPTS {
-    /*package*/ static final SConcept QoS_Cont$kE = MetaAdapterFactory.getConcept(0x222ccd66f9d64014L, 0x8569354bddee8138L, 0x25ba6d72b2d8c740L, "IoT_runtime.structure.QoS_Cont");
+    /*package*/ static final SConcept QoSContainer$kE = MetaAdapterFactory.getConcept(0x222ccd66f9d64014L, 0x8569354bddee8138L, 0x25ba6d72b2d8c740L, "IoT_runtime.structure.QoSContainer");
   }
 
   private static final class LINKS {

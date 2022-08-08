@@ -44,9 +44,9 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptOperate_Actuator = createDescriptorForOperate_Actuator();
   /*package*/ final ConceptDescriptor myConceptPeriod = createDescriptorForPeriod();
   /*package*/ final ConceptDescriptor myConceptQoSCluster = createDescriptorForQoSCluster();
+  /*package*/ final ConceptDescriptor myConceptQoSContainer = createDescriptorForQoSContainer();
   /*package*/ final ConceptDescriptor myConceptQoSNode = createDescriptorForQoSNode();
   /*package*/ final ConceptDescriptor myConceptQoSRegion = createDescriptorForQoSRegion();
-  /*package*/ final ConceptDescriptor myConceptQoS_Cont = createDescriptorForQoS_Cont();
   /*package*/ final ConceptDescriptor myConceptQoS_Event = createDescriptorForQoS_Event();
   /*package*/ final ConceptDescriptor myConceptRedeployment = createDescriptorForRedeployment();
   /*package*/ final ConceptDescriptor myConceptRegion = createDescriptorForRegion();
@@ -84,7 +84,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptAction, myConceptActuator, myConceptActuator_Type, myConceptAdaptationRule, myConceptApplication, myConceptCloud_Node, myConceptCluster, myConceptCluster_Reference, myConceptContainer, myConceptContainer_Reference, myConceptEdge_Node, myConceptExp_LayerReg, myConceptFog_Node, myConceptGrammar, myConceptIoT_Device, myConceptIoT_Device_Reference, myConceptIoT_System, myConceptList_Of_Metrics, myConceptMetric, myConceptNode, myConceptNode_Reference, myConceptNum_Value, myConceptOffloading, myConceptOperate_Actuator, myConceptPeriod, myConceptQoSCluster, myConceptQoSNode, myConceptQoSRegion, myConceptQoS_Cont, myConceptQoS_Event, myConceptRedeployment, myConceptRegion, myConceptRegion_Reference, myConceptResource_Expression, myConceptScaling, myConceptSensor, myConceptSensorEvent, myConceptSensorTypeEvent, myConceptSensor_Actuator_Type, myConceptSensor_Type, myConceptThreshold_Value, myConceptTopic, myConceptVolume, myConceptWorkerReference);
+    return Arrays.asList(myConceptAction, myConceptActuator, myConceptActuator_Type, myConceptAdaptationRule, myConceptApplication, myConceptCloud_Node, myConceptCluster, myConceptCluster_Reference, myConceptContainer, myConceptContainer_Reference, myConceptEdge_Node, myConceptExp_LayerReg, myConceptFog_Node, myConceptGrammar, myConceptIoT_Device, myConceptIoT_Device_Reference, myConceptIoT_System, myConceptList_Of_Metrics, myConceptMetric, myConceptNode, myConceptNode_Reference, myConceptNum_Value, myConceptOffloading, myConceptOperate_Actuator, myConceptPeriod, myConceptQoSCluster, myConceptQoSContainer, myConceptQoSNode, myConceptQoSRegion, myConceptQoS_Event, myConceptRedeployment, myConceptRegion, myConceptRegion_Reference, myConceptResource_Expression, myConceptScaling, myConceptSensor, myConceptSensorEvent, myConceptSensorTypeEvent, myConceptSensor_Actuator_Type, myConceptSensor_Type, myConceptThreshold_Value, myConceptTopic, myConceptVolume, myConceptWorkerReference);
   }
 
   @Override
@@ -143,12 +143,12 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptPeriod;
       case LanguageConceptSwitch.QoSCluster:
         return myConceptQoSCluster;
+      case LanguageConceptSwitch.QoSContainer:
+        return myConceptQoSContainer;
       case LanguageConceptSwitch.QoSNode:
         return myConceptQoSNode;
       case LanguageConceptSwitch.QoSRegion:
         return myConceptQoSRegion;
-      case LanguageConceptSwitch.QoS_Cont:
-        return myConceptQoS_Cont;
       case LanguageConceptSwitch.QoS_Event:
         return myConceptQoS_Event;
       case LanguageConceptSwitch.Redeployment:
@@ -466,6 +466,15 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.associate("cluster", 0x5306924001b2832eL).target(0x222ccd66f9d64014L, 0x8569354bddee8138L, 0x23381bd32c6859a9L).optional(false).origin("5982629958612321070").done();
     return b.create();
   }
+  private static ConceptDescriptor createDescriptorForQoSContainer() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("IoT_runtime", "QoSContainer", 0x222ccd66f9d64014L, 0x8569354bddee8138L, 0x25ba6d72b2d8c740L);
+    b.class_(false, false, false);
+    b.super_("IoT_runtime.structure.Resource_Expression", 0x222ccd66f9d64014L, 0x8569354bddee8138L, 0x5306924001a481deL);
+    b.origin("r:589c5fd8-b628-4aae-9e87-31a99b5068a7(IoT_runtime.structure)/2718605664465766208");
+    b.version(2);
+    b.associate("container", 0x25ba6d72b2d8c741L).target(0x222ccd66f9d64014L, 0x8569354bddee8138L, 0x330981c29fe0fb09L).optional(false).origin("2718605664465766209").done();
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForQoSNode() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("IoT_runtime", "QoSNode", 0x222ccd66f9d64014L, 0x8569354bddee8138L, 0x5306924001c7aec1L);
     b.class_(false, false, false);
@@ -484,15 +493,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.property("layer", 0x5306924001ab7d87L).type(MetaIdFactory.dataTypeId(0x222ccd66f9d64014L, 0x8569354bddee8138L, 0x53069240019d60c8L)).origin("5982629958611860871").done();
     b.property("quantity", 0x5306924001d611c9L).type(PrimitiveTypeId.STRING).origin("5982629958614651337").done();
     b.associate("region", 0x5306924001454deaL).target(0x222ccd66f9d64014L, 0x8569354bddee8138L, 0x6175b41c53adc15cL).optional(true).origin("5982629958605164010").done();
-    return b.create();
-  }
-  private static ConceptDescriptor createDescriptorForQoS_Cont() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("IoT_runtime", "QoS_Cont", 0x222ccd66f9d64014L, 0x8569354bddee8138L, 0x25ba6d72b2d8c740L);
-    b.class_(false, false, false);
-    b.super_("IoT_runtime.structure.Resource_Expression", 0x222ccd66f9d64014L, 0x8569354bddee8138L, 0x5306924001a481deL);
-    b.origin("r:589c5fd8-b628-4aae-9e87-31a99b5068a7(IoT_runtime.structure)/2718605664465766208");
-    b.version(2);
-    b.associate("container", 0x25ba6d72b2d8c741L).target(0x222ccd66f9d64014L, 0x8569354bddee8138L, 0x330981c29fe0fb09L).optional(false).origin("2718605664465766209").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForQoS_Event() {

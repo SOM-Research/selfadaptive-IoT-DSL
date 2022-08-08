@@ -11389,7 +11389,7 @@
   </node>
   <node concept="24kQdi" id="2mUrnaMQctc">
     <property role="3GE5qa" value="AdaptationRules" />
-    <ref role="1XX52x" to="40ag:2mUrnaMQct0" resolve="QoS_Cont" />
+    <ref role="1XX52x" to="40ag:2mUrnaMQct0" resolve="QoSContainer" />
     <node concept="1iCGBv" id="2mUrnaMQcte" role="2wV5jI">
       <ref role="1NtTu8" to="40ag:2mUrnaMQct1" resolve="container" />
       <node concept="1sVBvm" id="2mUrnaMQctg" role="1sWHZn">
