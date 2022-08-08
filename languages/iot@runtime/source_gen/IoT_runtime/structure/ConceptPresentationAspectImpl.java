@@ -20,11 +20,7 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_Container;
   private ConceptPresentation props_Container_Reference;
   private ConceptPresentation props_Edge_Node;
-  private ConceptPresentation props_Exp_ClusterLayer;
-  private ConceptPresentation props_Exp_Cont;
   private ConceptPresentation props_Exp_LayerReg;
-  private ConceptPresentation props_Exp_Node;
-  private ConceptPresentation props_Exp_RegLayer;
   private ConceptPresentation props_Fog_Node;
   private ConceptPresentation props_Grammar;
   private ConceptPresentation props_IoT_Device;
@@ -38,6 +34,10 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_Offloading;
   private ConceptPresentation props_Operate_Actuator;
   private ConceptPresentation props_Period;
+  private ConceptPresentation props_QoSCluster;
+  private ConceptPresentation props_QoSNode;
+  private ConceptPresentation props_QoSRegion;
+  private ConceptPresentation props_QoS_Cont;
   private ConceptPresentation props_QoS_Event;
   private ConceptPresentation props_Redeployment;
   private ConceptPresentation props_Region;
@@ -45,9 +45,9 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
   private ConceptPresentation props_Resource_Expression;
   private ConceptPresentation props_Scaling;
   private ConceptPresentation props_Sensor;
+  private ConceptPresentation props_SensorEvent;
+  private ConceptPresentation props_SensorTypeEvent;
   private ConceptPresentation props_Sensor_Actuator_Type;
-  private ConceptPresentation props_Sensor_Event;
-  private ConceptPresentation props_Sensor_Events;
   private ConceptPresentation props_Sensor_Type;
   private ConceptPresentation props_Threshold_Value;
   private ConceptPresentation props_Topic;
@@ -135,20 +135,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Edge_Node = cpb.create();
         }
         return props_Edge_Node;
-      case LanguageConceptSwitch.Exp_ClusterLayer:
-        if (props_Exp_ClusterLayer == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.presentationByReference(0x222ccd66f9d64014L, 0x8569354bddee8138L, 0x5306924001b2832bL, 0x5306924001b2832eL, "cluster", "", "");
-          props_Exp_ClusterLayer = cpb.create();
-        }
-        return props_Exp_ClusterLayer;
-      case LanguageConceptSwitch.Exp_Cont:
-        if (props_Exp_Cont == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.presentationByReference(0x222ccd66f9d64014L, 0x8569354bddee8138L, 0x25ba6d72b2d8c740L, 0x25ba6d72b2d8c741L, "container", "", "");
-          props_Exp_Cont = cpb.create();
-        }
-        return props_Exp_Cont;
       case LanguageConceptSwitch.Exp_LayerReg:
         if (props_Exp_LayerReg == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -156,20 +142,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Exp_LayerReg = cpb.create();
         }
         return props_Exp_LayerReg;
-      case LanguageConceptSwitch.Exp_Node:
-        if (props_Exp_Node == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.presentationByReference(0x222ccd66f9d64014L, 0x8569354bddee8138L, 0x5306924001c7aec1L, 0x5306924001c7aec2L, "node", "", "");
-          props_Exp_Node = cpb.create();
-        }
-        return props_Exp_Node;
-      case LanguageConceptSwitch.Exp_RegLayer:
-        if (props_Exp_RegLayer == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.presentationByReference(0x222ccd66f9d64014L, 0x8569354bddee8138L, 0xcbb176ababbb082L, 0x5306924001454deaL, "region", "", "");
-          props_Exp_RegLayer = cpb.create();
-        }
-        return props_Exp_RegLayer;
       case LanguageConceptSwitch.Fog_Node:
         if (props_Fog_Node == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -259,6 +231,34 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Period = cpb.create();
         }
         return props_Period;
+      case LanguageConceptSwitch.QoSCluster:
+        if (props_QoSCluster == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByReference(0x222ccd66f9d64014L, 0x8569354bddee8138L, 0x5306924001b2832bL, 0x5306924001b2832eL, "cluster", "", "");
+          props_QoSCluster = cpb.create();
+        }
+        return props_QoSCluster;
+      case LanguageConceptSwitch.QoSNode:
+        if (props_QoSNode == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByReference(0x222ccd66f9d64014L, 0x8569354bddee8138L, 0x5306924001c7aec1L, 0x5306924001c7aec2L, "node", "", "");
+          props_QoSNode = cpb.create();
+        }
+        return props_QoSNode;
+      case LanguageConceptSwitch.QoSRegion:
+        if (props_QoSRegion == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByReference(0x222ccd66f9d64014L, 0x8569354bddee8138L, 0xcbb176ababbb082L, 0x5306924001454deaL, "region", "", "");
+          props_QoSRegion = cpb.create();
+        }
+        return props_QoSRegion;
+      case LanguageConceptSwitch.QoS_Cont:
+        if (props_QoS_Cont == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByReference(0x222ccd66f9d64014L, 0x8569354bddee8138L, 0x25ba6d72b2d8c740L, 0x25ba6d72b2d8c741L, "container", "", "");
+          props_QoS_Cont = cpb.create();
+        }
+        return props_QoS_Cont;
       case LanguageConceptSwitch.QoS_Event:
         if (props_QoS_Event == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -307,6 +307,20 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Sensor = cpb.create();
         }
         return props_Sensor;
+      case LanguageConceptSwitch.SensorEvent:
+        if (props_SensorEvent == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByReference(0x222ccd66f9d64014L, 0x8569354bddee8138L, 0xcbb176abacfab9fL, 0xcbb176abacfaba0L, "sensor", "", "");
+          props_SensorEvent = cpb.create();
+        }
+        return props_SensorEvent;
+      case LanguageConceptSwitch.SensorTypeEvent:
+        if (props_SensorTypeEvent == null) {
+          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
+          cpb.presentationByReference(0x222ccd66f9d64014L, 0x8569354bddee8138L, 0x53069240016af7c7L, 0x53069240016af7caL, "region", "", "");
+          props_SensorTypeEvent = cpb.create();
+        }
+        return props_SensorTypeEvent;
       case LanguageConceptSwitch.Sensor_Actuator_Type:
         if (props_Sensor_Actuator_Type == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
@@ -314,20 +328,6 @@ public class ConceptPresentationAspectImpl extends ConceptPresentationAspectBase
           props_Sensor_Actuator_Type = cpb.create();
         }
         return props_Sensor_Actuator_Type;
-      case LanguageConceptSwitch.Sensor_Event:
-        if (props_Sensor_Event == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.presentationByReference(0x222ccd66f9d64014L, 0x8569354bddee8138L, 0xcbb176abacfab9fL, 0xcbb176abacfaba0L, "sensor", "", "");
-          props_Sensor_Event = cpb.create();
-        }
-        return props_Sensor_Event;
-      case LanguageConceptSwitch.Sensor_Events:
-        if (props_Sensor_Events == null) {
-          ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();
-          cpb.presentationByReference(0x222ccd66f9d64014L, 0x8569354bddee8138L, 0x53069240016af7c7L, 0x53069240016af7caL, "region", "", "");
-          props_Sensor_Events = cpb.create();
-        }
-        return props_Sensor_Events;
       case LanguageConceptSwitch.Sensor_Type:
         if (props_Sensor_Type == null) {
           ConceptPresentationBuilder cpb = new ConceptPresentationBuilder();

@@ -87,7 +87,7 @@
     <classNode dependClassName="IoT_runtime.constraints.Node_Constraints" />
     <classNode dependClassName="IoT_runtime.constraints.Region_Constraints" />
     <classNode dependClassName="IoT_runtime.constraints.Region_Reference_Constraints" />
-    <classNode dependClassName="IoT_runtime.constraints.Sensor_Events_Constraints" />
+    <classNode dependClassName="IoT_runtime.constraints.SensorTypeEvent_Constraints" />
     <classNode dependClassName="IoT_runtime.constraints.WorkerReference_Constraints" />
     <classNode dependClassName="java.lang.Override" />
     <classNode dependClassName="jetbrains.mps.lang.smodel.ConceptSwitchIndex" />
@@ -201,7 +201,7 @@
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SConcept" />
     <classNode extendsClassName="jetbrains.mps.smodel.runtime.base.BaseConstraintsDescriptor" />
   </dependency>
-  <dependency className="IoT_runtime.constraints.Sensor_Events_Constraints">
+  <dependency className="IoT_runtime.constraints.SensorTypeEvent_Constraints">
     <classNode dependClassName="IoT_runtime.behavior.Sensor_Type__BehaviorDescriptor" />
     <classNode dependClassName="java.lang.Iterable" />
     <classNode dependClassName="java.lang.Override" />

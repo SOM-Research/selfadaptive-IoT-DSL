@@ -10848,7 +10848,7 @@
   </node>
   <node concept="24kQdi" id="MV5QEUIV2d">
     <property role="3GE5qa" value="AdaptationRules" />
-    <ref role="1XX52x" to="40ag:MV5QEUIV22" resolve="Exp_RegLayer" />
+    <ref role="1XX52x" to="40ag:MV5QEUIV22" resolve="QoSRegion" />
     <node concept="3EZMnI" id="5c6$$01hkRJ" role="2wV5jI">
       <node concept="1iCGBv" id="5c6$$01hkRQ" role="3EZMnx">
         <ref role="1NtTu8" to="40ag:5c6$$01hkRE" resolve="region" />
@@ -10872,7 +10872,7 @@
   </node>
   <node concept="24kQdi" id="MV5QEUNUIE">
     <property role="3GE5qa" value="AdaptationRules" />
-    <ref role="1XX52x" to="40ag:MV5QEUNUIv" resolve="Sensor_Event" />
+    <ref role="1XX52x" to="40ag:MV5QEUNUIv" resolve="SensorEvent" />
     <node concept="3EZMnI" id="3OwpQzwJi$_" role="2wV5jI">
       <node concept="3F0ifn" id="3OwpQzwJi$G" role="3EZMnx">
         <property role="3F0ifm" value="(" />
@@ -10894,7 +10894,7 @@
   </node>
   <node concept="24kQdi" id="5c6$$01qJvk">
     <property role="3GE5qa" value="AdaptationRules" />
-    <ref role="1XX52x" to="40ag:5c6$$01qJv7" resolve="Sensor_Events" />
+    <ref role="1XX52x" to="40ag:5c6$$01qJv7" resolve="SensorTypeEvent" />
     <node concept="3EZMnI" id="5c6$$01qJvm" role="2wV5jI">
       <node concept="3F0ifn" id="3OwpQzwJi_N" role="3EZMnx">
         <property role="3F0ifm" value="(" />
@@ -10928,7 +10928,7 @@
   </node>
   <node concept="24kQdi" id="5c6$$01GCcR">
     <property role="3GE5qa" value="AdaptationRules" />
-    <ref role="1XX52x" to="40ag:5c6$$01GCcF" resolve="Exp_ClusterLayer" />
+    <ref role="1XX52x" to="40ag:5c6$$01GCcF" resolve="QoSCluster" />
     <node concept="3EZMnI" id="5c6$$01GCcT" role="2wV5jI">
       <node concept="1iCGBv" id="5c6$$01GCcU" role="3EZMnx">
         <ref role="1NtTu8" to="40ag:5c6$$01GCcI" resolve="cluster" />
@@ -10952,7 +10952,7 @@
   </node>
   <node concept="24kQdi" id="5c6$$01LUVd">
     <property role="3GE5qa" value="AdaptationRules" />
-    <ref role="1XX52x" to="40ag:5c6$$01LUV1" resolve="Exp_Node" />
+    <ref role="1XX52x" to="40ag:5c6$$01LUV1" resolve="QoSNode" />
     <node concept="1iCGBv" id="5c6$$01LUVi" role="2wV5jI">
       <ref role="1NtTu8" to="40ag:5c6$$01LUV2" resolve="node" />
       <node concept="1sVBvm" id="5c6$$01LUVk" role="1sWHZn">
@@ -11389,7 +11389,7 @@
   </node>
   <node concept="24kQdi" id="2mUrnaMQctc">
     <property role="3GE5qa" value="AdaptationRules" />
-    <ref role="1XX52x" to="40ag:2mUrnaMQct0" resolve="Exp_Cont" />
+    <ref role="1XX52x" to="40ag:2mUrnaMQct0" resolve="QoS_Cont" />
     <node concept="1iCGBv" id="2mUrnaMQcte" role="2wV5jI">
       <ref role="1NtTu8" to="40ag:2mUrnaMQct1" resolve="container" />
       <node concept="1sVBvm" id="2mUrnaMQctg" role="1sWHZn">

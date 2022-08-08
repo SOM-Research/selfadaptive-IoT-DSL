@@ -675,19 +675,19 @@
     </file>
   </root>
   <root nodeRef="r:ef5b13d7-d5e8-4ebf-a18f-76c256afe20a(IoT_runtime.constraints)/5982629958615616538">
-    <file name="Sensor_Events_Constraints.java">
-      <node id="5982629958615616538" at="30,38,31,37" concept="10" />
+    <file name="SensorTypeEvent_Constraints.java">
+      <node id="5982629958615616538" at="30,40,31,39" concept="10" />
       <node id="5982629958615616539" at="42,63,43,126" concept="6" />
       <node id="5982629958618053770" at="48,47,49,177" concept="6" />
       <node id="5982629958615778253" at="51,15,52,54" concept="6" />
       <node id="5982629958615616538" at="56,6,57,131" concept="5" />
       <node id="5982629958615616539" at="57,131,58,42" concept="1" />
       <node id="5982629958615616538" at="58,42,59,22" concept="6" />
-      <node id="5982629958615616538" at="63,0,64,0" concept="8" trace="Sensor_Events$lo" />
+      <node id="5982629958615616538" at="63,0,64,0" concept="8" trace="SensorTypeEvent$lo" />
       <node id="5982629958615616538" at="64,0,65,0" concept="8" trace="Sensor_Type$$o" />
       <node id="5982629958615616538" at="68,0,69,0" concept="8" trace="sensorType$YlTT" />
       <node id="5982629958615616538" at="69,0,70,0" concept="8" trace="region$o6rh" />
-      <node id="5982629958615616538" at="30,0,33,0" concept="0" trace="Sensor_Events_Constraints#()V" />
+      <node id="5982629958615616538" at="30,0,33,0" concept="0" trace="SensorTypeEvent_Constraints#()V" />
       <node id="5982629958618053768" at="48,0,51,0" concept="4" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
       <node id="5982629958615616539" at="41,0,45,0" concept="4" trace="getSearchScopeValidatorNode#()Lorg/jetbrains/mps/openapi/model/SNodeReference;" />
       <node id="5982629958615774291" at="46,80,51,15" concept="5" />
@@ -696,7 +696,7 @@
       <node id="5982629958615616539" at="37,0,56,0" concept="4" trace="getScopeProvider#()Ljetbrains/mps/smodel/runtime/ReferenceScopeProvider;" />
       <node id="5982629958615616539" at="35,90,56,6" concept="5" />
       <node id="5982629958615616538" at="34,0,61,0" concept="4" trace="getSpecifiedReferences#()Ljava/util/Map;" />
-      <scope id="5982629958615616538" at="30,38,31,37" />
+      <scope id="5982629958615616538" at="30,40,31,39" />
       <scope id="5982629958615616539" at="42,63,43,126" />
       <scope id="5982629958618053769" at="48,47,49,177" />
       <scope id="5982629958615616538" at="30,0,33,0" />
@@ -717,12 +717,12 @@
         <var name="references" id="5982629958615616538" />
       </scope>
       <scope id="5982629958615616538" at="34,0,61,0" />
-      <unit id="5982629958618053768" at="47,177,51,13" name="IoT_runtime.constraints.Sensor_Events_Constraints$1$1$1" />
-      <unit id="5982629958615616538" at="62,0,66,0" name="IoT_runtime.constraints.Sensor_Events_Constraints$CONCEPTS" />
-      <unit id="5982629958615616538" at="67,0,71,0" name="IoT_runtime.constraints.Sensor_Events_Constraints$LINKS" />
-      <unit id="5982629958615616539" at="40,19,54,9" name="IoT_runtime.constraints.Sensor_Events_Constraints$1$1" />
-      <unit id="5982629958615616539" at="36,48,56,5" name="IoT_runtime.constraints.Sensor_Events_Constraints$1" />
-      <unit id="5982629958615616538" at="29,0,72,0" name="IoT_runtime.constraints.Sensor_Events_Constraints" />
+      <unit id="5982629958618053768" at="47,177,51,13" name="IoT_runtime.constraints.SensorTypeEvent_Constraints$1$1$1" />
+      <unit id="5982629958615616538" at="62,0,66,0" name="IoT_runtime.constraints.SensorTypeEvent_Constraints$CONCEPTS" />
+      <unit id="5982629958615616538" at="67,0,71,0" name="IoT_runtime.constraints.SensorTypeEvent_Constraints$LINKS" />
+      <unit id="5982629958615616539" at="40,19,54,9" name="IoT_runtime.constraints.SensorTypeEvent_Constraints$1$1" />
+      <unit id="5982629958615616539" at="36,48,56,5" name="IoT_runtime.constraints.SensorTypeEvent_Constraints$1" />
+      <unit id="5982629958615616538" at="29,0,72,0" name="IoT_runtime.constraints.SensorTypeEvent_Constraints" />
     </file>
   </root>
 </debug-info>

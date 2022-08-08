@@ -49,34 +49,6 @@
     <file name="EditorAspectDescriptorImpl.java">
       <unit at="20,0,150,0" name="IoT_runtime.editor.EditorAspectDescriptorImpl" />
     </file>
-    <file name="Exp_ClusterLayer_SubstituteMenu.java">
-      <unit at="90,0,93,0" name="IoT_runtime.editor.Exp_ClusterLayer_SubstituteMenu$CONCEPTS" />
-      <unit at="94,0,97,0" name="IoT_runtime.editor.Exp_ClusterLayer_SubstituteMenu$LINKS" />
-      <unit at="49,0,68,0" name="IoT_runtime.editor.Exp_ClusterLayer_SubstituteMenu$SMP_ReferenceScope_x5h1ov_a" />
-      <unit at="68,0,89,0" name="IoT_runtime.editor.Exp_ClusterLayer_SubstituteMenu$SMP_Subconcepts_x5h1ov_b" />
-      <unit at="26,0,98,0" name="IoT_runtime.editor.Exp_ClusterLayer_SubstituteMenu" />
-    </file>
-    <file name="Exp_Cont_SubstituteMenu.java">
-      <unit at="90,0,93,0" name="IoT_runtime.editor.Exp_Cont_SubstituteMenu$CONCEPTS" />
-      <unit at="94,0,97,0" name="IoT_runtime.editor.Exp_Cont_SubstituteMenu$LINKS" />
-      <unit at="49,0,68,0" name="IoT_runtime.editor.Exp_Cont_SubstituteMenu$SMP_ReferenceScope_eq8kle_a" />
-      <unit at="68,0,89,0" name="IoT_runtime.editor.Exp_Cont_SubstituteMenu$SMP_Subconcepts_eq8kle_b" />
-      <unit at="26,0,98,0" name="IoT_runtime.editor.Exp_Cont_SubstituteMenu" />
-    </file>
-    <file name="Exp_Node_SubstituteMenu.java">
-      <unit at="90,0,93,0" name="IoT_runtime.editor.Exp_Node_SubstituteMenu$CONCEPTS" />
-      <unit at="94,0,97,0" name="IoT_runtime.editor.Exp_Node_SubstituteMenu$LINKS" />
-      <unit at="49,0,68,0" name="IoT_runtime.editor.Exp_Node_SubstituteMenu$SMP_ReferenceScope_ve95ui_a" />
-      <unit at="68,0,89,0" name="IoT_runtime.editor.Exp_Node_SubstituteMenu$SMP_Subconcepts_ve95ui_b" />
-      <unit at="26,0,98,0" name="IoT_runtime.editor.Exp_Node_SubstituteMenu" />
-    </file>
-    <file name="Exp_RegLayer_SubstituteMenu.java">
-      <unit at="90,0,93,0" name="IoT_runtime.editor.Exp_RegLayer_SubstituteMenu$CONCEPTS" />
-      <unit at="94,0,97,0" name="IoT_runtime.editor.Exp_RegLayer_SubstituteMenu$LINKS" />
-      <unit at="49,0,68,0" name="IoT_runtime.editor.Exp_RegLayer_SubstituteMenu$SMP_ReferenceScope_em6pss_a" />
-      <unit at="68,0,89,0" name="IoT_runtime.editor.Exp_RegLayer_SubstituteMenu$SMP_Subconcepts_em6pss_b" />
-      <unit at="26,0,98,0" name="IoT_runtime.editor.Exp_RegLayer_SubstituteMenu" />
-    </file>
     <file name="IoT_Device_Reference_SubstituteMenu.java">
       <unit at="90,0,93,0" name="IoT_runtime.editor.IoT_Device_Reference_SubstituteMenu$CONCEPTS" />
       <unit at="94,0,97,0" name="IoT_runtime.editor.IoT_Device_Reference_SubstituteMenu$LINKS" />
@@ -90,6 +62,34 @@
       <unit at="49,0,68,0" name="IoT_runtime.editor.Node_Reference_SubstituteMenu$SMP_ReferenceScope_mt6rl1_a" />
       <unit at="68,0,89,0" name="IoT_runtime.editor.Node_Reference_SubstituteMenu$SMP_Subconcepts_mt6rl1_b" />
       <unit at="26,0,98,0" name="IoT_runtime.editor.Node_Reference_SubstituteMenu" />
+    </file>
+    <file name="QoSCluster_SubstituteMenu.java">
+      <unit at="90,0,93,0" name="IoT_runtime.editor.QoSCluster_SubstituteMenu$CONCEPTS" />
+      <unit at="94,0,97,0" name="IoT_runtime.editor.QoSCluster_SubstituteMenu$LINKS" />
+      <unit at="49,0,68,0" name="IoT_runtime.editor.QoSCluster_SubstituteMenu$SMP_ReferenceScope_83fx9l_a" />
+      <unit at="68,0,89,0" name="IoT_runtime.editor.QoSCluster_SubstituteMenu$SMP_Subconcepts_83fx9l_b" />
+      <unit at="26,0,98,0" name="IoT_runtime.editor.QoSCluster_SubstituteMenu" />
+    </file>
+    <file name="QoSNode_SubstituteMenu.java">
+      <unit at="90,0,93,0" name="IoT_runtime.editor.QoSNode_SubstituteMenu$CONCEPTS" />
+      <unit at="94,0,97,0" name="IoT_runtime.editor.QoSNode_SubstituteMenu$LINKS" />
+      <unit at="49,0,68,0" name="IoT_runtime.editor.QoSNode_SubstituteMenu$SMP_ReferenceScope_h97e68_a" />
+      <unit at="68,0,89,0" name="IoT_runtime.editor.QoSNode_SubstituteMenu$SMP_Subconcepts_h97e68_b" />
+      <unit at="26,0,98,0" name="IoT_runtime.editor.QoSNode_SubstituteMenu" />
+    </file>
+    <file name="QoSRegion_SubstituteMenu.java">
+      <unit at="90,0,93,0" name="IoT_runtime.editor.QoSRegion_SubstituteMenu$CONCEPTS" />
+      <unit at="94,0,97,0" name="IoT_runtime.editor.QoSRegion_SubstituteMenu$LINKS" />
+      <unit at="49,0,68,0" name="IoT_runtime.editor.QoSRegion_SubstituteMenu$SMP_ReferenceScope_69d1tz_a" />
+      <unit at="68,0,89,0" name="IoT_runtime.editor.QoSRegion_SubstituteMenu$SMP_Subconcepts_69d1tz_b" />
+      <unit at="26,0,98,0" name="IoT_runtime.editor.QoSRegion_SubstituteMenu" />
+    </file>
+    <file name="QoS_Cont_SubstituteMenu.java">
+      <unit at="90,0,93,0" name="IoT_runtime.editor.QoS_Cont_SubstituteMenu$CONCEPTS" />
+      <unit at="94,0,97,0" name="IoT_runtime.editor.QoS_Cont_SubstituteMenu$LINKS" />
+      <unit at="49,0,68,0" name="IoT_runtime.editor.QoS_Cont_SubstituteMenu$SMP_ReferenceScope_q5963y_a" />
+      <unit at="68,0,89,0" name="IoT_runtime.editor.QoS_Cont_SubstituteMenu$SMP_Subconcepts_q5963y_b" />
+      <unit at="26,0,98,0" name="IoT_runtime.editor.QoS_Cont_SubstituteMenu" />
     </file>
     <file name="QoS_Event_SubstituteMenu.java">
       <unit at="90,0,93,0" name="IoT_runtime.editor.QoS_Event_SubstituteMenu$CONCEPTS" />
@@ -105,20 +105,20 @@
       <unit at="68,0,89,0" name="IoT_runtime.editor.Region_Reference_SubstituteMenu$SMP_Subconcepts_ilxbyk_b" />
       <unit at="26,0,98,0" name="IoT_runtime.editor.Region_Reference_SubstituteMenu" />
     </file>
-    <file name="Sensor_Event_SubstituteMenu.java">
-      <unit at="90,0,93,0" name="IoT_runtime.editor.Sensor_Event_SubstituteMenu$CONCEPTS" />
-      <unit at="94,0,97,0" name="IoT_runtime.editor.Sensor_Event_SubstituteMenu$LINKS" />
-      <unit at="49,0,68,0" name="IoT_runtime.editor.Sensor_Event_SubstituteMenu$SMP_ReferenceScope_obibn5_a" />
-      <unit at="68,0,89,0" name="IoT_runtime.editor.Sensor_Event_SubstituteMenu$SMP_Subconcepts_obibn5_b" />
-      <unit at="26,0,98,0" name="IoT_runtime.editor.Sensor_Event_SubstituteMenu" />
+    <file name="SensorEvent_SubstituteMenu.java">
+      <unit at="90,0,93,0" name="IoT_runtime.editor.SensorEvent_SubstituteMenu$CONCEPTS" />
+      <unit at="94,0,97,0" name="IoT_runtime.editor.SensorEvent_SubstituteMenu$LINKS" />
+      <unit at="49,0,68,0" name="IoT_runtime.editor.SensorEvent_SubstituteMenu$SMP_ReferenceScope_woiczg_a" />
+      <unit at="68,0,89,0" name="IoT_runtime.editor.SensorEvent_SubstituteMenu$SMP_Subconcepts_woiczg_b" />
+      <unit at="26,0,98,0" name="IoT_runtime.editor.SensorEvent_SubstituteMenu" />
     </file>
-    <file name="Sensor_Events_SubstituteMenu.java">
-      <unit at="124,0,127,0" name="IoT_runtime.editor.Sensor_Events_SubstituteMenu$CONCEPTS" />
-      <unit at="128,0,131,0" name="IoT_runtime.editor.Sensor_Events_SubstituteMenu$LINKS" />
-      <unit at="102,0,123,0" name="IoT_runtime.editor.Sensor_Events_SubstituteMenu$SMP_Subconcepts_p28xt9_b" />
-      <unit at="76,0,101,0" name="IoT_runtime.editor.Sensor_Events_SubstituteMenu$SMP_ReferenceScope_p28xt9_a$Item" />
-      <unit at="53,0,102,0" name="IoT_runtime.editor.Sensor_Events_SubstituteMenu$SMP_ReferenceScope_p28xt9_a" />
-      <unit at="30,0,132,0" name="IoT_runtime.editor.Sensor_Events_SubstituteMenu" />
+    <file name="SensorTypeEvent_SubstituteMenu.java">
+      <unit at="124,0,127,0" name="IoT_runtime.editor.SensorTypeEvent_SubstituteMenu$CONCEPTS" />
+      <unit at="128,0,131,0" name="IoT_runtime.editor.SensorTypeEvent_SubstituteMenu$LINKS" />
+      <unit at="102,0,123,0" name="IoT_runtime.editor.SensorTypeEvent_SubstituteMenu$SMP_Subconcepts_ljjx0p_b" />
+      <unit at="76,0,101,0" name="IoT_runtime.editor.SensorTypeEvent_SubstituteMenu$SMP_ReferenceScope_ljjx0p_a$Item" />
+      <unit at="53,0,102,0" name="IoT_runtime.editor.SensorTypeEvent_SubstituteMenu$SMP_ReferenceScope_ljjx0p_a" />
+      <unit at="30,0,132,0" name="IoT_runtime.editor.SensorTypeEvent_SubstituteMenu" />
     </file>
     <file name="WorkerReference_SubstituteMenu.java">
       <unit at="90,0,93,0" name="IoT_runtime.editor.WorkerReference_SubstituteMenu$CONCEPTS" />
@@ -3555,7 +3555,7 @@
     </file>
   </root>
   <root nodeRef="r:caf42758-b12c-43b6-8955-709b54c96c6b(IoT_runtime.editor)/2718605664465766220">
-    <file name="Exp_Cont_Editor.java">
+    <file name="QoS_Cont_Editor.java">
       <node id="2718605664465766220" at="11,79,12,74" concept="9" />
       <node id="2718605664465766220" at="11,0,14,0" concept="7" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <scope id="2718605664465766220" at="11,79,12,74" />
@@ -3563,9 +3563,9 @@
         <var name="editorContext" id="2718605664465766220" />
         <var name="node" id="2718605664465766220" />
       </scope>
-      <unit id="2718605664465766220" at="10,0,15,0" name="IoT_runtime.editor.Exp_Cont_Editor" />
+      <unit id="2718605664465766220" at="10,0,15,0" name="IoT_runtime.editor.QoS_Cont_Editor" />
     </file>
-    <file name="Exp_Cont_EditorBuilder_a.java">
+    <file name="QoS_Cont_EditorBuilder_a.java">
       <node id="2718605664465766220" at="45,88,46,19" concept="14" />
       <node id="2718605664465766220" at="46,19,47,18" concept="2" />
       <node id="2718605664465766220" at="52,26,53,18" concept="9" />
@@ -3632,7 +3632,7 @@
       <node id="2718605664465766220" at="101,0,104,0" concept="7" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
       <node id="2718605664465766224" at="122,0,125,0" concept="7" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="2718605664465766234" at="147,0,150,0" concept="7" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
-      <node id="2718605664465766220" at="45,0,49,0" concept="1" trace="Exp_Cont_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="2718605664465766220" at="45,0,49,0" concept="1" trace="QoS_Cont_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="2718605664465766220" at="93,0,97,5" concept="6" />
       <node id="2718605664465766220" at="50,0,55,0" concept="7" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="2718605664465766220" at="71,72,76,45" concept="8" />
@@ -3719,30 +3719,30 @@
         <var name="referenceLink" id="2718605664465766220" />
       </scope>
       <scope id="2718605664465766220" at="68,0,111,0" />
-      <unit id="2718605664465766220" at="162,0,165,0" name="IoT_runtime.editor.Exp_Cont_EditorBuilder_a$LINKS" />
-      <unit id="2718605664465766220" at="171,0,174,0" name="IoT_runtime.editor.Exp_Cont_EditorBuilder_a$PROPS" />
-      <unit id="2718605664465766220" at="72,74,76,9" name="IoT_runtime.editor.Exp_Cont_EditorBuilder_a$1$1" />
-      <unit id="2718605664465766220" at="100,102,104,5" name="IoT_runtime.editor.Exp_Cont_EditorBuilder_a$2" />
-      <unit id="2718605664465766234" at="146,104,150,9" name="IoT_runtime.editor.Exp_Cont_EditorBuilder_a$Inline_Builder0$1" />
-      <unit id="2718605664465766220" at="166,0,170,0" name="IoT_runtime.editor.Exp_Cont_EditorBuilder_a$CONCEPTS" />
-      <unit id="2718605664465766220" at="70,42,89,5" name="IoT_runtime.editor.Exp_Cont_EditorBuilder_a$1" />
-      <unit id="2718605664465766224" at="111,0,161,0" name="IoT_runtime.editor.Exp_Cont_EditorBuilder_a$Inline_Builder0" />
-      <unit id="2718605664465766220" at="41,0,175,0" name="IoT_runtime.editor.Exp_Cont_EditorBuilder_a" />
+      <unit id="2718605664465766220" at="162,0,165,0" name="IoT_runtime.editor.QoS_Cont_EditorBuilder_a$LINKS" />
+      <unit id="2718605664465766220" at="171,0,174,0" name="IoT_runtime.editor.QoS_Cont_EditorBuilder_a$PROPS" />
+      <unit id="2718605664465766220" at="72,74,76,9" name="IoT_runtime.editor.QoS_Cont_EditorBuilder_a$1$1" />
+      <unit id="2718605664465766220" at="100,102,104,5" name="IoT_runtime.editor.QoS_Cont_EditorBuilder_a$2" />
+      <unit id="2718605664465766234" at="146,104,150,9" name="IoT_runtime.editor.QoS_Cont_EditorBuilder_a$Inline_Builder0$1" />
+      <unit id="2718605664465766220" at="166,0,170,0" name="IoT_runtime.editor.QoS_Cont_EditorBuilder_a$CONCEPTS" />
+      <unit id="2718605664465766220" at="70,42,89,5" name="IoT_runtime.editor.QoS_Cont_EditorBuilder_a$1" />
+      <unit id="2718605664465766224" at="111,0,161,0" name="IoT_runtime.editor.QoS_Cont_EditorBuilder_a$Inline_Builder0" />
+      <unit id="2718605664465766220" at="41,0,175,0" name="IoT_runtime.editor.QoS_Cont_EditorBuilder_a" />
     </file>
   </root>
   <root nodeRef="r:caf42758-b12c-43b6-8955-709b54c96c6b(IoT_runtime.editor)/5982629958607632340">
-    <file name="Sensor_Events_Editor.java">
-      <node id="5982629958607632340" at="11,79,12,79" concept="9" />
+    <file name="SensorTypeEvent_Editor.java">
+      <node id="5982629958607632340" at="11,79,12,81" concept="9" />
       <node id="5982629958607632340" at="11,0,14,0" concept="7" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="5982629958607632340" at="11,79,12,79" />
+      <scope id="5982629958607632340" at="11,79,12,81" />
       <scope id="5982629958607632340" at="11,0,14,0">
         <var name="editorContext" id="5982629958607632340" />
         <var name="node" id="5982629958607632340" />
       </scope>
-      <unit id="5982629958607632340" at="10,0,15,0" name="IoT_runtime.editor.Sensor_Events_Editor" />
+      <unit id="5982629958607632340" at="10,0,15,0" name="IoT_runtime.editor.SensorTypeEvent_Editor" />
     </file>
-    <file name="Sensor_Events_EditorBuilder_a.java">
-      <node id="5982629958607632340" at="43,93,44,19" concept="14" />
+    <file name="SensorTypeEvent_EditorBuilder_a.java">
+      <node id="5982629958607632340" at="43,95,44,19" concept="14" />
       <node id="5982629958607632340" at="44,19,45,18" concept="2" />
       <node id="5982629958607632340" at="50,26,51,18" concept="9" />
       <node id="5982629958607632340" at="54,39,55,32" concept="9" />
@@ -3865,7 +3865,7 @@
       <node id="5982629958607632340" at="198,0,201,0" concept="7" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
       <node id="5982629958609564033" at="219,0,222,0" concept="7" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="5982629958609564047" at="241,0,244,0" concept="7" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
-      <node id="5982629958607632340" at="43,0,47,0" concept="1" trace="Sensor_Events_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="5982629958607632340" at="43,0,47,0" concept="1" trace="SensorTypeEvent_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="5982629958607632340" at="101,0,105,5" concept="6" />
       <node id="5982629958607632340" at="190,0,194,5" concept="6" />
       <node id="5982629958607632340" at="48,0,53,0" concept="7" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
@@ -3912,7 +3912,7 @@
       <scope id="5982629958609564033" at="225,28,226,20" />
       <scope id="5982629958609564047" at="241,43,242,120" />
       <scope id="5982629958609564047" at="250,17,251,42" />
-      <scope id="5982629958607632340" at="43,93,45,18" />
+      <scope id="5982629958607632340" at="43,95,45,18" />
       <scope id="5982629958607632340" at="102,40,104,45" />
       <scope id="5982629958607632340" at="113,73,115,145">
         <var name="manager" id="5982629958607632340" />
@@ -4029,35 +4029,35 @@
         <var name="referenceLink" id="5982629958607632340" />
       </scope>
       <scope id="5982629958607632340" at="76,0,119,0" />
-      <unit id="5982629958607632340" at="272,0,275,0" name="IoT_runtime.editor.Sensor_Events_EditorBuilder_a$PROPS" />
-      <unit id="5982629958607632340" at="80,74,84,9" name="IoT_runtime.editor.Sensor_Events_EditorBuilder_a$1$1" />
-      <unit id="5982629958607632340" at="108,102,112,5" name="IoT_runtime.editor.Sensor_Events_EditorBuilder_a$2" />
-      <unit id="5982629958607632364" at="151,104,155,9" name="IoT_runtime.editor.Sensor_Events_EditorBuilder_a$Inline_Builder0$1" />
-      <unit id="5982629958607632340" at="176,74,180,9" name="IoT_runtime.editor.Sensor_Events_EditorBuilder_a$3$1" />
-      <unit id="5982629958607632340" at="197,102,201,5" name="IoT_runtime.editor.Sensor_Events_EditorBuilder_a$4" />
-      <unit id="5982629958609564047" at="240,104,244,9" name="IoT_runtime.editor.Sensor_Events_EditorBuilder_a$Inline_Builder1$1" />
-      <unit id="5982629958607632340" at="262,0,266,0" name="IoT_runtime.editor.Sensor_Events_EditorBuilder_a$LINKS" />
-      <unit id="5982629958607632340" at="267,0,271,0" name="IoT_runtime.editor.Sensor_Events_EditorBuilder_a$CONCEPTS" />
-      <unit id="5982629958607632340" at="174,42,186,5" name="IoT_runtime.editor.Sensor_Events_EditorBuilder_a$3" />
-      <unit id="5982629958607632340" at="78,42,97,5" name="IoT_runtime.editor.Sensor_Events_EditorBuilder_a$1" />
-      <unit id="5982629958607632354" at="119,0,166,0" name="IoT_runtime.editor.Sensor_Events_EditorBuilder_a$Inline_Builder0" />
-      <unit id="5982629958609564033" at="208,0,255,0" name="IoT_runtime.editor.Sensor_Events_EditorBuilder_a$Inline_Builder1" />
-      <unit id="5982629958607632340" at="39,0,276,0" name="IoT_runtime.editor.Sensor_Events_EditorBuilder_a" />
+      <unit id="5982629958607632340" at="272,0,275,0" name="IoT_runtime.editor.SensorTypeEvent_EditorBuilder_a$PROPS" />
+      <unit id="5982629958607632340" at="80,74,84,9" name="IoT_runtime.editor.SensorTypeEvent_EditorBuilder_a$1$1" />
+      <unit id="5982629958607632340" at="108,102,112,5" name="IoT_runtime.editor.SensorTypeEvent_EditorBuilder_a$2" />
+      <unit id="5982629958607632364" at="151,104,155,9" name="IoT_runtime.editor.SensorTypeEvent_EditorBuilder_a$Inline_Builder0$1" />
+      <unit id="5982629958607632340" at="176,74,180,9" name="IoT_runtime.editor.SensorTypeEvent_EditorBuilder_a$3$1" />
+      <unit id="5982629958607632340" at="197,102,201,5" name="IoT_runtime.editor.SensorTypeEvent_EditorBuilder_a$4" />
+      <unit id="5982629958609564047" at="240,104,244,9" name="IoT_runtime.editor.SensorTypeEvent_EditorBuilder_a$Inline_Builder1$1" />
+      <unit id="5982629958607632340" at="262,0,266,0" name="IoT_runtime.editor.SensorTypeEvent_EditorBuilder_a$LINKS" />
+      <unit id="5982629958607632340" at="267,0,271,0" name="IoT_runtime.editor.SensorTypeEvent_EditorBuilder_a$CONCEPTS" />
+      <unit id="5982629958607632340" at="174,42,186,5" name="IoT_runtime.editor.SensorTypeEvent_EditorBuilder_a$3" />
+      <unit id="5982629958607632340" at="78,42,97,5" name="IoT_runtime.editor.SensorTypeEvent_EditorBuilder_a$1" />
+      <unit id="5982629958607632354" at="119,0,166,0" name="IoT_runtime.editor.SensorTypeEvent_EditorBuilder_a$Inline_Builder0" />
+      <unit id="5982629958609564033" at="208,0,255,0" name="IoT_runtime.editor.SensorTypeEvent_EditorBuilder_a$Inline_Builder1" />
+      <unit id="5982629958607632340" at="39,0,276,0" name="IoT_runtime.editor.SensorTypeEvent_EditorBuilder_a" />
     </file>
   </root>
   <root nodeRef="r:caf42758-b12c-43b6-8955-709b54c96c6b(IoT_runtime.editor)/5982629958612321079">
-    <file name="Exp_ClusterLayer_Editor.java">
-      <node id="5982629958612321079" at="11,79,12,82" concept="9" />
+    <file name="QoSCluster_Editor.java">
+      <node id="5982629958612321079" at="11,79,12,76" concept="9" />
       <node id="5982629958612321079" at="11,0,14,0" concept="7" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="5982629958612321079" at="11,79,12,82" />
+      <scope id="5982629958612321079" at="11,79,12,76" />
       <scope id="5982629958612321079" at="11,0,14,0">
         <var name="editorContext" id="5982629958612321079" />
         <var name="node" id="5982629958612321079" />
       </scope>
-      <unit id="5982629958612321079" at="10,0,15,0" name="IoT_runtime.editor.Exp_ClusterLayer_Editor" />
+      <unit id="5982629958612321079" at="10,0,15,0" name="IoT_runtime.editor.QoSCluster_Editor" />
     </file>
-    <file name="Exp_ClusterLayer_EditorBuilder_a.java">
-      <node id="5982629958612321079" at="43,96,44,19" concept="14" />
+    <file name="QoSCluster_EditorBuilder_a.java">
+      <node id="5982629958612321079" at="43,90,44,19" concept="14" />
       <node id="5982629958612321079" at="44,19,45,18" concept="2" />
       <node id="5982629958612321079" at="50,26,51,18" concept="9" />
       <node id="5982629958612321079" at="54,39,55,32" concept="9" />
@@ -4142,7 +4142,7 @@
       <node id="5982629958612321083" at="122,0,125,0" concept="7" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="5982629958612321084" at="144,0,147,0" concept="7" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
       <node id="5982629958612321088" at="176,0,179,0" concept="7" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
-      <node id="5982629958612321079" at="43,0,47,0" concept="1" trace="Exp_ClusterLayer_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="5982629958612321079" at="43,0,47,0" concept="1" trace="QoSCluster_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="5982629958612321079" at="93,0,97,5" concept="6" />
       <node id="5982629958612321079" at="48,0,53,0" concept="7" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="5982629958612321079" at="71,72,76,43" concept="8" />
@@ -4174,7 +4174,7 @@
       <scope id="5982629958612321084" at="153,17,154,42" />
       <scope id="5982629958612321088" at="176,41,177,118" />
       <scope id="5982629958612321088" at="185,15,186,40" />
-      <scope id="5982629958612321079" at="43,96,45,18" />
+      <scope id="5982629958612321079" at="43,90,45,18" />
       <scope id="5982629958612321079" at="94,40,96,46" />
       <scope id="5982629958612321079" at="105,73,107,145">
         <var name="manager" id="5982629958612321079" />
@@ -4253,31 +4253,31 @@
         <var name="referenceLink" id="5982629958612321079" />
       </scope>
       <scope id="5982629958612321079" at="68,0,111,0" />
-      <unit id="5982629958612321079" at="190,0,193,0" name="IoT_runtime.editor.Exp_ClusterLayer_EditorBuilder_a$LINKS" />
-      <unit id="5982629958612321079" at="72,74,76,9" name="IoT_runtime.editor.Exp_ClusterLayer_EditorBuilder_a$1$1" />
-      <unit id="5982629958612321079" at="100,102,104,5" name="IoT_runtime.editor.Exp_ClusterLayer_EditorBuilder_a$2" />
-      <unit id="5982629958612321084" at="143,104,147,9" name="IoT_runtime.editor.Exp_ClusterLayer_EditorBuilder_a$Inline_Builder0$1" />
-      <unit id="5982629958612321088" at="175,102,179,7" name="IoT_runtime.editor.Exp_ClusterLayer_EditorBuilder_a$3" />
-      <unit id="5982629958612321079" at="194,0,198,0" name="IoT_runtime.editor.Exp_ClusterLayer_EditorBuilder_a$CONCEPTS" />
-      <unit id="5982629958612321079" at="199,0,203,0" name="IoT_runtime.editor.Exp_ClusterLayer_EditorBuilder_a$PROPS" />
-      <unit id="5982629958612321079" at="70,42,89,5" name="IoT_runtime.editor.Exp_ClusterLayer_EditorBuilder_a$1" />
-      <unit id="5982629958612321083" at="111,0,158,0" name="IoT_runtime.editor.Exp_ClusterLayer_EditorBuilder_a$Inline_Builder0" />
-      <unit id="5982629958612321079" at="39,0,204,0" name="IoT_runtime.editor.Exp_ClusterLayer_EditorBuilder_a" />
+      <unit id="5982629958612321079" at="190,0,193,0" name="IoT_runtime.editor.QoSCluster_EditorBuilder_a$LINKS" />
+      <unit id="5982629958612321079" at="72,74,76,9" name="IoT_runtime.editor.QoSCluster_EditorBuilder_a$1$1" />
+      <unit id="5982629958612321079" at="100,102,104,5" name="IoT_runtime.editor.QoSCluster_EditorBuilder_a$2" />
+      <unit id="5982629958612321084" at="143,104,147,9" name="IoT_runtime.editor.QoSCluster_EditorBuilder_a$Inline_Builder0$1" />
+      <unit id="5982629958612321088" at="175,102,179,7" name="IoT_runtime.editor.QoSCluster_EditorBuilder_a$3" />
+      <unit id="5982629958612321079" at="194,0,198,0" name="IoT_runtime.editor.QoSCluster_EditorBuilder_a$CONCEPTS" />
+      <unit id="5982629958612321079" at="199,0,203,0" name="IoT_runtime.editor.QoSCluster_EditorBuilder_a$PROPS" />
+      <unit id="5982629958612321079" at="70,42,89,5" name="IoT_runtime.editor.QoSCluster_EditorBuilder_a$1" />
+      <unit id="5982629958612321083" at="111,0,158,0" name="IoT_runtime.editor.QoSCluster_EditorBuilder_a$Inline_Builder0" />
+      <unit id="5982629958612321079" at="39,0,204,0" name="IoT_runtime.editor.QoSCluster_EditorBuilder_a" />
     </file>
   </root>
   <root nodeRef="r:caf42758-b12c-43b6-8955-709b54c96c6b(IoT_runtime.editor)/5982629958613708493">
-    <file name="Exp_Node_Editor.java">
-      <node id="5982629958613708493" at="11,79,12,74" concept="9" />
+    <file name="QoSNode_Editor.java">
+      <node id="5982629958613708493" at="11,79,12,73" concept="9" />
       <node id="5982629958613708493" at="11,0,14,0" concept="7" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="5982629958613708493" at="11,79,12,74" />
+      <scope id="5982629958613708493" at="11,79,12,73" />
       <scope id="5982629958613708493" at="11,0,14,0">
         <var name="editorContext" id="5982629958613708493" />
         <var name="node" id="5982629958613708493" />
       </scope>
-      <unit id="5982629958613708493" at="10,0,15,0" name="IoT_runtime.editor.Exp_Node_Editor" />
+      <unit id="5982629958613708493" at="10,0,15,0" name="IoT_runtime.editor.QoSNode_Editor" />
     </file>
-    <file name="Exp_Node_EditorBuilder_a.java">
-      <node id="5982629958613708493" at="45,88,46,19" concept="14" />
+    <file name="QoSNode_EditorBuilder_a.java">
+      <node id="5982629958613708493" at="45,87,46,19" concept="14" />
       <node id="5982629958613708493" at="46,19,47,18" concept="2" />
       <node id="5982629958613708493" at="52,26,53,18" concept="9" />
       <node id="5982629958613708493" at="56,39,57,32" concept="9" />
@@ -4343,7 +4343,7 @@
       <node id="5982629958613708493" at="101,0,104,0" concept="7" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
       <node id="5982629958613708500" at="122,0,125,0" concept="7" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="5982629958613708510" at="147,0,150,0" concept="7" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
-      <node id="5982629958613708493" at="45,0,49,0" concept="1" trace="Exp_Node_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="5982629958613708493" at="45,0,49,0" concept="1" trace="QoSNode_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="5982629958613708493" at="93,0,97,5" concept="6" />
       <node id="5982629958613708493" at="50,0,55,0" concept="7" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="5982629958613708493" at="71,72,76,40" concept="8" />
@@ -4368,7 +4368,7 @@
       <scope id="5982629958613708500" at="128,28,129,20" />
       <scope id="5982629958613708510" at="147,43,148,120" />
       <scope id="5982629958613708510" at="156,17,157,42" />
-      <scope id="5982629958613708493" at="45,88,47,18" />
+      <scope id="5982629958613708493" at="45,87,47,18" />
       <scope id="5982629958613708493" at="94,40,96,43" />
       <scope id="5982629958613708493" at="105,73,107,145">
         <var name="manager" id="5982629958613708493" />
@@ -4430,15 +4430,15 @@
         <var name="referenceLink" id="5982629958613708493" />
       </scope>
       <scope id="5982629958613708493" at="68,0,111,0" />
-      <unit id="5982629958613708493" at="162,0,165,0" name="IoT_runtime.editor.Exp_Node_EditorBuilder_a$LINKS" />
-      <unit id="5982629958613708493" at="171,0,174,0" name="IoT_runtime.editor.Exp_Node_EditorBuilder_a$PROPS" />
-      <unit id="5982629958613708493" at="72,74,76,9" name="IoT_runtime.editor.Exp_Node_EditorBuilder_a$1$1" />
-      <unit id="5982629958613708493" at="100,102,104,5" name="IoT_runtime.editor.Exp_Node_EditorBuilder_a$2" />
-      <unit id="5982629958613708510" at="146,104,150,9" name="IoT_runtime.editor.Exp_Node_EditorBuilder_a$Inline_Builder0$1" />
-      <unit id="5982629958613708493" at="166,0,170,0" name="IoT_runtime.editor.Exp_Node_EditorBuilder_a$CONCEPTS" />
-      <unit id="5982629958613708493" at="70,42,89,5" name="IoT_runtime.editor.Exp_Node_EditorBuilder_a$1" />
-      <unit id="5982629958613708500" at="111,0,161,0" name="IoT_runtime.editor.Exp_Node_EditorBuilder_a$Inline_Builder0" />
-      <unit id="5982629958613708493" at="41,0,175,0" name="IoT_runtime.editor.Exp_Node_EditorBuilder_a" />
+      <unit id="5982629958613708493" at="162,0,165,0" name="IoT_runtime.editor.QoSNode_EditorBuilder_a$LINKS" />
+      <unit id="5982629958613708493" at="171,0,174,0" name="IoT_runtime.editor.QoSNode_EditorBuilder_a$PROPS" />
+      <unit id="5982629958613708493" at="72,74,76,9" name="IoT_runtime.editor.QoSNode_EditorBuilder_a$1$1" />
+      <unit id="5982629958613708493" at="100,102,104,5" name="IoT_runtime.editor.QoSNode_EditorBuilder_a$2" />
+      <unit id="5982629958613708510" at="146,104,150,9" name="IoT_runtime.editor.QoSNode_EditorBuilder_a$Inline_Builder0$1" />
+      <unit id="5982629958613708493" at="166,0,170,0" name="IoT_runtime.editor.QoSNode_EditorBuilder_a$CONCEPTS" />
+      <unit id="5982629958613708493" at="70,42,89,5" name="IoT_runtime.editor.QoSNode_EditorBuilder_a$1" />
+      <unit id="5982629958613708500" at="111,0,161,0" name="IoT_runtime.editor.QoSNode_EditorBuilder_a$Inline_Builder0" />
+      <unit id="5982629958613708493" at="41,0,175,0" name="IoT_runtime.editor.QoSNode_EditorBuilder_a" />
     </file>
   </root>
   <root nodeRef="r:caf42758-b12c-43b6-8955-709b54c96c6b(IoT_runtime.editor)/6500437020946150262">
@@ -24971,18 +24971,18 @@
     </file>
   </root>
   <root nodeRef="r:caf42758-b12c-43b6-8955-709b54c96c6b(IoT_runtime.editor)/917352696266862733">
-    <file name="Exp_RegLayer_Editor.java">
-      <node id="917352696266862733" at="11,79,12,78" concept="9" />
+    <file name="QoSRegion_Editor.java">
+      <node id="917352696266862733" at="11,79,12,75" concept="9" />
       <node id="917352696266862733" at="11,0,14,0" concept="7" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="917352696266862733" at="11,79,12,78" />
+      <scope id="917352696266862733" at="11,79,12,75" />
       <scope id="917352696266862733" at="11,0,14,0">
         <var name="editorContext" id="917352696266862733" />
         <var name="node" id="917352696266862733" />
       </scope>
-      <unit id="917352696266862733" at="10,0,15,0" name="IoT_runtime.editor.Exp_RegLayer_Editor" />
+      <unit id="917352696266862733" at="10,0,15,0" name="IoT_runtime.editor.QoSRegion_Editor" />
     </file>
-    <file name="Exp_RegLayer_EditorBuilder_a.java">
-      <node id="917352696266862733" at="40,92,41,19" concept="14" />
+    <file name="QoSRegion_EditorBuilder_a.java">
+      <node id="917352696266862733" at="40,89,41,19" concept="14" />
       <node id="917352696266862733" at="41,19,42,18" concept="2" />
       <node id="917352696266862733" at="47,26,48,18" concept="9" />
       <node id="917352696266862733" at="51,39,52,32" concept="9" />
@@ -25063,7 +25063,7 @@
       <node id="5982629958605164024" at="112,0,115,0" concept="7" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="5982629958605164073" at="134,0,137,0" concept="7" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
       <node id="5982629958611860890" at="166,0,169,0" concept="7" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
-      <node id="917352696266862733" at="40,0,44,0" concept="1" trace="Exp_RegLayer_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="917352696266862733" at="40,0,44,0" concept="1" trace="QoSRegion_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="917352696266862733" at="83,0,87,5" concept="6" />
       <node id="917352696266862733" at="45,0,50,0" concept="7" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="917352696266862733" at="68,72,73,42" concept="8" />
@@ -25094,7 +25094,7 @@
       <scope id="5982629958605164073" at="143,17,144,42" />
       <scope id="5982629958611860890" at="166,41,167,118" />
       <scope id="5982629958611860890" at="175,15,176,40" />
-      <scope id="917352696266862733" at="40,92,42,18" />
+      <scope id="917352696266862733" at="40,89,42,18" />
       <scope id="917352696266862733" at="84,40,86,45" />
       <scope id="917352696266862733" at="95,73,97,145">
         <var name="manager" id="917352696266862733" />
@@ -25167,31 +25167,31 @@
         <var name="referenceLink" id="917352696266862733" />
       </scope>
       <scope id="917352696266862733" at="65,0,101,0" />
-      <unit id="917352696266862733" at="180,0,183,0" name="IoT_runtime.editor.Exp_RegLayer_EditorBuilder_a$LINKS" />
-      <unit id="917352696266862733" at="69,74,73,9" name="IoT_runtime.editor.Exp_RegLayer_EditorBuilder_a$1$1" />
-      <unit id="917352696266862733" at="90,102,94,5" name="IoT_runtime.editor.Exp_RegLayer_EditorBuilder_a$2" />
-      <unit id="5982629958605164073" at="133,104,137,9" name="IoT_runtime.editor.Exp_RegLayer_EditorBuilder_a$Inline_Builder0$1" />
-      <unit id="5982629958611860890" at="165,102,169,7" name="IoT_runtime.editor.Exp_RegLayer_EditorBuilder_a$3" />
-      <unit id="917352696266862733" at="184,0,188,0" name="IoT_runtime.editor.Exp_RegLayer_EditorBuilder_a$CONCEPTS" />
-      <unit id="917352696266862733" at="189,0,193,0" name="IoT_runtime.editor.Exp_RegLayer_EditorBuilder_a$PROPS" />
-      <unit id="917352696266862733" at="67,42,79,5" name="IoT_runtime.editor.Exp_RegLayer_EditorBuilder_a$1" />
-      <unit id="5982629958605164024" at="101,0,148,0" name="IoT_runtime.editor.Exp_RegLayer_EditorBuilder_a$Inline_Builder0" />
-      <unit id="917352696266862733" at="36,0,194,0" name="IoT_runtime.editor.Exp_RegLayer_EditorBuilder_a" />
+      <unit id="917352696266862733" at="180,0,183,0" name="IoT_runtime.editor.QoSRegion_EditorBuilder_a$LINKS" />
+      <unit id="917352696266862733" at="69,74,73,9" name="IoT_runtime.editor.QoSRegion_EditorBuilder_a$1$1" />
+      <unit id="917352696266862733" at="90,102,94,5" name="IoT_runtime.editor.QoSRegion_EditorBuilder_a$2" />
+      <unit id="5982629958605164073" at="133,104,137,9" name="IoT_runtime.editor.QoSRegion_EditorBuilder_a$Inline_Builder0$1" />
+      <unit id="5982629958611860890" at="165,102,169,7" name="IoT_runtime.editor.QoSRegion_EditorBuilder_a$3" />
+      <unit id="917352696266862733" at="184,0,188,0" name="IoT_runtime.editor.QoSRegion_EditorBuilder_a$CONCEPTS" />
+      <unit id="917352696266862733" at="189,0,193,0" name="IoT_runtime.editor.QoSRegion_EditorBuilder_a$PROPS" />
+      <unit id="917352696266862733" at="67,42,79,5" name="IoT_runtime.editor.QoSRegion_EditorBuilder_a$1" />
+      <unit id="5982629958605164024" at="101,0,148,0" name="IoT_runtime.editor.QoSRegion_EditorBuilder_a$Inline_Builder0" />
+      <unit id="917352696266862733" at="36,0,194,0" name="IoT_runtime.editor.QoSRegion_EditorBuilder_a" />
     </file>
   </root>
   <root nodeRef="r:caf42758-b12c-43b6-8955-709b54c96c6b(IoT_runtime.editor)/917352696268172202">
-    <file name="Sensor_Event_Editor.java">
-      <node id="917352696268172202" at="11,79,12,78" concept="9" />
+    <file name="SensorEvent_Editor.java">
+      <node id="917352696268172202" at="11,79,12,77" concept="9" />
       <node id="917352696268172202" at="11,0,14,0" concept="7" trace="createEditorCell#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
-      <scope id="917352696268172202" at="11,79,12,78" />
+      <scope id="917352696268172202" at="11,79,12,77" />
       <scope id="917352696268172202" at="11,0,14,0">
         <var name="editorContext" id="917352696268172202" />
         <var name="node" id="917352696268172202" />
       </scope>
-      <unit id="917352696268172202" at="10,0,15,0" name="IoT_runtime.editor.Sensor_Event_Editor" />
+      <unit id="917352696268172202" at="10,0,15,0" name="IoT_runtime.editor.SensorEvent_Editor" />
     </file>
-    <file name="Sensor_Event_EditorBuilder_a.java">
-      <node id="917352696268172202" at="43,92,44,19" concept="14" />
+    <file name="SensorEvent_EditorBuilder_a.java">
+      <node id="917352696268172202" at="43,91,44,19" concept="14" />
       <node id="917352696268172202" at="44,19,45,18" concept="2" />
       <node id="917352696268172202" at="50,26,51,18" concept="9" />
       <node id="917352696268172202" at="54,39,55,32" concept="9" />
@@ -25264,7 +25264,7 @@
       <node id="917352696268172202" at="107,0,110,0" concept="7" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
       <node id="4404634135713098040" at="128,0,131,0" concept="7" trace="createCell#()Ljetbrains/mps/openapi/editor/cells/EditorCell;" />
       <node id="4404634135713098051" at="150,0,153,0" concept="7" trace="accept#(Lorg/jetbrains/mps/openapi/model/SNode;)Z" />
-      <node id="917352696268172202" at="43,0,47,0" concept="1" trace="Sensor_Event_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
+      <node id="917352696268172202" at="43,0,47,0" concept="1" trace="SensorEvent_EditorBuilder_a#(Ljetbrains/mps/openapi/editor/EditorContext;Lorg/jetbrains/mps/openapi/model/SNode;)V" />
       <node id="917352696268172202" at="99,0,103,5" concept="6" />
       <node id="917352696268172202" at="48,0,53,0" concept="7" trace="getNode#()Lorg/jetbrains/mps/openapi/model/SNode;" />
       <node id="917352696268172202" at="77,72,82,42" concept="8" />
@@ -25291,7 +25291,7 @@
       <scope id="4404634135713098040" at="134,28,135,20" />
       <scope id="4404634135713098051" at="150,43,151,120" />
       <scope id="4404634135713098051" at="159,17,160,42" />
-      <scope id="917352696268172202" at="43,92,45,18" />
+      <scope id="917352696268172202" at="43,91,45,18" />
       <scope id="917352696268172202" at="100,40,102,45" />
       <scope id="917352696268172202" at="111,73,113,145">
         <var name="manager" id="917352696268172202" />
@@ -25360,15 +25360,15 @@
         <var name="referenceLink" id="917352696268172202" />
       </scope>
       <scope id="917352696268172202" at="74,0,117,0" />
-      <unit id="917352696268172202" at="171,0,174,0" name="IoT_runtime.editor.Sensor_Event_EditorBuilder_a$LINKS" />
-      <unit id="917352696268172202" at="180,0,183,0" name="IoT_runtime.editor.Sensor_Event_EditorBuilder_a$PROPS" />
-      <unit id="917352696268172202" at="78,74,82,9" name="IoT_runtime.editor.Sensor_Event_EditorBuilder_a$1$1" />
-      <unit id="917352696268172202" at="106,102,110,5" name="IoT_runtime.editor.Sensor_Event_EditorBuilder_a$2" />
-      <unit id="4404634135713098051" at="149,104,153,9" name="IoT_runtime.editor.Sensor_Event_EditorBuilder_a$Inline_Builder0$1" />
-      <unit id="917352696268172202" at="175,0,179,0" name="IoT_runtime.editor.Sensor_Event_EditorBuilder_a$CONCEPTS" />
-      <unit id="917352696268172202" at="76,42,95,5" name="IoT_runtime.editor.Sensor_Event_EditorBuilder_a$1" />
-      <unit id="4404634135713098040" at="117,0,164,0" name="IoT_runtime.editor.Sensor_Event_EditorBuilder_a$Inline_Builder0" />
-      <unit id="917352696268172202" at="39,0,184,0" name="IoT_runtime.editor.Sensor_Event_EditorBuilder_a" />
+      <unit id="917352696268172202" at="171,0,174,0" name="IoT_runtime.editor.SensorEvent_EditorBuilder_a$LINKS" />
+      <unit id="917352696268172202" at="180,0,183,0" name="IoT_runtime.editor.SensorEvent_EditorBuilder_a$PROPS" />
+      <unit id="917352696268172202" at="78,74,82,9" name="IoT_runtime.editor.SensorEvent_EditorBuilder_a$1$1" />
+      <unit id="917352696268172202" at="106,102,110,5" name="IoT_runtime.editor.SensorEvent_EditorBuilder_a$2" />
+      <unit id="4404634135713098051" at="149,104,153,9" name="IoT_runtime.editor.SensorEvent_EditorBuilder_a$Inline_Builder0$1" />
+      <unit id="917352696268172202" at="175,0,179,0" name="IoT_runtime.editor.SensorEvent_EditorBuilder_a$CONCEPTS" />
+      <unit id="917352696268172202" at="76,42,95,5" name="IoT_runtime.editor.SensorEvent_EditorBuilder_a$1" />
+      <unit id="4404634135713098040" at="117,0,164,0" name="IoT_runtime.editor.SensorEvent_EditorBuilder_a$Inline_Builder0" />
+      <unit id="917352696268172202" at="39,0,184,0" name="IoT_runtime.editor.SensorEvent_EditorBuilder_a" />
     </file>
   </root>
 </debug-info>

@@ -309,10 +309,10 @@ public class QueriesGenerated extends QueryProviderBase {
     return isEmptyString(SPropertyOperations.getString(_context.getNode(), PROPS.subPath$eZhP));
   }
   public static boolean ifMacro_Condition_3_0(final IfMacroContext _context) {
-    return SNodeOperations.isInstanceOf(SLinkOperations.getTarget(_context.getNode(), LINKS.expr$bjkt), CONCEPTS.Exp_Node$_M);
+    return SNodeOperations.isInstanceOf(SLinkOperations.getTarget(_context.getNode(), LINKS.expr$bjkt), CONCEPTS.QoSNode$_M);
   }
   public static boolean ifMacro_Condition_3_1(final IfMacroContext _context) {
-    return SNodeOperations.isInstanceOf(SLinkOperations.getTarget(_context.getNode(), LINKS.expr$bjkt), CONCEPTS.Exp_Cont$kE);
+    return SNodeOperations.isInstanceOf(SLinkOperations.getTarget(_context.getNode(), LINKS.expr$bjkt), CONCEPTS.QoS_Cont$kE);
   }
   public static boolean ifMacro_Condition_3_2(final IfMacroContext _context) {
     return Objects.equals(SPropertyOperations.getString(SLinkOperations.getTarget(_context.getNode(), LINKS.metric$vNf_), PROPS.name$MnvL), "Network_throughput_in");
@@ -990,7 +990,7 @@ public class QueriesGenerated extends QueryProviderBase {
   private static final class CONCEPTS {
     /*package*/ static final SConcept Container$SX = MetaAdapterFactory.getConcept(0x222ccd66f9d64014L, 0x8569354bddee8138L, 0x330981c29fe0fb09L, "IoT_runtime.structure.Container");
     /*package*/ static final SConcept Node$uW = MetaAdapterFactory.getConcept(0x222ccd66f9d64014L, 0x8569354bddee8138L, 0x23381bd32c685983L, "IoT_runtime.structure.Node");
-    /*package*/ static final SConcept Exp_Node$_M = MetaAdapterFactory.getConcept(0x222ccd66f9d64014L, 0x8569354bddee8138L, 0x5306924001c7aec1L, "IoT_runtime.structure.Exp_Node");
-    /*package*/ static final SConcept Exp_Cont$kE = MetaAdapterFactory.getConcept(0x222ccd66f9d64014L, 0x8569354bddee8138L, 0x25ba6d72b2d8c740L, "IoT_runtime.structure.Exp_Cont");
+    /*package*/ static final SConcept QoSNode$_M = MetaAdapterFactory.getConcept(0x222ccd66f9d64014L, 0x8569354bddee8138L, 0x5306924001c7aec1L, "IoT_runtime.structure.QoSNode");
+    /*package*/ static final SConcept QoS_Cont$kE = MetaAdapterFactory.getConcept(0x222ccd66f9d64014L, 0x8569354bddee8138L, 0x25ba6d72b2d8c740L, "IoT_runtime.structure.QoS_Cont");
   }
 }

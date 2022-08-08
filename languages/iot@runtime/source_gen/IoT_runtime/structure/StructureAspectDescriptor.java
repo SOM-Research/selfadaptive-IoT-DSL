@@ -29,11 +29,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptContainer = createDescriptorForContainer();
   /*package*/ final ConceptDescriptor myConceptContainer_Reference = createDescriptorForContainer_Reference();
   /*package*/ final ConceptDescriptor myConceptEdge_Node = createDescriptorForEdge_Node();
-  /*package*/ final ConceptDescriptor myConceptExp_ClusterLayer = createDescriptorForExp_ClusterLayer();
-  /*package*/ final ConceptDescriptor myConceptExp_Cont = createDescriptorForExp_Cont();
   /*package*/ final ConceptDescriptor myConceptExp_LayerReg = createDescriptorForExp_LayerReg();
-  /*package*/ final ConceptDescriptor myConceptExp_Node = createDescriptorForExp_Node();
-  /*package*/ final ConceptDescriptor myConceptExp_RegLayer = createDescriptorForExp_RegLayer();
   /*package*/ final ConceptDescriptor myConceptFog_Node = createDescriptorForFog_Node();
   /*package*/ final ConceptDescriptor myConceptGrammar = createDescriptorForGrammar();
   /*package*/ final ConceptDescriptor myConceptIoT_Device = createDescriptorForIoT_Device();
@@ -47,6 +43,10 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptOffloading = createDescriptorForOffloading();
   /*package*/ final ConceptDescriptor myConceptOperate_Actuator = createDescriptorForOperate_Actuator();
   /*package*/ final ConceptDescriptor myConceptPeriod = createDescriptorForPeriod();
+  /*package*/ final ConceptDescriptor myConceptQoSCluster = createDescriptorForQoSCluster();
+  /*package*/ final ConceptDescriptor myConceptQoSNode = createDescriptorForQoSNode();
+  /*package*/ final ConceptDescriptor myConceptQoSRegion = createDescriptorForQoSRegion();
+  /*package*/ final ConceptDescriptor myConceptQoS_Cont = createDescriptorForQoS_Cont();
   /*package*/ final ConceptDescriptor myConceptQoS_Event = createDescriptorForQoS_Event();
   /*package*/ final ConceptDescriptor myConceptRedeployment = createDescriptorForRedeployment();
   /*package*/ final ConceptDescriptor myConceptRegion = createDescriptorForRegion();
@@ -54,9 +54,9 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptResource_Expression = createDescriptorForResource_Expression();
   /*package*/ final ConceptDescriptor myConceptScaling = createDescriptorForScaling();
   /*package*/ final ConceptDescriptor myConceptSensor = createDescriptorForSensor();
+  /*package*/ final ConceptDescriptor myConceptSensorEvent = createDescriptorForSensorEvent();
+  /*package*/ final ConceptDescriptor myConceptSensorTypeEvent = createDescriptorForSensorTypeEvent();
   /*package*/ final ConceptDescriptor myConceptSensor_Actuator_Type = createDescriptorForSensor_Actuator_Type();
-  /*package*/ final ConceptDescriptor myConceptSensor_Event = createDescriptorForSensor_Event();
-  /*package*/ final ConceptDescriptor myConceptSensor_Events = createDescriptorForSensor_Events();
   /*package*/ final ConceptDescriptor myConceptSensor_Type = createDescriptorForSensor_Type();
   /*package*/ final ConceptDescriptor myConceptThreshold_Value = createDescriptorForThreshold_Value();
   /*package*/ final ConceptDescriptor myConceptTopic = createDescriptorForTopic();
@@ -84,7 +84,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptAction, myConceptActuator, myConceptActuator_Type, myConceptAdaptationRule, myConceptApplication, myConceptCloud_Node, myConceptCluster, myConceptCluster_Reference, myConceptContainer, myConceptContainer_Reference, myConceptEdge_Node, myConceptExp_ClusterLayer, myConceptExp_Cont, myConceptExp_LayerReg, myConceptExp_Node, myConceptExp_RegLayer, myConceptFog_Node, myConceptGrammar, myConceptIoT_Device, myConceptIoT_Device_Reference, myConceptIoT_System, myConceptList_Of_Metrics, myConceptMetric, myConceptNode, myConceptNode_Reference, myConceptNum_Value, myConceptOffloading, myConceptOperate_Actuator, myConceptPeriod, myConceptQoS_Event, myConceptRedeployment, myConceptRegion, myConceptRegion_Reference, myConceptResource_Expression, myConceptScaling, myConceptSensor, myConceptSensor_Actuator_Type, myConceptSensor_Event, myConceptSensor_Events, myConceptSensor_Type, myConceptThreshold_Value, myConceptTopic, myConceptVolume, myConceptWorkerReference);
+    return Arrays.asList(myConceptAction, myConceptActuator, myConceptActuator_Type, myConceptAdaptationRule, myConceptApplication, myConceptCloud_Node, myConceptCluster, myConceptCluster_Reference, myConceptContainer, myConceptContainer_Reference, myConceptEdge_Node, myConceptExp_LayerReg, myConceptFog_Node, myConceptGrammar, myConceptIoT_Device, myConceptIoT_Device_Reference, myConceptIoT_System, myConceptList_Of_Metrics, myConceptMetric, myConceptNode, myConceptNode_Reference, myConceptNum_Value, myConceptOffloading, myConceptOperate_Actuator, myConceptPeriod, myConceptQoSCluster, myConceptQoSNode, myConceptQoSRegion, myConceptQoS_Cont, myConceptQoS_Event, myConceptRedeployment, myConceptRegion, myConceptRegion_Reference, myConceptResource_Expression, myConceptScaling, myConceptSensor, myConceptSensorEvent, myConceptSensorTypeEvent, myConceptSensor_Actuator_Type, myConceptSensor_Type, myConceptThreshold_Value, myConceptTopic, myConceptVolume, myConceptWorkerReference);
   }
 
   @Override
@@ -113,16 +113,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptContainer_Reference;
       case LanguageConceptSwitch.Edge_Node:
         return myConceptEdge_Node;
-      case LanguageConceptSwitch.Exp_ClusterLayer:
-        return myConceptExp_ClusterLayer;
-      case LanguageConceptSwitch.Exp_Cont:
-        return myConceptExp_Cont;
       case LanguageConceptSwitch.Exp_LayerReg:
         return myConceptExp_LayerReg;
-      case LanguageConceptSwitch.Exp_Node:
-        return myConceptExp_Node;
-      case LanguageConceptSwitch.Exp_RegLayer:
-        return myConceptExp_RegLayer;
       case LanguageConceptSwitch.Fog_Node:
         return myConceptFog_Node;
       case LanguageConceptSwitch.Grammar:
@@ -149,6 +141,14 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptOperate_Actuator;
       case LanguageConceptSwitch.Period:
         return myConceptPeriod;
+      case LanguageConceptSwitch.QoSCluster:
+        return myConceptQoSCluster;
+      case LanguageConceptSwitch.QoSNode:
+        return myConceptQoSNode;
+      case LanguageConceptSwitch.QoSRegion:
+        return myConceptQoSRegion;
+      case LanguageConceptSwitch.QoS_Cont:
+        return myConceptQoS_Cont;
       case LanguageConceptSwitch.QoS_Event:
         return myConceptQoS_Event;
       case LanguageConceptSwitch.Redeployment:
@@ -163,12 +163,12 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptScaling;
       case LanguageConceptSwitch.Sensor:
         return myConceptSensor;
+      case LanguageConceptSwitch.SensorEvent:
+        return myConceptSensorEvent;
+      case LanguageConceptSwitch.SensorTypeEvent:
+        return myConceptSensorTypeEvent;
       case LanguageConceptSwitch.Sensor_Actuator_Type:
         return myConceptSensor_Actuator_Type;
-      case LanguageConceptSwitch.Sensor_Event:
-        return myConceptSensor_Event;
-      case LanguageConceptSwitch.Sensor_Events:
-        return myConceptSensor_Events;
       case LanguageConceptSwitch.Sensor_Type:
         return myConceptSensor_Type;
       case LanguageConceptSwitch.Threshold_Value:
@@ -305,25 +305,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.alias("Edge node");
     return b.create();
   }
-  private static ConceptDescriptor createDescriptorForExp_ClusterLayer() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("IoT_runtime", "Exp_ClusterLayer", 0x222ccd66f9d64014L, 0x8569354bddee8138L, 0x5306924001b2832bL);
-    b.class_(false, false, false);
-    b.super_("IoT_runtime.structure.Resource_Expression", 0x222ccd66f9d64014L, 0x8569354bddee8138L, 0x5306924001a481deL);
-    b.origin("r:589c5fd8-b628-4aae-9e87-31a99b5068a7(IoT_runtime.structure)/5982629958612321067");
-    b.version(2);
-    b.property("layer", 0x5306924001b2832cL).type(MetaIdFactory.dataTypeId(0x222ccd66f9d64014L, 0x8569354bddee8138L, 0x53069240019d60c8L)).origin("5982629958612321068").done();
-    b.associate("cluster", 0x5306924001b2832eL).target(0x222ccd66f9d64014L, 0x8569354bddee8138L, 0x23381bd32c6859a9L).optional(false).origin("5982629958612321070").done();
-    return b.create();
-  }
-  private static ConceptDescriptor createDescriptorForExp_Cont() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("IoT_runtime", "Exp_Cont", 0x222ccd66f9d64014L, 0x8569354bddee8138L, 0x25ba6d72b2d8c740L);
-    b.class_(false, false, false);
-    b.super_("IoT_runtime.structure.Resource_Expression", 0x222ccd66f9d64014L, 0x8569354bddee8138L, 0x5306924001a481deL);
-    b.origin("r:589c5fd8-b628-4aae-9e87-31a99b5068a7(IoT_runtime.structure)/2718605664465766208");
-    b.version(2);
-    b.associate("container", 0x25ba6d72b2d8c741L).target(0x222ccd66f9d64014L, 0x8569354bddee8138L, 0x330981c29fe0fb09L).optional(false).origin("2718605664465766209").done();
-    return b.create();
-  }
   private static ConceptDescriptor createDescriptorForExp_LayerReg() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("IoT_runtime", "Exp_LayerReg", 0x222ccd66f9d64014L, 0x8569354bddee8138L, 0x5a3631079e4b3368L);
     b.class_(false, false, false);
@@ -331,26 +312,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:589c5fd8-b628-4aae-9e87-31a99b5068a7(IoT_runtime.structure)/6500437020946150248");
     b.version(2);
     b.property("layer", 0x5a3631079e4b336dL).type(MetaIdFactory.dataTypeId(0x222ccd66f9d64014L, 0x8569354bddee8138L, 0x53069240019d60c8L)).origin("6500437020946150253").done();
-    return b.create();
-  }
-  private static ConceptDescriptor createDescriptorForExp_Node() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("IoT_runtime", "Exp_Node", 0x222ccd66f9d64014L, 0x8569354bddee8138L, 0x5306924001c7aec1L);
-    b.class_(false, false, false);
-    b.super_("IoT_runtime.structure.Resource_Expression", 0x222ccd66f9d64014L, 0x8569354bddee8138L, 0x5306924001a481deL);
-    b.origin("r:589c5fd8-b628-4aae-9e87-31a99b5068a7(IoT_runtime.structure)/5982629958613708481");
-    b.version(2);
-    b.associate("node", 0x5306924001c7aec2L).target(0x222ccd66f9d64014L, 0x8569354bddee8138L, 0x23381bd32c685983L).optional(false).origin("5982629958613708482").done();
-    return b.create();
-  }
-  private static ConceptDescriptor createDescriptorForExp_RegLayer() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("IoT_runtime", "Exp_RegLayer", 0x222ccd66f9d64014L, 0x8569354bddee8138L, 0xcbb176ababbb082L);
-    b.class_(false, false, false);
-    b.super_("IoT_runtime.structure.Resource_Expression", 0x222ccd66f9d64014L, 0x8569354bddee8138L, 0x5306924001a481deL);
-    b.origin("r:589c5fd8-b628-4aae-9e87-31a99b5068a7(IoT_runtime.structure)/917352696266862722");
-    b.version(2);
-    b.property("layer", 0x5306924001ab7d87L).type(MetaIdFactory.dataTypeId(0x222ccd66f9d64014L, 0x8569354bddee8138L, 0x53069240019d60c8L)).origin("5982629958611860871").done();
-    b.property("quantity", 0x5306924001d611c9L).type(PrimitiveTypeId.STRING).origin("5982629958614651337").done();
-    b.associate("region", 0x5306924001454deaL).target(0x222ccd66f9d64014L, 0x8569354bddee8138L, 0x6175b41c53adc15cL).optional(true).origin("5982629958605164010").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForFog_Node() {
@@ -495,6 +456,45 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.property("unit", 0x78a15643faf7e38bL).type(MetaIdFactory.dataTypeId(0x222ccd66f9d64014L, 0x8569354bddee8138L, 0x78a15643faf7e38eL)).origin("8692323605775115147").done();
     return b.create();
   }
+  private static ConceptDescriptor createDescriptorForQoSCluster() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("IoT_runtime", "QoSCluster", 0x222ccd66f9d64014L, 0x8569354bddee8138L, 0x5306924001b2832bL);
+    b.class_(false, false, false);
+    b.super_("IoT_runtime.structure.Resource_Expression", 0x222ccd66f9d64014L, 0x8569354bddee8138L, 0x5306924001a481deL);
+    b.origin("r:589c5fd8-b628-4aae-9e87-31a99b5068a7(IoT_runtime.structure)/5982629958612321067");
+    b.version(2);
+    b.property("layer", 0x5306924001b2832cL).type(MetaIdFactory.dataTypeId(0x222ccd66f9d64014L, 0x8569354bddee8138L, 0x53069240019d60c8L)).origin("5982629958612321068").done();
+    b.associate("cluster", 0x5306924001b2832eL).target(0x222ccd66f9d64014L, 0x8569354bddee8138L, 0x23381bd32c6859a9L).optional(false).origin("5982629958612321070").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForQoSNode() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("IoT_runtime", "QoSNode", 0x222ccd66f9d64014L, 0x8569354bddee8138L, 0x5306924001c7aec1L);
+    b.class_(false, false, false);
+    b.super_("IoT_runtime.structure.Resource_Expression", 0x222ccd66f9d64014L, 0x8569354bddee8138L, 0x5306924001a481deL);
+    b.origin("r:589c5fd8-b628-4aae-9e87-31a99b5068a7(IoT_runtime.structure)/5982629958613708481");
+    b.version(2);
+    b.associate("node", 0x5306924001c7aec2L).target(0x222ccd66f9d64014L, 0x8569354bddee8138L, 0x23381bd32c685983L).optional(false).origin("5982629958613708482").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForQoSRegion() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("IoT_runtime", "QoSRegion", 0x222ccd66f9d64014L, 0x8569354bddee8138L, 0xcbb176ababbb082L);
+    b.class_(false, false, false);
+    b.super_("IoT_runtime.structure.Resource_Expression", 0x222ccd66f9d64014L, 0x8569354bddee8138L, 0x5306924001a481deL);
+    b.origin("r:589c5fd8-b628-4aae-9e87-31a99b5068a7(IoT_runtime.structure)/917352696266862722");
+    b.version(2);
+    b.property("layer", 0x5306924001ab7d87L).type(MetaIdFactory.dataTypeId(0x222ccd66f9d64014L, 0x8569354bddee8138L, 0x53069240019d60c8L)).origin("5982629958611860871").done();
+    b.property("quantity", 0x5306924001d611c9L).type(PrimitiveTypeId.STRING).origin("5982629958614651337").done();
+    b.associate("region", 0x5306924001454deaL).target(0x222ccd66f9d64014L, 0x8569354bddee8138L, 0x6175b41c53adc15cL).optional(true).origin("5982629958605164010").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForQoS_Cont() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("IoT_runtime", "QoS_Cont", 0x222ccd66f9d64014L, 0x8569354bddee8138L, 0x25ba6d72b2d8c740L);
+    b.class_(false, false, false);
+    b.super_("IoT_runtime.structure.Resource_Expression", 0x222ccd66f9d64014L, 0x8569354bddee8138L, 0x5306924001a481deL);
+    b.origin("r:589c5fd8-b628-4aae-9e87-31a99b5068a7(IoT_runtime.structure)/2718605664465766208");
+    b.version(2);
+    b.associate("container", 0x25ba6d72b2d8c741L).target(0x222ccd66f9d64014L, 0x8569354bddee8138L, 0x330981c29fe0fb09L).optional(false).origin("2718605664465766209").done();
+    return b.create();
+  }
   private static ConceptDescriptor createDescriptorForQoS_Event() {
     ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("IoT_runtime", "QoS_Event", 0x222ccd66f9d64014L, 0x8569354bddee8138L, 0xcbb176aba3d9f94L);
     b.class_(false, false, false);
@@ -567,18 +567,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.alias("Sensor");
     return b.create();
   }
-  private static ConceptDescriptor createDescriptorForSensor_Actuator_Type() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("IoT_runtime", "Sensor_Actuator_Type", 0x222ccd66f9d64014L, 0x8569354bddee8138L, 0x23381bd32c6859b0L);
-    b.class_(false, false, true);
-    b.origin("r:589c5fd8-b628-4aae-9e87-31a99b5068a7(IoT_runtime.structure)/2537808983820360112");
-    b.version(2);
-    b.aggregate("sensorVariables", 0x23381bd32c6859b1L).target(0x222ccd66f9d64014L, 0x8569354bddee8138L, 0x23381bd32c6859b3L).optional(true).ordered(true).multiple(true).origin("2537808983820360113").done();
-    b.aggregate("actuatorTypes", 0x23381bd32c6859b9L).target(0x222ccd66f9d64014L, 0x8569354bddee8138L, 0x23381bd32c6859b6L).optional(true).ordered(true).multiple(true).origin("2537808983820360121").done();
-    b.alias("Sensors And Actuator Types");
-    return b.create();
-  }
-  private static ConceptDescriptor createDescriptorForSensor_Event() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("IoT_runtime", "Sensor_Event", 0x222ccd66f9d64014L, 0x8569354bddee8138L, 0xcbb176abacfab9fL);
+  private static ConceptDescriptor createDescriptorForSensorEvent() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("IoT_runtime", "SensorEvent", 0x222ccd66f9d64014L, 0x8569354bddee8138L, 0xcbb176abacfab9fL);
     b.class_(false, false, false);
     b.super_("jetbrains.mps.baseLanguage.structure.Expression", 0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8c37f506fL);
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x2f16f1b357e19f43L);
@@ -587,8 +577,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.associate("sensor", 0xcbb176abacfaba0L).target(0x222ccd66f9d64014L, 0x8569354bddee8138L, 0x23381bd32c6875c5L).optional(false).origin("917352696268172192").done();
     return b.create();
   }
-  private static ConceptDescriptor createDescriptorForSensor_Events() {
-    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("IoT_runtime", "Sensor_Events", 0x222ccd66f9d64014L, 0x8569354bddee8138L, 0x53069240016af7c7L);
+  private static ConceptDescriptor createDescriptorForSensorTypeEvent() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("IoT_runtime", "SensorTypeEvent", 0x222ccd66f9d64014L, 0x8569354bddee8138L, 0x53069240016af7c7L);
     b.class_(false, false, false);
     b.super_("jetbrains.mps.baseLanguage.structure.Expression", 0xf3061a5392264cc5L, 0xa443f952ceaf5816L, 0xf8c37f506fL);
     b.parent(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x2f16f1b357e19f43L);
@@ -596,6 +586,16 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.version(2);
     b.associate("region", 0x53069240016af7caL).target(0x222ccd66f9d64014L, 0x8569354bddee8138L, 0x6175b41c53adc15cL).optional(false).origin("5982629958607632330").done();
     b.associate("sensorType", 0x530692400188716fL).target(0x222ccd66f9d64014L, 0x8569354bddee8138L, 0x23381bd32c6859b3L).optional(false).origin("5982629958609564015").done();
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForSensor_Actuator_Type() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("IoT_runtime", "Sensor_Actuator_Type", 0x222ccd66f9d64014L, 0x8569354bddee8138L, 0x23381bd32c6859b0L);
+    b.class_(false, false, true);
+    b.origin("r:589c5fd8-b628-4aae-9e87-31a99b5068a7(IoT_runtime.structure)/2537808983820360112");
+    b.version(2);
+    b.aggregate("sensorVariables", 0x23381bd32c6859b1L).target(0x222ccd66f9d64014L, 0x8569354bddee8138L, 0x23381bd32c6859b3L).optional(true).ordered(true).multiple(true).origin("2537808983820360113").done();
+    b.aggregate("actuatorTypes", 0x23381bd32c6859b9L).target(0x222ccd66f9d64014L, 0x8569354bddee8138L, 0x23381bd32c6859b6L).optional(true).ordered(true).multiple(true).origin("2537808983820360121").done();
+    b.alias("Sensors And Actuator Types");
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForSensor_Type() {
