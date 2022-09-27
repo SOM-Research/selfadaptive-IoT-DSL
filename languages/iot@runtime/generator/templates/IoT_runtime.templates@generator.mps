@@ -4246,7 +4246,7 @@
     </node>
   </node>
   <node concept="356sEV" id="1RNaUxCLyQ_">
-    <property role="TrG5h" value="iot-system/cofig-map" />
+    <property role="TrG5h" value="iot-system/config-map" />
     <property role="3Le9LX" value=".yaml" />
     <property role="3GE5qa" value="iot-system" />
     <node concept="356WMU" id="1RNaUxCLJCL" role="356KY_">
