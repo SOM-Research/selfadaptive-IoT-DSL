@@ -11,10 +11,10 @@ data:
       rules:
       - alert: Rule 1
         # Condition for alerting
-        expr: 100 - (avg by(node_hostname) (rate(node_cpu_seconds_total{mode="idle",node_hostname="fog-f1"}[30s])) * 100) > 80
+        expr: 100 - (avg by(node_hostname) (rate(node_cpu_seconds_total{mode="idle",node_hostname="fog-f1"}[35s])) * 100) > 80
         for: 1m
         annotations:
-          adaptations: '{"offloading_0.22419523357435223":{"pod_name":"C4","image":"mosquitto:2.0","namespace":"default","requirements":{"memory":"700M","cpu":"700m"},"hosts":{"node":{"operator":"In","values":["edge-b1"]},"region":{"operator":"In","values":["Floor 1"]},"cluster":{"operator":"In","values":[]}}},"scaling_0.36389015565763483":{"instances":1,"image":"mosquitto:2.0","namespace":"default","requirements":{"memory":"700M","cpu":"700m"},"hosts":{"node":{"operator":"In","values":[]},"region":{"operator":"In","values":["Hotel Beach"]},"cluster":{"operator":"In","values":[]}}}}'
+          adaptations: '{"offloading_0.5542084189834958":{"pod_name":"C4","image":"mosquitto:2.0","namespace":"default","requirements":{"memory":"700M","cpu":"700m"},"volumes":[{"name":"mosquitto-config","mountPath":" /config/mqtt.conf","subPath":"mosquitto.conf"}],"hosts":{"node":{"operator":"In","values":["edge-b1"]},"region":{"operator":"In","values":["Floor 1"]},"cluster":{"operator":"In","values":[]}}},"scaling_0.7205690327880323":{"instances":1,"image":"mosquitto:2.0","namespace":"default","requirements":{"memory":"700M","cpu":"700m"},"volumes":[],"hosts":{"node":{"operator":"In","values":[]},"region":{"operator":"In","values":["Hotel Beach"]},"cluster":{"operator":"In","values":[]}}}}'
         labels:
           severity: 'critical'
           actions: '1'
@@ -27,7 +27,7 @@ data:
         expr: floor1_roomA1_smoke > 400 or floor1_roomB1_temp > 400
         for: 10s
         annotations:
-          adaptations: '{"operate_actuator_test":{"broker_ip":"192.168.10.3","port":30070,"topic":"floor1/lobby/alarm","message":"On"}}'
+          adaptations: '{"operate_actuator_0.7526670820335847":{"broker_ip":"192.168.10.3","port":30070,"topic":"floor1/lobby/alarm","message":"On"}}'
         labels:
           severity: 'critical'
           actions: 'all'
