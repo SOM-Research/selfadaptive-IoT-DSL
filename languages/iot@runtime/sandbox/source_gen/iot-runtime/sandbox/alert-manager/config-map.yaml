@@ -19,5 +19,6 @@ data:
 
       routes:
         - receiver: ycap-webhook
+          group_by: ['...']
           match_re:
             severity: critical

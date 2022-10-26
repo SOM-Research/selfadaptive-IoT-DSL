@@ -1,0 +1,120 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: C1
+  labels:
+    app: App1
+spec:
+  containers:
+    - name: C1
+      image: hotel/app1:latest
+      resources:
+
+        requests:
+          memory: "500Mi"
+          cpu: "500m"
+      ports:
+      - containerPort: 8000
+
+
+
+  nodeSelector:
+    node: edge-a1
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: C2
+  labels:
+    app: App1
+spec:
+  containers:
+    - name: C2
+      image: hotel/app1:latest
+      resources:
+
+        requests:
+          memory: "500Mi"
+          cpu: "500m"
+      ports:
+      - containerPort: 8000
+
+
+
+  nodeSelector:
+    node: edge-b1
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: C3
+  labels:
+    app: App2
+spec:
+  containers:
+    - name: C3
+      image: hotel/app2:latest
+      resources:
+
+        requests:
+          memory: "900Mi"
+          cpu: "900m"
+      ports:
+      - containerPort: 5000
+
+
+
+  nodeSelector:
+    node: fog-f1
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: C4
+  labels:
+    app: App3
+spec:
+  containers:
+    - name: C4
+      image: mosquitto:2.0
+      resources:
+
+        requests:
+          memory: "700Mi"
+          cpu: "700m"
+      ports:
+      - containerPort: 1883
+      volumeMounts:
+        - name: mosquitto-config
+          mountPath:  /config/mqtt.conf
+          subPath: mosquitto.conf
+  volumes:
+  - name: mosquitto-config
+    configMap:
+      name: mosquitto-config
+  nodeSelector:
+    node: fog-f1
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: C5
+  labels:
+    app: App4
+spec:
+  containers:
+    - name: C5
+      image: hotel/app4:latest
+      resources:
+
+        requests:
+          memory: "2000Mi"
+          cpu: "2000m"
+      ports:
+      - containerPort: 8080
+
+
+
+  nodeSelector:
+    node: cloud-hotel
+---

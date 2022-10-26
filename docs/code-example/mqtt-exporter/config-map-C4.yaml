@@ -1,0 +1,96 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: mqtt-exporter-config
+  namespace: monitoring
+data:
+  conf.yaml: |
+    # MQTT All values default to paho.mqtt.client defaults
+    mqtt:
+      host:      '192.168.10.3'
+      port:       30070
+
+    metrics:
+      - name:     'floor1_roomA1_smoke'
+        help:     'Topic floor1/roomA1/smoke'
+        type:     'gauge'
+        topic:    'floor1/roomA1/smoke'
+        label_configs:
+          - source_labels:  ['__msg_topic__']           # Required (when label_configs is present)
+            separator:      '/'                         # Optional default ';'
+            regex:          '(.*)'                      # Optional default '(.*)'
+            target_label:   '__topic__'                 # Required (when label_configs is present and 'action' = 'replace')
+            replacement:    '\1'                        # Optional default '\1'
+            action:         'replace'                   # Optional default 'replace'
+
+      - name:     'floor1_roomA1_temp'
+        help:     'Topic floor1/roomA1/temp'
+        type:     'gauge'
+        topic:    'floor1/roomA1/temp'
+        label_configs:
+          - source_labels:  ['__msg_topic__']           # Required (when label_configs is present)
+            separator:      '/'                         # Optional default ';'
+            regex:          '(.*)'                      # Optional default '(.*)'
+            target_label:   '__topic__'                 # Required (when label_configs is present and 'action' = 'replace')
+            replacement:    '\1'                        # Optional default '\1'
+            action:         'replace'                   # Optional default 'replace'
+
+      - name:     'floor1_roomA1_valve'
+        help:     'Topic floor1/roomA1/valve'
+        type:     'gauge'
+        topic:    'floor1/roomA1/valve'
+        label_configs:
+          - source_labels:  ['__msg_topic__']           # Required (when label_configs is present)
+            separator:      '/'                         # Optional default ';'
+            regex:          '(.*)'                      # Optional default '(.*)'
+            target_label:   '__topic__'                 # Required (when label_configs is present and 'action' = 'replace')
+            replacement:    '\1'                        # Optional default '\1'
+            action:         'replace'                   # Optional default 'replace'
+
+      - name:     'floor1_roomB1_smoke'
+        help:     'Topic floor1/roomB1/smoke'
+        type:     'gauge'
+        topic:    'floor1/roomB1/smoke'
+        label_configs:
+          - source_labels:  ['__msg_topic__']           # Required (when label_configs is present)
+            separator:      '/'                         # Optional default ';'
+            regex:          '(.*)'                      # Optional default '(.*)'
+            target_label:   '__topic__'                 # Required (when label_configs is present and 'action' = 'replace')
+            replacement:    '\1'                        # Optional default '\1'
+            action:         'replace'                   # Optional default 'replace'
+
+      - name:     'floor1_roomB1_temp'
+        help:     'Topic floor1/roomB1/temp'
+        type:     'gauge'
+        topic:    'floor1/roomB1/temp'
+        label_configs:
+          - source_labels:  ['__msg_topic__']           # Required (when label_configs is present)
+            separator:      '/'                         # Optional default ';'
+            regex:          '(.*)'                      # Optional default '(.*)'
+            target_label:   '__topic__'                 # Required (when label_configs is present and 'action' = 'replace')
+            replacement:    '\1'                        # Optional default '\1'
+            action:         'replace'                   # Optional default 'replace'
+
+      - name:     'floor1_roomB1_valve'
+        help:     'Topic floor1/roomB1/valve'
+        type:     'gauge'
+        topic:    'floor1/roomB1/valve'
+        label_configs:
+          - source_labels:  ['__msg_topic__']           # Required (when label_configs is present)
+            separator:      '/'                         # Optional default ';'
+            regex:          '(.*)'                      # Optional default '(.*)'
+            target_label:   '__topic__'                 # Required (when label_configs is present and 'action' = 'replace')
+            replacement:    '\1'                        # Optional default '\1'
+            action:         'replace'                   # Optional default 'replace'
+
+      - name:     'floor1_lobby_alarm'
+        help:     'Topic floor1/lobby/alarm'
+        type:     'gauge'
+        topic:    'floor1/lobby/alarm'
+        label_configs:
+          - source_labels:  ['__msg_topic__']           # Required (when label_configs is present)
+            separator:      '/'                         # Optional default ';'
+            regex:          '(.*)'                      # Optional default '(.*)'
+            target_label:   '__topic__'                 # Required (when label_configs is present and 'action' = 'replace')
+            replacement:    '\1'                        # Optional default '\1'
+            action:         'replace'                   # Optional default 'replace'
