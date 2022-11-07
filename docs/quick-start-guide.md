@@ -4,7 +4,9 @@
 
 2.	In the left pane (Logical View) you find an example of a modeled IoT system (Hotel Beach first floor). You can open this example model by double clicking and explore the concepts modeled for an IoT system. The DSL has three notations (textual, tabular, and tree) to model the IoT system concepts. The notations for each concept are shown below.
 
-<img src="https://github.com/SOM-Research/selfadaptive-IoT-DSL/tree/main/docs/img/notation.PNG" alt="Notation" style="width:50%;"/>
+<p align="center">
+<img src="https://github.com/SOM-Research/selfadaptive-IoT-DSL/blob/main/docs/img/notation.PNG" alt="Notation" style="width:50%;"/>
+</p>
 
 3.	Three concepts (Nodes, Containers, and IoT Devices) can be modeled using two different notations (tabular and textual). The user is free to choose the notation. To change notation, right-click anywhere in the model workspace and select `Push Editor Hints`.
 
@@ -12,7 +14,9 @@
 
 4. Select `Use custom hints` and then check `Use tabular notation` option.
 
-![editor-hints-check](img/editor-hints-2.PNG)
+<p align="center">
+<img src="https://github.com/SOM-Research/selfadaptive-IoT-DSL/blob/main/docs/img/editor-hints-2.PNG" alt="Editor-hints check" style="width:60%;"/>
+</p>
 
 5. Now, you can see the model in tabular notation for the nodes, their software containers, and the IoT devices.
 
@@ -21,19 +25,27 @@
 
 1. You can create new solution by right clicking on `selfadaptive-IoT-DSL -> New -> Solution`
 
-![new-solution](img/new-solution.PNG)
+<p align="center">
+<img src="https://github.com/SOM-Research/selfadaptive-IoT-DSL/blob/main/docs/img/new-solution.PNG" alt="Create new solution" style="width:70%;"/>
+</p>
 
 2. Then, create a new model by right clicking on your `NewSolution -> New -> Model`
 
-![new-model](img/new-model.PNG)
+<p align="center">
+<img src="https://github.com/SOM-Research/selfadaptive-IoT-DSL/blob/main/docs/img/new-model.PNG" alt="Create new model" style="width:70%;"/>
+</p>
 
 3. When you are creating a model, you have add **IoT_runtime** to `Used Languages`.
 
-![choose-language](img/choose-language.PNG)
+<p align="center">
+<img src="https://github.com/SOM-Research/selfadaptive-IoT-DSL/blob/main/docs/img/choose-language.PNG" alt="Language" style="width:70%;"/>
+</p>
 
 4. Finally, you can create a new IoT System model.
 
-![new-iot](img/new-iot.PNG)
+<p align="center">
+<img src="https://github.com/SOM-Research/selfadaptive-IoT-DSL/blob/main/docs/img/new-iot.PNG" alt="New IoT System" style="width:70%;"/>
+</p>
 
 > _Note: You will need to create two other templates: (1) `Sensors And Actuators Type` to define the list of sensors and actuators types, and (2) `List_Of_Metrics` to define the list of QoS and infrastructure metrics that you will be able to relate in the adaptation rules. You can explore these two models in our sandbox model._
 
@@ -61,8 +73,12 @@
 
 1. To generate the code once the IoT system model is finished, right click on the model and select `Rebuild Model 'solution.model'`.
 
+<p align="center">
 ![code](img/rebuild-model.png)
+</p>
 
 2. If the model contains no errors, the generated code can be viewed in the directory `<<project_directory>>/solutions/<<solution_name>>/source_gen/<<solution_name>>/<<model_name>>`. The folders and generated code should look like this:
 
-![code](img/start-script.png)
+<p align="center">
+<img src="https://github.com/SOM-Research/selfadaptive-IoT-DSL/blob/main/docs/img/start-script.png" alt="Code generation" style="width:80%;"/>
+</p>
