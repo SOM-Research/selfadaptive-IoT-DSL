@@ -9,7 +9,7 @@ You can find in this repository the DSL implemented in MPS, an example sandbox m
 
 * [Paper+appendices](https://github.com/SOM-Research/selfadaptive-IoT-DSL/tree/main/docs/paper-appe.pdf) submitted to [Computing Journal](https://www.springer.com/journal/607)
 * [Installation guide](https://github.com/SOM-Research/selfadaptive-IoT-DSL/tree/main/docs/installation-guide.md)
-* [Quick Start guide](https://github.com/SOM-Research/selfadaptive-IoT-DSL/tree/main/docs/quick-start-guide.pdf)
+* [Quick Start guide](https://github.com/SOM-Research/selfadaptive-IoT-DSL/tree/main/docs/quick-start-guide.md)
 * [DSL Metamodel](https://github.com/SOM-Research/selfadaptive-IoT-DSL/tree/main/docs/img/metamodel.png)
 * [Generated code example](https://github.com/SOM-Research/selfadaptive-IoT-DSL/tree/main/docs/code-example)
 
