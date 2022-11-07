@@ -4,7 +4,7 @@
 
 2.	In the left pane (Logical View) you find an example of a modeled IoT system (Hotel Beach first floor). You can open this example model by double clicking and explore the concepts modeled for an IoT system. The DSL has three notations (textual, tabular, and tree) to model the IoT system concepts. The notations for each concept are shown below.
 
-![notation](img/notation.PNG)
+<img src="https://github.com/SOM-Research/selfadaptive-IoT-DSL/tree/main/docs/img/notation.PNG" alt="Notation" style="width:50%;"/>
 
 3.	Three concepts (Nodes, Containers, and IoT Devices) can be modeled using two different notations (tabular and textual). The user is free to choose the notation. To change notation, right-click anywhere in the model workspace and select `Push Editor Hints`.
 
