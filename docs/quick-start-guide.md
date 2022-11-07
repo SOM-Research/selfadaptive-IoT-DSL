@@ -61,7 +61,7 @@
 
 1. To generate the code once the IoT system model is finished, right click on the model and select `Rebuild Model 'solution.model'`.
 
-![code](rebuild/rebuild-model.PNG)
+![code](img/rebuild-model.png)
 
 2. If the model contains no errors, the generated code can be viewed in the directory `<<project_directory>>/solutions/<<solution_name>>/source_gen/<<solution_name>>/<<model_name>>`. The folders and generated code should look like this:
 
