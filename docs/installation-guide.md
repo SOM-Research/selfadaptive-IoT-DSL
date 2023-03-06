@@ -22,4 +22,6 @@
 
 	![Plugin c](img/plugin-c.png)
 
-5.	Restart MPS and you will now be able to use the DSL to model IoT systems.
+5.	Restart MPS, rebuild the language (right click and select `Rebuild Language 'IoT_runtime'`), and make language (right click and select `Make Language 'IoT_runtime'`). Finally, you will be able to use the DSL to model IoT systems.
+
+![Rebuild language](img/rebuild-language.png)
